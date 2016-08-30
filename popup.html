@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Copyright (c) 2016 The Web Chapter. All Rights Reserved. -->
+    <meta charset="utf-8">
+    <title>BrowseIt</title>
+    <link href="popup.css" rel="stylesheet" type="text/css"></link>
+    <script src="libs/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="js/browser.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <main>
+
+      <section class="development">
+        <h3>Utvikling</h3>
+        <table>
+          <tbody>
+            <tr><td class="left link"><a href="https://projects.knowit.no/">projects.knowit.no</a></td><td class="right name">Atlassian <span class="hotkey">C</span>onfluence (wiki)</td></tr>
+            <tr><td class="left link"><a href="https://support.knowit.no/">support.knowit.no</a></td><td class="right name">Atlassian <span class="hotkey">J</span>IRA (tickets)</td></tr>
+            <tr><td class="left link"><a href="https://kode.knowit.no/">kode.knowit.no</a></td><td class="right name">Atlassian Bitb<span class="hotkey">u</span>cket (repos)</td></tr>
+            <tr><td class="divider" colspan="2"> </td></tr>
+            <tr><td class="left link"><a href="https://byggmester.knowit.no/">byggmester.knowit.no</a></td><td class="right name">Atlassian Bamboo (build server)</td></tr>
+            <tr><td class="left link"><a href="https://crowd.knowit.no/">crowd.knowit.no</a></td><td class="right name">Atlassian Crowd (user groups)</td></tr>
+            <tr><td class="divider" colspan="2"> </td></tr>
+            <tr><td class="left link"><a href="https://nexus.knowit.no/">nexus.knowit.no</a></td><td class="right name">Nexus for NPM &amp; Maven</td></tr>
+            <tr><td class="left link"><a href="https://github.com/knowit/">github.com/knowit</a></td><td class="right name">Knowit's public GitHub repos</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="administration">
+        <h3>Administrasjon</h3>
+        <table>
+          <tbody>
+            <tr><td class="left name">Epost</td><td><a href="http://epost.knowit.no/">epost.knowit.no</a></td></tr>
+            <tr><td class="left name">Kalender</td><td><a href="http://kalender.knowit.no/">kalender.knowit.no</a></td></tr>
+            <tr><td class="divider" colspan="2"> </td></tr>
+            <tr><td class="left name">Timereg</td><td><a href="https://timereg.knowit.no/">timereg.knowit.no</a></td></tr>
+            <tr><td class="left name">CV-reg</td><td><a href="https://cvreg.knowit.no/">cvreg.knowit.no</a></td></tr>
+            <tr><td class="divider" colspan="2"> </td></tr>
+            <tr><td class="left name">Sharepoint</td><td><a href="http://knowit.sharepoint.com/">knowit.sharepoint.com</a></td></tr>
+            <tr><td class="left name">HelpIt</td><td><a href="http://helpit.knowit.se/">helpit.knowit.se</a></td></tr>
+            <tr><td class="divider" colspan="2"> </td></tr>
+            <tr><td class="left name">Firmahytter</td><td><a href="http://prodess.no/">prodess.no</a></td></tr>
+            <tr><td class="left name">Reiseregning</td><td><a href="https://expense.visma.net/">expense.visma.net</a></td></tr>
+            <tr><td class="left name">Konsulentene</td><td><a href="http://www.knowit.no/kontakt-oss/#specialists">knowit.no/kontakt-oss/#specialists</a></td></tr>
+            <tr><td class="left name">Epostlister</td><td><a href="https://groups.google.com/a/knowit.no/forum/#!forumsearch/">groups.google.com/a/knowit.no/...</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="nooblist">
+
+        <h3>Nooblisten <span id="noob_counter">_</span></h3>
+
+        <div id="fry">
+          Good news everyone! You have completed all the tasks. A+. Well done!<br />
+          <ul>
+            <li><b>Si ifra til</b> Christer Kjellesvig eller Michael Johansen at du har kommet hit ;)<br /></li>
+            <li>Vi ønsker gjerne feedback på hvordan du synes BrowseIt fungerer, og hva som kunne vært bedre til neste år</li>
+            <li>Send feedback til <a href="mailto:michael.johansen@knowit.no">michael.johansen@knowit.no</a></li>
+          </ul>
+          <img src="img/fry.gif" />
+        </div>
+
+        <div id="noob_description">
+          <ul>
+            <li>"In no particular order", bare logisk gruppert med et <b>subjektivt og røft tidsestimat</b> står foran hver oppgave.</li>
+            <li>Når du huker av eller skriver noe så lagres det <b>lokalt på denne maskinen</b> (i localStorage).</li>
+            <li>Det er ikke alt som er relevant om du er <b>sommerjobber</b>, men det skjønner du selv.</li>
+            <li>Om noe tar <b>0 minutter</b> så betyr det "gjøres for deg" (forhåpentligvis).</li>
+            <li>Anbefaler å få gjort det meste i løpet av <b>de første par månedene.</b></li>
+            <li>Denne listen er <b>kun for din egen del,</b> så bruk den som du ønsker.</li>
+            <li><b>Bruk gjerne feltet til venstre</b> for å notere hvor lang tid ting egentlig tok, vi ønsker å tilpasse estimatene til virkeligheten ved å f.eks. ta en gjennomgang med håndsopprekning etterhvert. Det er <b>spesielt viktig for de estimatene vi har tatt helt feil på.</b></li>
+          </ul>
+        </div>
+
+        <h4>Administrasjon</h4>
+        <div><input id="admin_leaders_time" placeholder="15 min" type="text"></input><input id="admin_leaders" type="checkbox"> Vet hvem mine ledere er <b>(prosjektleder &amp;&amp; gruppeleder &amp;&amp; avdelingsleder)</b>, og forskjellen på dem</input></div>
+        <div><input id="admin_contract_time" placeholder="30 min" type="text"></input><input id="admin_contract" type="checkbox"> Har lest, forstått og signert <b>ansettelseskontrakten</b></input></div>
+        <div><input id="admin_nda_time" placeholder="10 min" type="text"></input><input id="admin_nda" type="checkbox"> Har lest, forstått og signert <b>taushetserklæringen</b> som var vedlagt ansettelseskontrakten</input></div>
+        <div><input id="admin_handbook_time" placeholder="20 min" type="text"></input><input id="admin_handbook" type="checkbox"> Har lest høvelig gjennom <a href="https://projects.knowit.no/pages/viewpage.action?pageId=30998775"><b>personalhåndboka</b></a></input></div>
+        <div><input id="admin_bizcard_time" placeholder="20 min" type="text"></input><input id="admin_bizcard" type="checkbox"> Hvis jeg vil så har jeg skaffet <a href="http://visittkort.org/storbedrift/knowit.html"><b>visittkort</b></a>, else void</input></div>
+        <div><input id="admin_project_time" placeholder="15 min" type="text"></input><input id="admin_project" type="checkbox"> Har snakket med gruppeleder om hvilke <b>teknologier/prosjekter</b> jeg ønsker å jobbe med</input></div>
+        <div><input id="admin_anyleader_time" placeholder="5 min" type="text"></input><input id="admin_anyleader" type="checkbox"> Jeg vet at jeg har <b>tilgang til alle gruppeledere og avdelingsledere,</b> selv om ikke alle er akkurat mine ledere</input></div>
+        <div><input id="admin_vacation_time" placeholder="20 min" type="text"></input><input id="admin_vacation" type="checkbox"> Har fått forklart hvordan feriedager funker i <b>mitt første arbeidsår</b></input></div>
+        <div><input id="admin_development_time" placeholder="1 time" type="text"></input><input id="admin_development" type="checkbox"> Har hatt min første <b>utviklingssamtale</b> med gruppeleder</input></div>
+        <div><input id="admin_negotiations_time" placeholder="10 min" type="text"></input><input id="admin_negotiations" type="checkbox"> Har fått vite hvordan <b>lønnsjusteringer</b> fungerer, og at det skjer årlig i januar</input></div>
+
+        <h4>Kommunikasjon</h4>
+        <div><input id="communication_hello_time" placeholder="20 min" type="text"></input><input id="communication_hello" type="checkbox"> Har vært på <b>hilserunde med gruppeleder</b> og sagt hei til de fleste</input></div>
+        <div><input id="communication_user_time" placeholder="0 min" type="text"></input><input id="communication_user" type="checkbox"> Har fått <b>bruker</b> på Google Apps (single sign-on for mange tjenester!)</input></div>
+        <div><input id="communication_email_time" placeholder="10 min" type="text"></input><input id="communication_email" type="checkbox"> Har åpnet <b>eposten og kalenderen</b>, og vet at eposten må sjekkes daglig</input></div>
+        <div><input id="communication_slack_time" placeholder="15 min" type="text"></input><input id="communication_slack" type="checkbox"> Har kommet meg på <a href="https://knowitobjectnet.slack.com/"><b>Slack</b></a>, og lagt til kanalene jeg vil ha</input></div>
+        <div><input id="communication_mailinglists_time" placeholder="10 min" type="text"></input><input id="communication_mailinglists" type="checkbox"> Har meldt meg på <b>epostlistene</b> som jeg ønsker å være på (se link i toppen)</input></div>
+        <div><input id="communication_archive_time" placeholder="10 min" type="text"></input><input id="communication_archive" type="checkbox"> Vet hvordan jeg <b>arkiverer epost</b> i Google Apps, jeg vet hvorfor arkivering er bedre enn sletting</input></div>
+        <div><input id="communication_vacationcalendar_time" placeholder="10 min" type="text"></input><input id="communication_vacationcalendar" type="checkbox"> Har fått lagt til <b>feriekalenderen</b>, og lover å benytte den</input></div>
+        <div><input id="communication_meetingcalendars_time" placeholder="10 min" type="text"></input><input id="communication_meetingcalendars" type="checkbox"> Vet hvordan jeg legger til <b>møteromskalendere</b>, og lover å benytte dem</input></div>
+        <div><input id="communication_confluence_time" placeholder="10 min" type="text"></input><input id="communication_confluence" type="checkbox"> Abonnerer på <b>daglige oppdateringer fra Confluence</b> slik at jeg får rask oversikt over organisasjonen (anbefales i begynnelsen, skru av etterhvert)</input></div>
+
+        <h4>Lokaler</h4>
+        <div><input id="offices_accesscard_time" placeholder="15 min" type="text"></input><input id="offices_accesscard" type="checkbox"> Har fått <b>adgangskort</b> og lært koden min</input></div>
+        <div><input id="offices_emergencyexits_time" placeholder="10 min" type="text"></input><input id="offices_emergencyexits" type="checkbox"> Vet hvor <b>nødutgangene</b> er, og hvordan de åpnes</input></div>
+        <div><input id="offices_desk_time" placeholder="30 min" type="text"></input><input id="offices_desk" type="checkbox"> Har fått en <b>kontorstol</b> jeg liker, og et <b>bord</b> (heve/senk etter ønske)</input></div>
+        <div><input id="offices_showers_time" placeholder="10 min" type="text"></input><input id="offices_showers" type="checkbox"> Vet hvor <b>dusjene, skapene,</b> rekvisitarommet og serverrommet er</input></div>
+        <div><input id="offices_storage_time" placeholder="20 min" type="text"></input><input id="offices_storage" type="checkbox"> Har vært på <b>lageret</b> vårt, og vet hva jeg kan hente derfra</input></div>
+        <div><input id="offices_post_time" placeholder="5 min" type="text"></input><input id="offices_post" type="checkbox"> Vet at jeg kan få <b>pakker levert til jobb</b> via posten (null problem)</input></div>
+
+        <h4>Økonomi</h4>
+        <div><input id="economy_boss_time" placeholder="60 min" type="text"></input><input id="economy_boss" type="checkbox"> Har hatt møte med <b>økonomisjefen</b></input></div>
+        <div><input id="economy_timereg_time" placeholder="30 min" type="text"></input><input id="economy_timereg" type="checkbox"> Forstår høvelig hvordan jeg bruker <b>Timereg</b></input></div>
+        <div><input id="economy_columns_time" placeholder="10 min" type="text"></input><input id="economy_columns" type="checkbox"> Har funnet <b>de skjulte kolonnene</b> i Timereg</input></div>
+        <div><input id="economy_lunchmoney_time" placeholder="15 min" type="text"></input><input id="economy_lunchmoney" type="checkbox"> Er klar over at <b>lunsjordning</b> varierer stort mellom prosjekter, og har spurt i mitt prosjekt</input></div>
+        <div><input id="economy_simcard_time" placeholder="15 min" type="text"></input><input id="economy_simcard" type="checkbox"> Har fått nytt <b>SIM-kort</b> som betales av jobben (sweet!)</input></div>
+        <div><input id="economy_insurance_policy_time" placeholder="20 min" type="text"></input><input id="economy_insurance_policy" type="checkbox"> Har lest høvelig over <b>forsikringspolisene</b></input></div>
+        <!--<div><input id="economy_insurance_signature_time" placeholder="15 min" type="text"></input><input id="economy_insurance_signature" type="checkbox"> Har fylt ut <b>forsikringspapirene</b></input></div>-->
+        <div><input id="economy_insurance_card_time" placeholder="5 min" type="text"></input><input id="economy_insurance_card" type="checkbox"> Har fått og signert <b>forsikringsbeviset</b></input></div>
+        <div><input id="economy_pension_policy_time" placeholder="30 min" type="text"></input><input id="economy_pension_policy" type="checkbox"> Har satt meg inn i hvordan <b>pensjonsavtalen</b> min fungerer</input></div>
+        <div><input id="economy_accounts_time" placeholder="10 min" type="text"></input><input id="economy_accounts" type="checkbox"> Har sett over listen over <a href="https://projects.knowit.no/display/UC/Bedriftskonti"><b>bedriftskonti</b></a>, og fått forklart hvordan de brukes</input></div>
+        <div><input id="economy_travelexpenses_time" placeholder="20 min" type="text"></input><input id="economy_travelexpenses" type="checkbox"> Har brukt <b>reiseregningssystemet</b> for første gang</input></div>
+        <div><input id="economy_overtimefood_time" placeholder="15 min" type="text"></input><input id="economy_overtimefood" type="checkbox"> Har lært når <b>overtidsmat</b> kan kjøpes, og hvordan det funker med kvittering og Timereg (PS: før opp hvem du spiste med i kommentarfeltet i Timereg)</input></div>
+
+        <h4>Faglig</h4>
+        <div><input id="science_leaders_time" placeholder="10 min" type="text"></input><input id="science_leaders" type="checkbox"> Vet hvem <b>fagsjefene</b> er, og har hilst på dem</input></div>
+        <div><input id="science_wiki_time" placeholder="15 min" type="text"></input><input id="science_wiki" type="checkbox"> Har sett på <a href="https://projects.knowit.no/display/FAG/Faggrupper"><b>listen</b></a> over aktive faggrupper / fagområder på wikien</input></div>
+        <div><input id="science_groups_time" placeholder="15 min" type="text"></input><input id="science_groups" type="checkbox"> Har <b>meldt meg inn i, eller <a href="https://projects.knowit.no/display/FAG/Hvordan+etablere+faggrupper">startet</a>,</b> en faggruppe / et fagområde</input></div>
+        <div><input id="science_hours_time" placeholder="8 timer" type="text"></input><input id="science_hours" type="checkbox"> Har brukt mine første <b>8 fagtimer</b></input></div>
+        <div><input id="science_reward_time" placeholder="10 min" type="text"></input><input id="science_reward" type="checkbox"> Har lest om <a href="https://projects.knowit.no/pages/viewpage.action?pageId=19335580"><b>belønningsmodellen</b></a> for foredrag</input></div>
+        <div><input id="science_seminar_time" placeholder="4 dager" type="text"></input><input id="science_seminar" type="checkbox"> Har vært med på mitt første <b>fagseminar</b></input></div>
+
+        <h4>Sosialt</h4>
+        <div><input id="social_companysports_time" placeholder="20 min" type="text"></input><input id="social_companysports" type="checkbox"> Om ønsket har jeg blitt med i en av gruppene i <b>bedriftsidrettslaget</b>, else void</input></div>
+        <div><input id="social_internalmeeting_time" placeholder="2 timer" type="text"></input><input id="social_internalmeeting" type="checkbox"> Har vært med på mitt første <b>internmøte</b></input></div>
+        <div><input id="social_teambuilding_time" placeholder="4 timer" type="text"></input><input id="social_teambuilding" type="checkbox"> Har hatt <b>brettspillkveld</b> eller lignende med teamet mitt</input></div>
+        <div><input id="social_teamlunch_time" placeholder="1 time" type="text"></input><input id="social_teamlunch" type="checkbox"> Har vært med på min første <b>prosjektlunsj</b></input></div>
+        <div><input id="social_teamice_time" placeholder="15 min" type="text"></input><input id="social_teamice" type="checkbox"> Har vært med på min første <b>is på takterrassen</b> med teamet</input></div>
+
+        <h4>CV-reg &amp; eksponering</h4>
+        <div><input id="cvreg_master_time" placeholder="8 timer" type="text"></input><input id="cvreg_master" type="checkbox"> Har laget <b>master-CV</b> i CV-reg på norsk</input></div>
+        <!--<div><input id="cvreg_sent_time" placeholder="10 min" type="text"></input><input id="cvreg_sent" type="checkbox"> Har <b>sendt CVen</b> til selgerne våre</input></div>-->
+        <div><input id="cvreg_feedback_time" placeholder="1 time" type="text"></input><input id="cvreg_feedback" type="checkbox"> Har <b>fulgt opp</b> tilbakemelding fra selgerne</input></div>
+        <!--<div><input id="cvreg_removal_time" placeholder="20 min" type="text"></input><input id="cvreg_removal" type="checkbox"> Har seriøst vurdert hvilke teknologier jeg <b>kan, men ikke legger inn</b> på CV-reg fordi jeg ikke vil ta i dem igjen</input></div>-->
+        <div><input id="cvreg_employeelist_time" placeholder="15 min" type="text"></input><input id="cvreg_employeelist" type="checkbox"> Har lagt inn meg selv på <a href="https://projects.knowit.no/display/OO/Ansatte"><b>ansattsiden</b></a> på wikien</input></div>
+        <div><input id="cvreg_internalexposure_time" placeholder="1 time" type="text"></input><input id="cvreg_internalexposure" type="checkbox"> Har sørget for at gruppeleder har skrevet en <b>en artikkel om meg på intranettet</b></input></div>
+        <!--<div><input id="cvreg_externalexposure_time" placeholder="1 time" type="text"></input><input id="cvreg_externalexposure" type="checkbox"> Har sørget for at navn, og eventuelt (bilde &amp;&amp; beskrivelse &amp;&amp; kontaktinfo) for meg <b>vises på knowit.no</b></input></div>-->
+
+        <h4>Hardware &amp; software</h4>
+        <div><input id="hwsw_arrange_time" placeholder="15 min" type="text"></input><input id="hwsw_arrange" type="checkbox"> Avtale innkjøp av splitter ny <b>laptop</b> (3 år syklus)</input></div>
+        <div><input id="hwsw_laptop_time" placeholder="0 min" type="text"></input><input id="hwsw_laptop" type="checkbox"> Fått splitter ny <b>laptop&lt;3</b></input></div>
+        <div><input id="hwsw_setup_time" placeholder="4 timer" type="text"></input><input id="hwsw_setup" type="checkbox"> <b>Sette opp laptopen</b> slik jeg liker å ha den</input></div>
+        <div><input id="hwsw_sticker_time" placeholder="10 min" type="text"></input><input id="hwsw_sticker" type="checkbox"> Har fått <b>Knowit-sticker</b> til laptopen</input></div>
+        <div><input id="hwsw_gadgets_time" placeholder="20 min" type="text"></input><input id="hwsw_gadgets" type="checkbox"> Hentet det jeg trenger av <b>kabler, mus/tastatur,</b> laptopstand, overganger, etc.</input></div>
+        <div><input id="hwsw_wifi_time" placeholder="5 min" type="text"></input><input id="hwsw_wifi" type="checkbox"> Fått koblet på <b>WiFi</b> og har lært forskjellen på gjeste-WiFi og intern-WiFi</input></div>
+        <div><input id="hwsw_printer_time" placeholder="20 min" type="text"></input><input id="hwsw_printer" type="checkbox"> Har satt opp <a href="https://projects.knowit.no/display/DRIFT/Printeroppsett+i+U7+-+Canon+Multifunksjonsskriver"><b>printeren</b></a> med guiden på wikien</input></div>
+        <div><input id="hwsw_office_time" placeholder="20 min" type="text"></input><input id="hwsw_office" type="checkbox"> Har en <b>office suite</b> som fungerer for meg (MS Office, iWork, GDocs, OpenOffice, etc.)</input></div>
+
+        <h4>Utviklingsverktøy</h4>
+        <div><input id="develop_confluence_time" placeholder="15 min" type="text"></input><input id="develop_confluence" type="checkbox"> Har sett meg rundt på <b>Confluence</b> (wikien)<b></b></input></div>
+        <div><input id="develop_jira_time" placeholder="15 min" type="text"></input><input id="develop_jira" type="checkbox"> Har sett meg rundt på <b>JIRA</b> (tickets)<b></b></input></div>
+        <div><input id="develop_bitbucket_time" placeholder="15 min" type="text"></input><input id="develop_bitbucket" type="checkbox"> Har sett meg rundt på <b>Bitbucket</b> (kodebasene)<b></b></input></div>
+        <div><input id="develop_sshkeys_time" placeholder="30 min" type="text"></input><input id="develop_sshkeys" type="checkbox"> Har laget <b>unik og passordbeskyttet SSH-nøkkel</b>, og lagt den inn på Bitbucket</input></div>
+        <div><input id="develop_crowd_bamboo_time" placeholder="20 min" type="text"></input><input id="develop_crowd_bamboo" type="checkbox"> Har sett litt på <b>Crowd og Bamboo</b> (brukergrupper, byggserver)<b></b></input></div>
+        <div><input id="develop_atlassian_time" placeholder="30 min" type="text"></input><input id="develop_atlassian" type="checkbox"> Har fått intro til hvordan prosjektet mitt bruker <b>Atlassian</b>-produktene</input></div>
+
+        <h4>Sikkerhet</h4>
+        <div><input id="security_encryption_time" placeholder="15 min" type="text"></input><input id="security_encryption" type="checkbox"> Har skrudd på <b>full disk encryption</b> på laptopen (kan være problematisk på noen Linux-distroer)</input></div>
+        <div><input id="security_pwmanager_time" placeholder="1 time" type="text"></input><input id="security_pwmanager" type="checkbox"> Har tatt i bruk <b>LastPass</b> eller lignende</input></div>
+        <div><input id="security_workpasswords_time" placeholder="20 min" type="text"></input><input id="security_workpasswords" type="checkbox"> Bruker et sterkt og helt unikt passord <b>med single sign-on hos Knowit</b> (Gmail, Slack, Confluence, JIRA, Bitbucket, etc.)</input></div>
+        <div><input id="security_privatepasswords_time" placeholder="20 min" type="text"></input><input id="security_privatepasswords" type="checkbox"> Bruker sterke og helt unike passord <b>på alle private kjernetjenester</b> (Facebook, Gmail, Dropbox, iCloud, etc.)</input></div>
+        <div><input id="security_firewall_time" placeholder="30 min" type="text"></input><input id="security_firewall" type="checkbox"> Bruker <b>brannmur</b> og har full kontroll på hvilke tjenester som kjører på min jobbmaskin</input></div>
+        <div><input id="security_backup_time" placeholder="30 min" type="text"></input><input id="security_backup" type="checkbox"> Har lagt inn gode <b>backup-løsninger (cloud sync)</b> på laptopen</input></div>
+        <div><input id="security_hierarchy_time" placeholder="30 min" type="text"></input><input id="security_hierarchy" type="checkbox"> Har laget en god begynnelse på <b>en filstruktur</b> og skal holde Knowit-filer ryddige plassert i strukturen</input></div>
+
+        <!--<h4>Hvem spør jeg om hva</h4>-->
+        <!-- TODO -->
+
+        <h4>When the going gets tough...</h4>
+        <div><input id="tough_chocolate" type="checkbox"></input>...the tough eat chocolate</input></div>
+        <div><input id="tough_commit" type="checkbox"></input>Jeg <b>skal</b> committe ofte. Jeg <b>skal</b> committe ofte. Jeg <b>skal</b> committe ofte.</input></div>
+        <div><input id="tough_tell" type="checkbox"></input>Jeg lover å <b>si ifra</b> når jeg har problemer</input></div>
+        <div><input id="tough_ask" type="checkbox"></input>Jeg lover å <b>spørre de andre på teamet</b> om alt mulig rart</input></div>
+        <div><input id="tough_docs" type="checkbox"></input>Jeg lover å <b>lese dokumentasjonen</b></input></div>
+        <div><input id="tough_projects" type="checkbox"></input>Jeg forstår at <b>jeg må si nei</b> dersom jeg ikke vil påta meg et nytt prosjekt <b>selv om en leder spør om det</b></input></div>
+        <div><input id="tough_confidant" type="checkbox"></input>Jeg vet at jeg alltid kan prate med de personalansvarlige (gruppeledere og avdelingsledere) om <b>hva som helst</b> for de har taushetsplikt, og at jeg kan <b>velge fritt</b> hvem av dem jeg vil prate med vanskelige ting om</input></div>
+
+      </section>
+
+      <div class="shadowbox"> </div>
+
+      <header>
+        <img id="browseit" src="img/logo.png" />
+        <a href="https://projects.knowit.no/display/FAG/The+Web+Chapter"><img id="twc" src="img/twc-logo.png" /></a>
+      </header>
+
+      <footer>
+        <a href="popup.html"><img id="expand" src="img/expand.png" /></a>
+        <div id="feedback">
+          Bruk <span class="bold">Ctrl + Shift + &lt;bokstav&gt;</span> for å åpne en side uten å åpne BrowseIt.
+          <br />
+          <span class="bold">Ctrl + Shift + B</span> åpner BrowseIt.
+          Send gjerne forslag til
+          <a href="mailto:michael.johansen@knowit.no">michael.johansen@knowit.no</a>
+        </div>
+        <div id="counter">?</div>
+      </footer>
+
+    </main>
+
+    <div id="leftblock"></div>
+    <div id="rightblock"></div>
+
+    <script src="popup.js" type="text/javascript"></script>
+  </body>
+</html>

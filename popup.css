@@ -1,0 +1,228 @@
+/* Fonts */
+
+@font-face {
+  font-family: Raleway;
+  src: url('fonts/Raleway-Medium.ttf');
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url('fonts/Raleway-Bold.ttf');
+}
+
+/* Body */
+
+body {
+  width: 800px;
+  height: 540px;
+  font-family: Raleway;
+  font-size: 9pt;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main */
+
+main {
+  overflow-y: scroll;
+
+  background-color: #fff;
+  /*border: 1px solid #ccc;*/
+
+  width: 740px;
+  padding: 30px;
+
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 45px;
+  left: 0;
+}
+
+div#leftblock {
+  border-right: 1px solid #ccc;
+  box-shadow: inset 0px 0px 20px 0px #555;
+  position: fixed;
+  top: -100px;
+  bottom: -100px;
+  left: -100px;
+  width: 100px;
+  background-color: #eee;
+}
+
+div#rightblock {
+  border-left: 1px solid #ccc;
+  box-shadow: inset 0px 0px 20px 0px #555;
+  position: fixed;
+  top: -100px;
+  bottom: -100px;
+  right: -100px;
+  width: 100px;
+  background-color: #eee;
+}
+
+/* Shadowbox under Header */
+
+div.shadowbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 60px;
+  box-shadow: 0 10px 10px 10px white;
+}
+
+/* Header */
+
+header {
+  background-image: url('img/banner.png');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 89px;
+  padding: 0;
+  margin: 0;
+}
+
+header img#browseit {
+  margin: 15px 0 0 20px;
+  width: 192px;
+  height: 46px;
+  position: relative;
+  float: left;
+}
+
+header img#twc {
+  margin: 15px 20px 0 0;
+  width: auto;
+  height: 40px;
+  position: relative;
+  float: right;
+}
+
+/* Sections */
+
+section {
+  position: relative;
+}
+section.development {
+  border: 1px solid white;
+  float: left;
+  width: 45%;
+}
+section.administration {
+  border: 1px solid white;
+  float: right;
+  width: 50%;
+}
+section.nooblist {
+  float: left;
+  width: 100%;
+}
+section h3 {
+  font-family: RalewayBold;
+}
+
+/* Table */
+
+table {
+  font-size: 9pt;
+  width: 100%;
+}
+td.left {
+  text-align: right;
+}
+td.right {
+}
+td.link {
+}
+td.name {
+}
+td.divider {
+  height: 10px;
+}
+
+/* Nooblist */
+
+input[type="text"] {
+  width: 40px;
+  text-align: right;
+}
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+div#fry {
+  display: none;
+  background-color: cornsilk;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+/* Footer */
+
+footer {
+  border: 1px solid white;
+  border-top: 1px solid #ccc;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 10px 3px grey;
+  color: #ccc;
+  position: fixed;
+  width: 800px;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+footer img#expand {
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  width: 23px;
+  height: auto;
+}
+
+footer a#expand {
+  color: #bbb;
+}
+
+footer div#feedback {
+  position: relative;
+  float: left;
+  margin-top: 9px;
+  margin-left: 100px;
+  width: 600px;
+}
+
+footer div#feedback a {
+  color: #bbb;
+}
+
+footer div#counter {
+  position: relative;
+  float: left;
+  margin-top: 11px;
+  margin-left: 14px;
+  font-size: 14pt;
+  color: #555;
+}
+
+/* Details */
+
+b {
+  font-family: RalewayBold;
+}
+.bold {
+  font-family: RalewayBold;
+}
+.hotkey {
+  font-family: RalewayBold;
+  text-decoration: underline;
+}
+ul {
+  margin-left: -20px;
+}

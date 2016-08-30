@@ -1,0 +1,58 @@
+{
+  "name": "BrowseIt, for Knowit Objectnet",
+  "short_name": "BrowseIt",
+  "version": "0.7.2",
+  "manifest_version": 2,
+  "offline_enabled": true,
+
+  "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist. Made by The Web Chapter.",
+  "homepage_url": "http://knowit.no",
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_title": "BrowseIt",
+    "default_popup": "popup.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+B",
+        "mac": "MacCtrl+Shift+B"
+      },
+      "description": "Open BrowseIt"
+    },
+    "open_confluence": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "MacCtrl+Shift+C"
+      },
+      "description": "BrowseIt opens Confluence"
+    },
+    "open_jira": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J",
+        "mac": "MacCtrl+Shift+J"
+      },
+      "description": "BrowseIt opens JIRA"
+    },
+    "open_bitbucket": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "MacCtrl+Shift+U"
+      },
+      "description": "BrowseIt opens Bitbucket"
+    }
+  },
+
+  "icons": {
+    "48" : "img/48.png",
+    "128" : "img/128.png"
+  },
+
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
