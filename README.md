@@ -14,6 +14,7 @@ This software, as well as the concept, is not licensed for use anywhere outside 
 
 ## Credits (newest first)
 
+* All new hires in 2016 provided great feedback
 * Lars Ivar Næss provided valuable feedback
 * Christer Kjellesvig came up with the idea of having "time estimate fields"
 * Sigmund Marius Nilssen provided valuable feedback
