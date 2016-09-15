@@ -1,11 +1,11 @@
 {
-  "name": "BrowseIt, for Knowit Objectnet",
+  "name": "BrowseIt, for Knowit",
   "short_name": "BrowseIt",
-  "version": "0.7.2",
+  "version": "1.0.0",
   "manifest_version": 2,
   "offline_enabled": true,
 
-  "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist. Made by The Web Chapter.",
+  "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist. For Knowit Objectnet AS.",
   "homepage_url": "http://knowit.no",
 
   "background": {
