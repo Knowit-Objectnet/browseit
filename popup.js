@@ -60,12 +60,12 @@ var resizer = function(){
   var win = $(this);
 
   if (win.width() <= 800 && win.height() <= 600) {
-    $('a#expand').show();
+    $('img#expand').show();
     $('div#leftblock').hide();
     $('div#rightblock').hide();
   }
   else {
-    $('a#expand').hide();
+    $('img#expand').hide();
 
     var mainPadding = Number($('main').css('padding').match(/\d+/)[0]);
     var mainOffset = (win.width() - $('main').width()) / 2 - mainPadding; // The last -1 is the border of the sideblocks
