@@ -27,4 +27,4 @@ This software, as well as the concept, is not licensed for use anywhere outside 
 
 ## History
 
-The initial release of BrowseIt was made by Michael Johansen in July 2016. The extension was made with "science hours" from The Web Chapter, a science area in Knowit Objectnet. It was created because Michael needed to prepare a talk about *Chrome extensions* (and what better way to prepare than to just make one?). The extension was used by practically all new hires as an onboarding tool.
+The initial release of BrowseIt was made by Michael Johansen in July 2016. The extension was made with "science hours" from The Web Chapter, a science area in Knowit Objectnet. It was created because Michael needed to prepare a talk about *Chrome extensions* (and what better way to prepare than to just make one?). The extension is used by practically all new hires as an onboarding tool.
