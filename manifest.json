@@ -1,12 +1,12 @@
 {
   "name": "BrowseIt, for Knowit",
   "short_name": "BrowseIt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "offline_enabled": true,
 
-  "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist. For Knowit Objectnet AS.",
-  "homepage_url": "http://knowit.no",
+  "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist.",
+  "homepage_url": "https://knowit.no",
 
   "background": {
     "scripts": ["background.js"],
