@@ -29,6 +29,9 @@ var countFinished = function(doSlide) {
   }
 };
 
+// Add version number
+$('span.version').text(chrome.app.getDetails().version);
+
 // Hook up links
 $('a').click(function(event) {
   event.preventDefault();
