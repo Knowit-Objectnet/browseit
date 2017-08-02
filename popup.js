@@ -1,6 +1,12 @@
-console.log('%cJoin us, we have cake.\n%cHello Cutie.', 'color: white; font-size:20pt;', 'color: hotpink; font-size:20pt; font-weight: bold; line-height: 40px;');
-console.log('%cHvis du har funnet veien hit så vil du være med i The Web Chapter.', 'font-size:10pt;');
-console.log('%cSend oss en kjærlighetsmail da vel: %cthe.web.chapter@knowit.no', 'font-size:10pt;', 'color: hotpink; font-size: 10pt; font-weight: bold;');
+// Log a love letter
+const bigBlack = 'color: white; font-size:20pt;';
+const bigPink = 'color: hotpink; font-size:20pt; font-weight: bold; line-height: 40px;';
+const smallBlack = 'font-size:10pt;';
+const smallPinkLink = 'color: hotpink; font-size: 10pt; font-weight: bold;';
+console.log('%cHello Cutie.', bigPink);
+console.log('%cHvis du har funnet veien hit så vil du være med i 🕸 The Web Chapter.', smallBlack);
+console.log('%cSend en søt epost til en av lederne da vel. Du finner oss i medlemslisten.', smallBlack);
+console.log('%cFinn oss da ❤️ %chttps://projects.knowit.no/display/FAG/The+Web+Chapter', smallBlack, smallPinkLink);
 console.log('');
 
 // Count finished tasks and add to title
