@@ -75,17 +75,17 @@
           <b>Tidsfeltet til venstre</b> gir et subjektivt og røft tidsestimat. Fyll gjerne inn hvor lang tid ting egentlig tok. Vi ønsker å tilpasse estimatene til virkeligheten ved å f.eks. ta en gjennomgang med håndsopprekning etterhvert. Det er <b>spesielt viktig</b> for de estimatene vi har tatt helt feil på.
         </div>
 
-        <h3>Administrasjon</h3>
-        <div><input id="admin_leaders_time" placeholder="5 min" type="text"></input><input id="admin_leaders" type="checkbox"> Vet hvem mine ledere er <b>(prosjektleder &amp;&amp; gruppeleder &amp;&amp; avdelingsleder)</b>, og forskjellen på dem</input></div>
-        <div><input id="admin_contract_time" placeholder="60 min" type="text"></input><input id="admin_contract" type="checkbox"> Har lest, forstått og signert <b>ansettelseskontrakten</b> (tar fort en time)</input></div>
-        <div><input id="admin_nda_time" placeholder="10 min" type="text"></input><input id="admin_nda" type="checkbox"> Har lest, forstått og signert <b>taushetserklæringen</b> som var vedlagt ansettelseskontrakten</input></div>
-        <div><input id="admin_handbook_time" placeholder="60 min" type="text"></input><input id="admin_handbook" type="checkbox"> Har lest høvelig gjennom <a href="https://projects.knowit.no/pages/viewpage.action?pageId=30998775"><b>personalhåndboka</b></a> (tar fort en time)</input></div>
-        <div><input id="admin_bizcard_time" placeholder="20 min" type="text"></input><input id="admin_bizcard" type="checkbox"> Hvis jeg vil så har jeg skaffet <a href="http://visittkort.org/storbedrift/knowit.html"><b>visittkort</b></a>, else void</input></div>
-        <div><input id="admin_project_time" placeholder="15 min" type="text"></input><input id="admin_project" type="checkbox"> Har snakket med gruppeleder om hvilke <b>teknologier/prosjekter</b> jeg ønsker å jobbe med</input></div>
-        <div><input id="admin_anyleader_time" placeholder="0 min" type="text"></input><input id="admin_anyleader" type="checkbox"> Jeg vet at jeg har <b>tilgang til alle gruppeledere og avdelingsledere,</b> selv om ikke alle er akkurat mine ledere</input></div>
-        <div><input id="admin_development_time" placeholder="60 min" type="text"></input><input id="admin_development" type="checkbox"> Har hatt min første <b>utviklingssamtale</b> med gruppeleder</input></div>
-        <div><input id="admin_vacation_time" placeholder="bootcamp" type="text"></input><input id="admin_vacation" type="checkbox"> Har fått forklart hvordan feriedager funker i <b>mitt første arbeidsår</b></input></div>
-        <div><input id="admin_negotiations_time" placeholder="bootcamp" type="text"></input><input id="admin_negotiations" type="checkbox"> Har fått vite hvordan <b>lønnsjusteringer</b> fungerer, og at det skjer årlig i januar</input></div>
+        <!-- Personal life -->
+
+        <h3>Personal</h3>
+        <div><input id="people_leaders_time" placeholder="0 min" type="text"></input><input id="people_leaders" type="checkbox"> Vet hvem mine ledere er <b>(prosjektleder &amp;&amp; gruppeleder &amp;&amp; avdelingsleder)</b>, og forskjellen på dem</input></div>
+        <div><input id="people_contract_time" placeholder="60 min" type="text"></input><input id="people_contract" type="checkbox"> Har lest, forstått og signert <b>ansettelseskontrakten</b> (tar fort en time)</input></div>
+        <div><input id="people_nda_time" placeholder="10 min" type="text"></input><input id="people_nda" type="checkbox"> Har lest, forstått og signert <b>taushetserklæringen</b> som var vedlagt ansettelseskontrakten</input></div>
+        <div><input id="people_handbook_time" placeholder="60 min" type="text"></input><input id="people_handbook" type="checkbox"> Har lest høvelig gjennom <a href="https://projects.knowit.no/pages/viewpage.action?pageId=30998775"><b>personalhåndboka</b></a> (tar fort en time)</input></div>
+        <div><input id="people_project_time" placeholder="15 min" type="text"></input><input id="people_project" type="checkbox"> Har snakket med gruppeleder om hvilke <b>teknologier/prosjekter</b> jeg ønsker å jobbe med</input></div>
+        <div><input id="people_anyleader_time" placeholder="0 min" type="text"></input><input id="people_anyleader" type="checkbox"> Jeg vet at jeg har <b>tilgang til alle gruppeledere og avdelingsledere,</b> selv om ikke alle er akkurat mine ledere</input></div>
+        <div><input id="people_development_time" placeholder="60 min" type="text"></input><input id="people_development" type="checkbox"> Har hatt min første <b>utviklingssamtale</b> med gruppeleder</input></div>
+        <div><input id="people_vacation_time" placeholder="bootcamp" type="text"></input><input id="people_vacation" type="checkbox"> Har fått forklart hvordan feriedager funker i <b>mitt første arbeidsår</b></input></div>
 
         <h3>Kommunikasjon</h3>
         <div><input id="communication_hello_time" placeholder="30 min" type="text"></input><input id="communication_hello" type="checkbox"> Har vært på <b>hilserunde med gruppeleder</b> og sagt hei til de fleste</input></div>
@@ -97,15 +97,17 @@
         <div><input id="communication_vacationcalendar_time" placeholder="10 min" type="text"></input><input id="communication_vacationcalendar" type="checkbox"> Har fått lagt til <a href="https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"><b>feriekalenderen</b></a>, og lover å benytte den</input></div>
         <div><input id="communication_meetingcalendars_time" placeholder="10 min" type="text"></input><input id="communication_meetingcalendars" type="checkbox"> Vet hvordan jeg legger til <a href="https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"><b>møteromskalendere</b></a>, og lover å benytte dem</input></div>
         <div><input id="communication_templates_time" placeholder="15 min" type="text"></input><input id="communication_templates" type="checkbox"> Har sett Knowit sine <a href="https://knowit.sharepoint.com/sites/groupcommon/templates/SitePages/Home.aspx"><b>presentasjons- og dokumentmaler</b></a> og vet at jeg skal bruke den for "Knowit Solutions"</input></div>
-        <div><input id="communication_confluence_time" placeholder="10 min" type="text"></input><input id="communication_confluence" type="checkbox"> Abonnerer på <b>daglige oppdateringer fra Confluence</b> for å få oversikt over Knowit (greit som ny, skru av etterhvert)</input></div>
+        <div><input id="communication_confluence_time" placeholder="10 min" type="text"></input><input id="communication_confluence" type="checkbox"> Abonnerer på <a href="https://projects.knowit.no/users/editmyemailsettings.action"><b>daglige oppdateringer fra Confluence</b></a> for å få oversikt over Knowit (greit som ny, skru av etterhvert)</input></div>
 
         <h3>Lokaler</h3>
         <div><input id="offices_accesscard_time" placeholder="0 min" type="text"></input><input id="offices_accesscard" type="checkbox"> Har fått <b>adgangskort</b> og lært koden min</input></div>
         <div><input id="offices_desk_time" placeholder="0 min" type="text"></input><input id="offices_desk" type="checkbox"> Har fått en <b>kontorstol</b> jeg liker, og et <b>bord</b> (heve/senk etter ønske)</input></div>
-        <div><input id="offices_storage_time" placeholder="20 min" type="text"></input><input id="offices_storage" type="checkbox"> Har vært på <b>lageret</b> vårt, og vet hva jeg kan hente derfra</input></div>
+        <!--<div><input id="offices_storage_time" placeholder="20 min" type="text"></input><input id="offices_storage" type="checkbox"> Har vært på <b>lageret</b> vårt, og vet hva jeg kan hente derfra</input></div>-->
         <div><input id="offices_post_time" placeholder="0 min" type="text"></input><input id="offices_post" type="checkbox"> Vet at jeg kan få <b>pakker levert til jobb</b> via posten (null problem)</input></div>
         <div><input id="offices_showers_time" placeholder="hilserunde" type="text"></input><input id="offices_showers" type="checkbox"> Vet hvor <b>dusjene, skapene,</b> rekvisitarommet og serverrommet er</input></div>
         <div><input id="offices_emergencyexits_time" placeholder="hilserunde" type="text"></input><input id="offices_emergencyexits" type="checkbox"> Vet hvor <b>nødutgangene</b> er, og hvordan de åpnes</input></div>
+
+        <!-- Business life -->
 
         <h3>Økonomi</h3>
         <div><input id="economy_boss_time" placeholder="15 min" type="text"></input><input id="economy_boss" type="checkbox"> Har fått skriv fra, eller hatt møte med, <b>økonomisjefen</b></input></div>
@@ -116,15 +118,16 @@
         <div><input id="economy_insurance_policy_time" placeholder="20 min" type="text"></input><input id="economy_insurance_policy" type="checkbox"> Har lest høvelig over <b>forsikringspolisene</b></input></div>
         <!--<div><input id="economy_insurance_signature_time" placeholder="15 min" type="text"></input><input id="economy_insurance_signature" type="checkbox"> Har fylt ut <b>forsikringspapirene</b></input></div>-->
         <div><input id="economy_insurance_card_time" placeholder="5 min" type="text"></input><input id="economy_insurance_card" type="checkbox"> Har fått og signert <b>forsikringsbeviset</b></input></div>
+        <div><input id="economy_negotiations_time" placeholder="bootcamp" type="text"></input><input id="economy_negotiations" type="checkbox"> Har fått vite hvordan <b>lønnsjusteringer</b> fungerer, og at det skjer årlig i januar</input></div>
         <div><input id="economy_accounts_time" placeholder="10 min" type="text"></input><input id="economy_accounts" type="checkbox"> Har sett over listen over <a href="https://projects.knowit.no/display/UC/Bedriftskonti"><b>bedriftskonti</b></a>, og fått forklart hvordan de brukes</input></div>
         <div><input id="economy_travelexpenses_time" placeholder="20 min" type="text"></input><input id="economy_travelexpenses" type="checkbox"> Har brukt <b>reiseregningssystemet</b> for første gang</input></div>
         <div><input id="economy_overtimefood_time" placeholder="10 min" type="text"></input><input id="economy_overtimefood" type="checkbox"> Har lært hvordan <b>overtidsmat</b> funker med kvittering og Timereg (PS: noter hvem du spiste med i Timereg)</input></div>
         <div><input id="economy_pension_policy_time" placeholder="bootcamp" type="text"></input><input id="economy_pension_policy" type="checkbox"> Har satt meg inn i hvordan <b>pensjonsavtalen</b> min fungerer</input></div>
 
-        <h3>Faglig</h3>
+        <h3>Fag</h3>
         <div><input id="science_leaders_time" placeholder="10 min" type="text"></input><input id="science_leaders" type="checkbox"> Vet hvem <b>fagsjefene</b> er, og har hilst på dem</input></div>
         <div><input id="science_news_time" placeholder="0 min" type="text"></input><input id="science_news" type="checkbox"> Jeg leser <a href="https://news.ycombinator.com"><b>Hacker News</b></a> daglig</input></div>
-        <div><input id="science_wiki_time" placeholder="25 min" type="text"></input><input id="science_wiki" type="checkbox"> Har sett på <a href="https://projects.knowit.no/display/FAG/Faggrupper"><b>listen</b></a> over aktive faggrupper / fagområder på wikien</input></div>
+        <div><input id="science_wiki_time" placeholder="25 min" type="text"></input><input id="science_wiki" type="checkbox"> Har sett på listen over aktive <a href="https://projects.knowit.no/display/FAG/Faggrupper"><b>faggrupper / fagområder</b></a> på wikien</input></div>
         <div><input id="science_groups_time" placeholder="15 min" type="text"></input><input id="science_groups" type="checkbox"> Har <b>meldt meg inn i, eller <a href="https://projects.knowit.no/display/FAG/Hvordan+etablere+faggrupper">startet</a>,</b> en faggruppe / et fagområde</input></div>
         <div><input id="science_hours_time" placeholder="8 timer" type="text"></input><input id="science_hours" type="checkbox"> Har brukt mine første <b>8 fagtimer</b></input></div>
         <div><input id="science_reward_time" placeholder="10 min" type="text"></input><input id="science_reward" type="checkbox"> Har lest om <a href="https://projects.knowit.no/pages/viewpage.action?pageId=19335580"><b>belønningsmodellen</b></a> for foredrag</input></div>
@@ -139,15 +142,18 @@
         <div><input id="social_teamlunch_time" placeholder="60 min" type="text"></input><input id="social_teamlunch" type="checkbox"> Har vært med på min første <b>prosjektlunsj</b></input></div>
         <div><input id="social_teamice_time" placeholder="15 min" type="text"></input><input id="social_teamice" type="checkbox"> Har vært med på min første <b>is på takterrassen</b> med teamet</input></div>
 
-        <h3>CV-reg &amp; eksponering</h3>
-        <div><input id="cvreg_master_time" placeholder="8 timer" type="text"></input><input id="cvreg_master" type="checkbox"> Har laget <b>master-CV</b> i CV-reg på norsk (tar fort en dag)</input></div>
-        <!--<div><input id="cvreg_sent_time" placeholder="10 min" type="text"></input><input id="cvreg_sent" type="checkbox"> Har <b>sendt CVen</b> til selgerne våre</input></div>-->
-        <!--<div><input id="cvreg_feedback_time" placeholder="60 min" type="text"></input><input id="cvreg_feedback" type="checkbox"> Har <b>fulgt opp</b> tilbakemelding fra selgerne</input></div>-->
-        <!--<div><input id="cvreg_removal_time" placeholder="20 min" type="text"></input><input id="cvreg_removal" type="checkbox"> Har seriøst vurdert hvilke teknologier jeg <b>kan, men ikke legger inn</b> på CV-reg fordi jeg ikke vil ta i dem igjen</input></div>-->
-        <div><input id="cvreg_employeelist_time" placeholder="15 min" type="text"></input><input id="cvreg_employeelist" type="checkbox"> Har lagt inn meg selv på <a href="https://projects.knowit.no/display/OO/Ansatte"><b>ansattsiden</b></a> på wikien</input></div>
-        <!--<div><input id="cvreg_internalexposure_time" placeholder="60 min" type="text"></input><input id="cvreg_internalexposure" type="checkbox"> Har sørget for at gruppeleder har skrevet en <b>en artikkel om meg på intranettet</b></input></div>-->
-        <!--<div><input id="cvreg_externalexposure_time" placeholder="60 min" type="text"></input><input id="cvreg_externalexposure" type="checkbox"> Har sørget for at navn, og eventuelt (bilde &amp;&amp; beskrivelse &amp;&amp; kontaktinfo) for meg <b>vises på knowit.no</b></input></div>-->
-        <div><input id="cvreg_recruiting_time" placeholder="10 min" type="text"></input><input id="cvreg_recruiting" type="checkbox"> Har lest om <a href="https://projects.knowit.no/pages/viewpage.action?pageId=61052573"><b>rekrutteringsbonusen</b></a> vår</input></div>
+        <h3>Salg</h3>
+        <div><input id="sales_master_time" placeholder="8 timer" type="text"></input><input id="sales_master" type="checkbox"> Har laget <b>master-CV</b> i CV-reg på norsk (tar fort en dag)</input></div>
+        <!--<div><input id="sales_sent_time" placeholder="10 min" type="text"></input><input id="sales_sent" type="checkbox"> Har <b>sendt CVen</b> til selgerne våre</input></div>-->
+        <!--<div><input id="sales_feedback_time" placeholder="60 min" type="text"></input><input id="sales_feedback" type="checkbox"> Har <b>fulgt opp</b> tilbakemelding fra selgerne</input></div>-->
+        <!--<div><input id="sales_removal_time" placeholder="20 min" type="text"></input><input id="sales_removal" type="checkbox"> Har seriøst vurdert hvilke teknologier jeg <b>kan, men ikke legger inn</b> på CV-reg fordi jeg ikke vil ta i dem igjen</input></div>-->
+        <div><input id="sales_employeelist_time" placeholder="15 min" type="text"></input><input id="sales_employeelist" type="checkbox"> Har lagt inn meg selv på <a href="https://projects.knowit.no/display/OO/Ansatte"><b>ansattsiden</b></a> på wikien</input></div>
+        <!--<div><input id="sales_internalexposure_time" placeholder="60 min" type="text"></input><input id="sales_internalexposure" type="checkbox"> Har sørget for at gruppeleder har skrevet en <b>en artikkel om meg på intranettet</b></input></div>-->
+        <!--<div><input id="sales_externalexposure_time" placeholder="60 min" type="text"></input><input id="sales_externalexposure" type="checkbox"> Har sørget for at navn, og eventuelt (bilde &amp;&amp; beskrivelse &amp;&amp; kontaktinfo) for meg <b>vises på knowit.no</b></input></div>-->
+        <div><input id="sales_recruiting_time" placeholder="10 min" type="text"></input><input id="sales_recruiting" type="checkbox"> Har lest om <a href="https://projects.knowit.no/pages/viewpage.action?pageId=61052573"><b>rekrutteringsbonusen</b></a> vår</input></div>
+        <div><input id="sales_bizcard_time" placeholder="20 min" type="text"></input><input id="sales_bizcard" type="checkbox"> Hvis jeg vil så har jeg skaffet <a href="https://knowit.sharepoint.com/sites/groupcommon/templates/Word/Forms/AllItems.aspx"><b>visittkort</b></a>, else void</input></div>
+
+        <!-- Digital life -->
 
         <h3>Hardware &amp; software</h3>
         <div><input id="hwsw_arrange_time" placeholder="45 min" type="text"></input><input id="hwsw_arrange" type="checkbox"> Avtale innkjøp av splitter ny <b>laptop</b> (3 år syklus)</input></div>
@@ -155,7 +161,7 @@
         <div><input id="hwsw_setup_time" placeholder="8 timer" type="text"></input><input id="hwsw_setup" type="checkbox"> <b>Sette opp laptopen</b> slik jeg liker å ha den (tar fort en dag)</input></div>
         <!--<div><input id="hwsw_sticker_time" placeholder="10 min" type="text"></input><input id="hwsw_sticker" type="checkbox"> Har fått <b>Knowit-sticker</b> til laptopen</input></div>-->
         <div><input id="hwsw_gadgets_time" placeholder="20 min" type="text"></input><input id="hwsw_gadgets" type="checkbox"> Hentet det jeg trenger av <b>kabler, mus/tastatur,</b> laptopstand, overganger, etc.</input></div>
-        <div><input id="hwsw_wifi_time" placeholder="5 min" type="text"></input><input id="hwsw_wifi" type="checkbox"> Fått koblet på <b>WiFi</b> og har lært forskjellen på gjeste-WiFi og intern-WiFi</input></div>
+        <div><input id="hwsw_wifi_time" placeholder="5 min" type="text"></input><input id="hwsw_wifi" type="checkbox"> Fått koblet på <b>WiFi</b> og vet at VPN og møteroms-Chromecasts kun funker på vårt interne WiFi (ikke gjestenettet)</input></div>
         <div><input id="hwsw_printer_time" placeholder="10 min" type="text"></input><input id="hwsw_printer" type="checkbox"> Har satt opp <a href="https://projects.knowit.no/display/DRIFT/Printeroppsett+i+U7+-+Canon+Multifunksjonsskriver"><b>printeren</b></a> med guiden på wikien</input></div>
         <div><input id="hwsw_office_time" placeholder="20 min" type="text"></input><input id="hwsw_office" type="checkbox"> Har en <b>office suite</b> som fungerer for meg (MS Office, iWork, GDocs, OpenOffice, etc.)</input></div>
 
@@ -168,13 +174,15 @@
         <div><input id="develop_atlassian_time" placeholder="løpende" type="text"></input><input id="develop_atlassian" type="checkbox"> Har fått intro til hvordan prosjektet mitt bruker <b>Atlassian</b>-produktene</input></div>
 
         <h3>Sikkerhet</h3>
-        <div><!--TODO: do bootcamp--><input id="security_encryption_time" placeholder="10 min" type="text"></input><input id="security_encryption" type="checkbox"> Har skrudd på <b>full disk encryption</b> på laptopen (kan være problematisk på noen Linux-distroer)</input></div>
-        <div><!--TODO: do bootcamp--><input id="security_pwmanager_time" placeholder="2 timer" type="text"></input><input id="security_pwmanager" type="checkbox"> Har tatt i bruk <b>LastPass</b> eller lignende</input></div>
-        <div><!--TODO: do bootcamp--><input id="security_workpasswords_time" placeholder="10 min" type="text"></input><input id="security_workpasswords" type="checkbox"> Bruker et sterkt og helt unikt passord <b>med single sign-on hos Knowit</b> (Gmail, Slack, Confluence, JIRA, Bitbucket, etc.)</input></div>
-        <div><!--TODO: do bootcamp--><input id="security_privatepasswords_time" placeholder="30 min" type="text"></input><input id="security_privatepasswords" type="checkbox"> Bruker sterke og helt unike passord <b>på alle private kjernetjenester</b> (Facebook, Gmail, Dropbox, iCloud, etc.)</input></div>
-        <div><!--TODO: do bootcamp--><input id="security_firewall_time" placeholder="10 min" type="text"></input><input id="security_firewall" type="checkbox"> Tatt i bruk <b>brannmur</b>, og har kontroll på hvilke tjenester som kjører på min jobbmaskin</input></div>
-        <div><!--TODO: do bootcamp--><input id="security_backup_time" placeholder="30 min" type="text"></input><input id="security_backup" type="checkbox"> Har lagt inn gode <b>backup-løsninger</b> på laptopen</input></div>
-        <div><!--TODO: do bootcamp--><input id="security_hierarchy_time" placeholder="15 min" type="text"></input><input id="security_hierarchy" type="checkbox"> Har laget en god begynnelse på <b>en filstruktur</b> og skal holde Knowit-filer ryddige plassert i strukturen</input></div>
+        <div><input id="security_encryption_time" placeholder="bootcamp" type="text"></input><input id="security_encryption" type="checkbox"> Har skrudd på <b>full disk encryption</b> på laptopen (kan være problematisk på noen Linux-distroer)</input></div>
+        <div><input id="security_pwmanager_time" placeholder="bootcamp" type="text"></input><input id="security_pwmanager" type="checkbox"> Har tatt i bruk <b>LastPass</b> eller lignende</input></div>
+        <div><input id="security_workpasswords_time" placeholder="bootcamp" type="text"></input><input id="security_workpasswords" type="checkbox"> Bruker et sterkt og helt unikt passord <b>med single sign-on hos Knowit</b> (Gmail, Slack, Confluence, JIRA, Bitbucket, etc.)</input></div>
+        <div><input id="security_privatepasswords_time" placeholder="bootcamp" type="text"></input><input id="security_privatepasswords" type="checkbox"> Bruker sterke og helt unike passord <b>på alle private kjernetjenester</b> (Facebook, Gmail, Dropbox, iCloud, etc.)</input></div>
+        <div><input id="security_firewall_time" placeholder="bootcamp" type="text"></input><input id="security_firewall" type="checkbox"> Tatt i bruk <b>brannmur</b>, og har kontroll på hvilke tjenester som kjører på min jobbmaskin</input></div>
+        <div><input id="security_backup_time" placeholder="bootcamp" type="text"></input><input id="security_backup" type="checkbox"> Har lagt inn gode <b>backup-løsninger</b> på laptopen</input></div>
+        <div><input id="security_hierarchy_time" placeholder="bootcamp" type="text"></input><input id="security_hierarchy" type="checkbox"> Har laget en god begynnelse på <b>en filstruktur</b> og skal holde Knowit-filer ryddige plassert i strukturen</input></div>
+
+        <!-- Lastly… -->
 
         <h3>When the going gets tough...</h3>
         <div><input id="tough_chocolate" type="checkbox"></input>...the tough eat chocolate (på fredager kl 14, sett en alarm på smartklokken din)</input></div>
