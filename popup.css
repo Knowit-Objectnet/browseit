@@ -219,10 +219,6 @@ b {
 .bold {
   font-family: RalewayBold;
 }
-.hotkey {
-  font-family: RalewayBold;
-  text-decoration: underline;
-}
 ul {
   margin-left: -20px;
 }

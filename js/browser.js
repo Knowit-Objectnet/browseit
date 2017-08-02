@@ -17,10 +17,4 @@ var Browser = {
     return chrome.extension.getURL(url);
   },
 
-  getBackgroundProcess: function() {
-    if (chrome.extension != undefined) {
-      return chrome.extension.getBackgroundPage();
-    }
-  },
-
 }

@@ -8,11 +8,6 @@
   "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist.",
   "homepage_url": "https://knowit.no",
 
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-
   "browser_action": {
     "default_title": "BrowseIt",
     "default_popup": "popup.html"
@@ -25,27 +20,6 @@
         "mac": "MacCtrl+Shift+B"
       },
       "description": "Open BrowseIt"
-    },
-    "open_confluence": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+C",
-        "mac": "MacCtrl+Shift+C"
-      },
-      "description": "BrowseIt opens Confluence"
-    },
-    "open_jira": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+J",
-        "mac": "MacCtrl+Shift+J"
-      },
-      "description": "BrowseIt opens JIRA"
-    },
-    "open_bitbucket": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+U",
-        "mac": "MacCtrl+Shift+U"
-      },
-      "description": "BrowseIt opens Bitbucket"
     }
   },
 
