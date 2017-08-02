@@ -75,7 +75,7 @@
           <b>Tidsfeltet til venstre</b> gir et subjektivt og røft tidsestimat. Fyll gjerne inn hvor lang tid ting egentlig tok. Vi ønsker å tilpasse estimatene til virkeligheten ved å f.eks. ta en gjennomgang med håndsopprekning etterhvert. Det er <b>spesielt viktig</b> for de estimatene vi har tatt helt feil på.
         </div>
 
-        <!-- Personal life -->
+        <!-- Human life -->
 
         <h3>Personal</h3>
         <div><input id="people_leaders_time" placeholder="0 min" type="text"></input><input id="people_leaders" type="checkbox"> Vet hvem mine ledere er <b>(prosjektleder &amp;&amp; gruppeleder &amp;&amp; avdelingsleder)</b>, og forskjellen på dem</input></div>
@@ -104,8 +104,11 @@
         <div><input id="offices_desk_time" placeholder="0 min" type="text"></input><input id="offices_desk" type="checkbox"> Har fått en <b>kontorstol</b> jeg liker, og et <b>bord</b> (heve/senk etter ønske)</input></div>
         <!--<div><input id="offices_storage_time" placeholder="20 min" type="text"></input><input id="offices_storage" type="checkbox"> Har vært på <b>lageret</b> vårt, og vet hva jeg kan hente derfra</input></div>-->
         <div><input id="offices_post_time" placeholder="0 min" type="text"></input><input id="offices_post" type="checkbox"> Vet at jeg kan få <b>pakker levert til jobb</b> via posten (null problem)</input></div>
-        <div><input id="offices_showers_time" placeholder="hilserunde" type="text"></input><input id="offices_showers" type="checkbox"> Vet hvor <b>dusjene, skapene,</b> rekvisitarommet og serverrommet er</input></div>
+        <div><input id="offices_showers_time" placeholder="hilserunde" type="text"></input><input id="offices_showers" type="checkbox"> Vet hvor jeg finner <b>dusjene, skapene, og rekvisita</b></input></div>
         <div><input id="offices_emergencyexits_time" placeholder="hilserunde" type="text"></input><input id="offices_emergencyexits" type="checkbox"> Vet hvor <b>nødutgangene</b> er, og hvordan de åpnes</input></div>
+        <div><input id="offices_recycling_time" placeholder="0 min" type="text"></input><input id="offices_recycling" type="checkbox"> Jeg lover å benytte <b>resirkuleringsstasjonene</b></input></div>
+        <div><input id="offices_landlord_time" placeholder="10 min" type="text"></input><input id="offices_landlord" type="checkbox"> Har sjekket ut <a href="http://sundtkvartalet.eurest.no"><b>Sundtkvartalet sin nettside</b></a> og sett hva slags tjenester de tilbyr oss (t.o.m. renseri)</input></div>
+        <div><input id="offices_auditorium_time" placeholder="10 min" type="text"></input><input id="offices_auditorium" type="checkbox"> Vet at det er gratis å booke auditorium/møterom i 1. etasje via <a href="http://sundtkvartalet.eurest.no/moteromsbooking/"><b>Sundtkvartalet sin møteromsbooking</b></a></input></div>
 
         <!-- Business life -->
 
@@ -114,18 +117,18 @@
         <div><input id="economy_timereg_time" placeholder="30 min" type="text"></input><input id="economy_timereg" type="checkbox"> Forstår høvelig hvordan jeg bruker <b>Timereg</b></input></div>
         <div><input id="economy_columns_time" placeholder="10 min" type="text"></input><input id="economy_columns" type="checkbox"> Har funnet <b>de skjulte kolonnene</b> i Timereg</input></div>
         <div><input id="economy_lunchmoney_time" placeholder="5 min" type="text"></input><input id="economy_lunchmoney" type="checkbox"> Er klar over at <b>lunsjordning</b> varierer stort mellom prosjekter, og har spurt i mitt prosjekt</input></div>
-        <div><input id="economy_simcard_time" placeholder="15 min" type="text"></input><input id="economy_simcard" type="checkbox"> Har fått nytt <b>SIM-kort</b> som betales av jobben (sweet!)</input></div>
+        <div><input id="economy_simcard_time" placeholder="20 min" type="text"></input><input id="economy_simcard" type="checkbox"> Har fått nytt <b>SIM-kort</b> som betales av jobben (sweet!)</input></div>
         <div><input id="economy_insurance_policy_time" placeholder="20 min" type="text"></input><input id="economy_insurance_policy" type="checkbox"> Har lest høvelig over <b>forsikringspolisene</b></input></div>
         <!--<div><input id="economy_insurance_signature_time" placeholder="15 min" type="text"></input><input id="economy_insurance_signature" type="checkbox"> Har fylt ut <b>forsikringspapirene</b></input></div>-->
         <div><input id="economy_insurance_card_time" placeholder="5 min" type="text"></input><input id="economy_insurance_card" type="checkbox"> Har fått og signert <b>forsikringsbeviset</b></input></div>
-        <div><input id="economy_negotiations_time" placeholder="bootcamp" type="text"></input><input id="economy_negotiations" type="checkbox"> Har fått vite hvordan <b>lønnsjusteringer</b> fungerer, og at det skjer årlig i januar</input></div>
         <div><input id="economy_accounts_time" placeholder="10 min" type="text"></input><input id="economy_accounts" type="checkbox"> Har sett over listen over <a href="https://projects.knowit.no/display/UC/Bedriftskonti"><b>bedriftskonti</b></a>, og fått forklart hvordan de brukes</input></div>
-        <div><input id="economy_travelexpenses_time" placeholder="20 min" type="text"></input><input id="economy_travelexpenses" type="checkbox"> Har brukt <b>reiseregningssystemet</b> for første gang</input></div>
+        <div><input id="economy_travelexpenses_time" placeholder="20 min" type="text"></input><input id="economy_travelexpenses" type="checkbox"> Har brukt <a href="https://expense.visma.net/expense/"><b>reiseregningssystemet</b></a> for første gang (merk: ikke single sign-on, har eget passord)</input></div>
         <div><input id="economy_overtimefood_time" placeholder="10 min" type="text"></input><input id="economy_overtimefood" type="checkbox"> Har lært hvordan <b>overtidsmat</b> funker med kvittering og Timereg (PS: noter hvem du spiste med i Timereg)</input></div>
+        <div><input id="economy_negotiations_time" placeholder="bootcamp" type="text"></input><input id="economy_negotiations" type="checkbox"> Har fått vite hvordan <b>lønnsjusteringer</b> fungerer, og at det skjer årlig i januar</input></div>
         <div><input id="economy_pension_policy_time" placeholder="bootcamp" type="text"></input><input id="economy_pension_policy" type="checkbox"> Har satt meg inn i hvordan <b>pensjonsavtalen</b> min fungerer</input></div>
 
         <h3>Fag</h3>
-        <div><input id="science_leaders_time" placeholder="10 min" type="text"></input><input id="science_leaders" type="checkbox"> Vet hvem <b>fagsjefene</b> er, og har hilst på dem</input></div>
+        <div><input id="science_leaders_time" placeholder="10 min" type="text"></input><input id="science_leaders" type="checkbox"> Vet hvem <b>fagsjefen</b> er, og har hilst på vedkommende</input></div>
         <div><input id="science_news_time" placeholder="0 min" type="text"></input><input id="science_news" type="checkbox"> Jeg leser <a href="https://news.ycombinator.com"><b>Hacker News</b></a> daglig</input></div>
         <div><input id="science_wiki_time" placeholder="25 min" type="text"></input><input id="science_wiki" type="checkbox"> Har sett på listen over aktive <a href="https://projects.knowit.no/display/FAG/Faggrupper"><b>faggrupper / fagområder</b></a> på wikien</input></div>
         <div><input id="science_groups_time" placeholder="15 min" type="text"></input><input id="science_groups" type="checkbox"> Har <b>meldt meg inn i, eller <a href="https://projects.knowit.no/display/FAG/Hvordan+etablere+faggrupper">startet</a>,</b> en faggruppe / et fagområde</input></div>
@@ -138,7 +141,7 @@
         <div><input id="social_companysports_time" placeholder="5 min" type="text"></input><input id="social_companysports" type="checkbox"> Om ønsket har jeg blitt med i en av gruppene i <b>bedriftsidrettslaget</b>, else void</input></div>
         <div><input id="social_bandit_time" placeholder="5 min" type="text"></input><input id="social_bandit" type="checkbox"> Om jeg kan spille et instrument så har jeg pratet med en i <b>BandIt</b>, else void</input></div>
         <div><input id="social_internalmeeting_time" placeholder="2 timer" type="text"></input><input id="social_internalmeeting" type="checkbox"> Har vært med på mitt første <b>internmøte</b> (før én time på "1020: Interne møter")</input></div>
-        <div><input id="social_teambuilding_time" placeholder="4 timer" type="text"></input><input id="social_teambuilding" type="checkbox"> Har hatt <b>brettspillkveld</b> eller lignende med teamet mitt</input></div>
+        <div><input id="social_teambuilding_time" placeholder="4 timer" type="text"></input><input id="social_teambuilding" type="checkbox"> Har hatt <b>brettspillkveld</b> eller annen teambuilding med teamet mitt</input></div>
         <div><input id="social_teamlunch_time" placeholder="60 min" type="text"></input><input id="social_teamlunch" type="checkbox"> Har vært med på min første <b>prosjektlunsj</b></input></div>
         <div><input id="social_teamice_time" placeholder="15 min" type="text"></input><input id="social_teamice" type="checkbox"> Har vært med på min første <b>is på takterrassen</b> med teamet</input></div>
 
@@ -169,9 +172,9 @@
         <div><input id="develop_confluence_time" placeholder="løpende" type="text"></input><input id="develop_confluence" type="checkbox"> Har sett meg rundt på <b>Confluence</b> (wikien)<b></b></input></div>
         <div><input id="develop_jira_time" placeholder="løpende" type="text"></input><input id="develop_jira" type="checkbox"> Har sett meg rundt på <b>JIRA</b> (tickets)<b></b></input></div>
         <div><input id="develop_bitbucket_time" placeholder="løpende" type="text"></input><input id="develop_bitbucket" type="checkbox"> Har sett meg rundt på <b>Bitbucket</b> (kodebasene)<b></b></input></div>
-        <div><input id="develop_sshkeys_time" placeholder="20 min" type="text"></input><input id="develop_sshkeys" type="checkbox"> Har laget <b>unik og passordbeskyttet SSH-nøkkel</b>, og lagt den inn på Bitbucket</input></div>
-        <div><input id="develop_crowd_bamboo_time" placeholder="20 min" type="text"></input><input id="develop_crowd_bamboo" type="checkbox"> Har sett litt på <b>Crowd og Bamboo</b> (brukergrupper, byggserver)<b></b></input></div>
-        <div><input id="develop_atlassian_time" placeholder="løpende" type="text"></input><input id="develop_atlassian" type="checkbox"> Har fått intro til hvordan prosjektet mitt bruker <b>Atlassian</b>-produktene</input></div>
+        <div><input id="develop_crowd_bamboo_time" placeholder="10 min" type="text"></input><input id="develop_crowd_bamboo" type="checkbox"> Har sett litt på <b>Crowd og Bamboo</b> (brukergrupper, byggserver)<b></b></input></div>
+        <div><input id="develop_atlassian_time" placeholder="løpende" type="text"></input><input id="develop_atlassian" type="checkbox"> Har fått intro til hvilke verktøy som brukes i <b>prosjektet</b> mitt</input></div>
+        <div><input id="develop_sshkeys_time" placeholder="30 min" type="text"></input><input id="develop_sshkeys" type="checkbox"> Har laget <b>unik og passordbeskyttet SSH-nøkkel</b>, og lagt den inn på Bitbucket</input></div>
 
         <h3>Sikkerhet</h3>
         <div><input id="security_encryption_time" placeholder="bootcamp" type="text"></input><input id="security_encryption" type="checkbox"> Har skrudd på <b>full disk encryption</b> på laptopen (kan være problematisk på noen Linux-distroer)</input></div>
