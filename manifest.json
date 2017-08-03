@@ -1,7 +1,7 @@
 {
   "name": "BrowseIt, for Knowit",
   "short_name": "BrowseIt",
-  "version": "1.1.2",
+  "version": "1.1.0",
   "manifest_version": 2,
   "offline_enabled": true,
 
