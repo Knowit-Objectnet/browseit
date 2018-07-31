@@ -1,11 +1,11 @@
 {
   "name": "BrowseIt, for Knowit",
   "short_name": "BrowseIt",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "manifest_version": 2,
   "offline_enabled": true,
 
-  "description": "For the noobs and the veterans alike. Has all the links and your introductory todolist.",
+  "description": "For the noobs and the veterans alike. Has all important links, your introductory todolist, and a map of meeting rooms in Sundtkvartalet.",
   "homepage_url": "https://knowit.no",
 
   "browser_action": {
