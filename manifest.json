@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "offline_enabled": true,
 
-  "description": "For the noobs and the veterans alike. Has all important links, your introductory todolist, and a map of meeting rooms in Sundtkvartalet.",
+  "description": "For the noobs and the veterans alike. Has all important links, your introductory todolist, and a map of meeting rooms.",
   "homepage_url": "https://knowit.no",
 
   "browser_action": {
