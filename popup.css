@@ -78,6 +78,14 @@ header div#leftheader {
   margin-top: 10px;
 }
 
+header img#mapmarker {
+  color: #777;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 120px; /* can't be bothered with layout atm */
+  position: relative;
+}
+
 header img#twc {
   margin: 25px 0 0 0;
   width: auto;
@@ -89,6 +97,7 @@ header img#twc {
 /* Map */
 
 div#map {
+  cursor: pointer;
   display: none;
 }
 

@@ -31,7 +31,7 @@ var countFinished = function(doSlide) {
 
 // Add map toggle
 const toggleMap = () => $('div#map').slideToggle();
-$('div#leftheader').click(toggleMap);
+$('img#mapmarker').click(toggleMap);
 $('div#map img').click(toggleMap);
 
 // Add version number
