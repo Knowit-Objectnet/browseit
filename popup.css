@@ -63,9 +63,6 @@ div#rightblock {
 /* Header */
 
 header {
-  background-image: url('img/banner.png');
-  background-size: cover;
-  position: fixed;
   top: 0;
   left: 0;
   width: 800px;
