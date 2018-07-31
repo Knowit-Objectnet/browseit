@@ -71,22 +71,15 @@ header {
 }
 
 header div#leftheader {
-  position: relative;
   float: left;
-  width: 300px;
-}
-
-header div#leftheader div#browseit {
-  font-family: RalewayBold;
-  font-size: 36px;
+  font-size: 50px;
   font-variant: all-small-caps;
   letter-spacing: 5px;
-  height: 36px;
   margin-top: 10px;
 }
 
 header img#twc {
-  margin: 20px 20px 0 0;
+  margin: 25px 0 0 0;
   width: auto;
   height: 40px;
   position: relative;
