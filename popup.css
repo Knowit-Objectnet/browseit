@@ -116,6 +116,9 @@ section.nooblist {
 section h3 {
   font-family: RalewayBold;
 }
+section input[type="text"] {
+  margin-right: 5px;
+}
 
 /* Table */
 
