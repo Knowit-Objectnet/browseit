@@ -76,7 +76,7 @@ var resizer = function(){
   else {
     $('img#expand').hide();
 
-    var mainPadding = Number($('main').css('padding').match(/\d+/)[0]);
+    var mainPadding = Number($('main').css('padding').match(/\d+/g)[1]);
     var mainOffset = (win.width() - $('main').width()) / 2 - mainPadding; // The last -1 is the border of the sideblocks
 
     // Move main to center
@@ -86,9 +86,7 @@ var resizer = function(){
     $('div#leftblock').show().width(mainOffset + 100); // The block starts 100px off-screen due to box-shadow
     $('div#rightblock').show().width(mainOffset + 100); // The block starts 100px off-screen due to box-shadow
 
-    // Move header+shadowbox and footer too
-    $('header').css('left', mainOffset + 'px');
-    $('div.shadowbox').css('left', mainOffset + 'px');
+    // Move footer too
     $('footer').css('left', mainOffset + 'px');
   }
 };

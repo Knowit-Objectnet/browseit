@@ -29,10 +29,10 @@ main {
   /*border: 1px solid #ccc;*/
 
   width: 740px;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 
   position: absolute;
-  top: 60px;
+  top: 0;
   right: 0;
   bottom: 45px;
   left: 0;
@@ -65,22 +65,28 @@ div#rightblock {
 header {
   top: 0;
   left: 0;
-  width: 800px;
   height: 89px;
   padding: 0;
   margin: 0;
 }
 
-header img#browseit {
-  margin: 15px 0 0 20px;
-  width: 192px;
-  height: 46px;
+header div#leftheader {
   position: relative;
   float: left;
+  width: 300px;
+}
+
+header div#leftheader div#browseit {
+  font-family: RalewayBold;
+  font-size: 36px;
+  font-variant: all-small-caps;
+  letter-spacing: 5px;
+  height: 36px;
+  margin-top: 10px;
 }
 
 header img#twc {
-  margin: 15px 20px 0 0;
+  margin: 20px 20px 0 0;
   width: auto;
   height: 40px;
   position: relative;
