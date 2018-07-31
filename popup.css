@@ -60,17 +60,6 @@ div#rightblock {
   background-color: #eee;
 }
 
-/* Shadowbox under Header */
-
-div.shadowbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 800px;
-  height: 60px;
-  box-shadow: 0 10px 10px 10px white;
-}
-
 /* Header */
 
 header {
