@@ -86,6 +86,16 @@ header img#twc {
   float: right;
 }
 
+/* Map */
+
+div#map {
+  display: none;
+}
+
+div#map img {
+  width: 100%;
+}
+
 /* Sections */
 
 section {

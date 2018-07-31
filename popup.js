@@ -29,6 +29,11 @@ var countFinished = function(doSlide) {
   }
 };
 
+// Add map toggle
+const toggleMap = () => $('div#map').slideToggle();
+$('div#leftheader').click(toggleMap);
+$('div#map img').click(toggleMap);
+
 // Add version number
 $('span.version').text(chrome.app.getDetails().version);
 
