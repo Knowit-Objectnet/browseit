@@ -6,7 +6,8 @@ BrowseIt is an internal tool for employees in Knowit Objectnet AS, Norway. But *
 
 Contact: michael.johansen@knowit.no
 
-Install: https://chrome.google.com/webstore/detail/browseit-for-knowit-objec/bmdkicfmokaaiaekjfnpcadolcggokdl (NOTE: The extension will be republished under a new account in the near future, at that point this link will be void.)
+- Install: https://chrome.google.com/webstore/detail/browseit-for-knowit/hbmpfibpnmpenneffbojjkcehjpacedo
+- Shortlink: https://bit.ly/welcome-to-knowit
 
 ## Legal
 
@@ -14,6 +15,7 @@ This software, as well as the concept, is not licensed for use anywhere outside 
 
 ## Credits (newest first)
 
+* New recruits in 2019 provided a detailed PDF with change requests
 * All new recruits in 2016 provided great feedback
 * Lars Ivar Næss provided valuable feedback
 * Christer Kjellesvig came up with the idea of having "time estimate fields"
