@@ -176,7 +176,7 @@ footer {
   border-top: 1px solid #ccc;
   background-color: whitesmoke;
   box-shadow: 0px 5px 10px 3px grey;
-  color: #aaa;
+  color: #777;
   position: fixed;
   width: 800px;
   height: 45px;
@@ -208,7 +208,7 @@ footer div#feedback {
 }
 
 footer div#feedback a {
-  color: #bbb;
+  color: #777;
 }
 
 footer div#counter {
