@@ -119,6 +119,7 @@ section.administration {
   border: 1px solid white;
   float: right;
   width: 50%;
+  z-index: 1; /* Since it's technically below the nooblist, this places it above the nooblist */
 }
 section.nooblist {
   float: left;
