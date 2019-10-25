@@ -30,24 +30,21 @@ var countFinished = function(doSlide) {
 };
 
 // go to page
+var enterGame = document.createEvent("Event");
+var exitGame = document.createEvent("Event");
+enterGame.initEvent('enterGame', true, true);
+exitGame.initEvent('exitGame', true, true);
+
 $('button').click(function(event) {
   event.preventDefault();
   if(event.target.value == "game") {
     $('#home').hide();
     $('#game').show();
-    $('#gameContainer').load("game.html")
-    /*fetch("https://projects.knowit.no/pages/viewpage.action?pageId=55805057", { credentials: "include", sameSite: false})
-    .then(result => result.text())
-    .then(html => {
-      var parser = new DOMParser();
-      var doc = parser.parseFromString(html, "text/html");
-
-      console.log(doc.querySelectorAll('tr'))
-
-    })
-    .catch(e => console.log(e));*/
+    $('#gameContainer').load("game.html");
+    document.dispatchEvent(enterGame);
   } else {
-    $('#gameContainer').empty()
+    document.dispatchEvent(exitGame);
+    $('#gameContainer').empty();
     $('#game').hide();
     $('#home').show();
   }
