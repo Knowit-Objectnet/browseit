@@ -36,6 +36,7 @@ enterGame.initEvent('enterGame', true, true);
 exitGame.initEvent('exitGame', true, true);
 
 $('button').click(function(event) {
+
   event.preventDefault();
   if(event.target.value == "game") {
     $('#home').hide();
