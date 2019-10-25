@@ -7,8 +7,7 @@
     <link href="popup.css" rel="stylesheet" type="text/css"></link>
     <script src="libs/jquery-3.1.0.min.js" type="text/javascript"></script>
     <script src="js/browser.js" type="text/javascript"></script>
-    <script src="getEmployees.js" type="text/javascript"></script>
-    <script src="game.js" type="text/javascript"></script>
+    
   </head>
   <body>
 
@@ -21,17 +20,49 @@
         <a href="https://projects.knowit.no/display/FAG/Web+Chapter"><img id="twc" src="img/web-chapter-logo.png" /></a>
       </header>
 
+
+
+
+      
       <div id="game">
-        <button value="home">return</button>
-        <div id="gameContainer"></div>
+        <button id="homeButton" value="home">return</button>
+        <div id="gameMain" tabindex="0" style="border: 1px solid black; width: 400px; height: 300px;">
+            <div id="menu">
+                <div id="instructions" class="section">
+        
+                </div>
+                <button id="playButton">Play</button>
+            </div>
+        
+            <div id="play">
+                <div class="section">
+                    <div id="alphabet"></div>
+                    <div id="imageContainer"></div>
+                </div>
+                <div class="section">
+                    <div id="nameSection">
+                                
+                    </div>
+                </div>
+            </div>   
+        
+            <div id="finish">
+                <div id="score" class="section">
+        
+                </div>
+                <button id="retryButton">Retry</button> <button id="quitButton">Quit</button>
+            </div>
+        </div>
       </div>
+
+
 
       <div id="home">
         <div id="map">
           <img src="img/sundt-etasje-5.png" title="click to close" />
         </div>
 
-        <button value="game">to game</button>
+        <button id="gameButton" value="game">to game</button>
 
         <section class="development">
           <h2>Utvikling</h2>
@@ -301,6 +332,8 @@
     <div id="leftblock"></div>
     <div id="rightblock"></div>
 
+    <script src="getEmployees.js" type="text/javascript"></script>
+    <script src="game.js" type="text/javascript"></script>
     <script src="popup.js" type="text/javascript"></script>
   </body>
 </html>

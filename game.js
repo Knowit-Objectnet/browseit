@@ -1,21 +1,21 @@
 
 var exit = false;
+var isPlaying = false;
 
-window.onload = function ()  {
+var enterGame = function ()  {
 // Wait for the page to finish loading
+console.log("enter game")
 
-        document.addEventListener('enterGame', function(e){
-            // Init script when the game is opened
-            exit = false;
-            var lastRender = 0;
-            window.requestAnimationFrame(loop);
+        $('button#playButton').click(function(e){
+            console.log("Playbutton");
         });
-
-        document.addEventListener('exitGame', function(e){
-            // When the game is closed
-            exit = true;
+        $('#retryButton').click(function(e){
+            console.log("button");
         });
-
+        $('#quitButton').click(function(e){
+            console.log("button");
+        });
+        
         function update(progress) {
             // Update the state of the world for the elapsed time since last render
           }
@@ -23,14 +23,8 @@ window.onload = function ()  {
           function draw() {
             // Draw the state of the world
           }
-          
-          function loop(timestamp) {
-            var progress = timestamp - lastRender
-          
-            update(progress)
-            draw()
-          
-            lastRender = timestamp
-            window.requestAnimationFrame(loop)
-          }
+}
+
+var exitGame = function (){
+    console.log("exit game");
 }

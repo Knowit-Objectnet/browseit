@@ -30,27 +30,22 @@ var countFinished = function(doSlide) {
 };
 
 // go to page
-var enterGame = document.createEvent("Event");
-var exitGame = document.createEvent("Event");
-enterGame.initEvent('enterGame', true, true);
-exitGame.initEvent('exitGame', true, true);
 
-$('button').click(function(event) {
+$('#gameButton').click(function(event) {
 
   event.preventDefault();
-  if(event.target.value == "game") {
     $('#home').hide();
     $('#game').show();
-    $('#gameContainer').load("game.html");
-    document.dispatchEvent(enterGame);
-  } else {
-    document.dispatchEvent(exitGame);
-    $('#gameContainer').empty();
+    enterGame();
+});
+
+$('#homeButton').click(function(event) {
+
+  event.preventDefault();
     $('#game').hide();
     $('#home').show();
-  }
-  
-});
+    exitGame();
+})
 
 // Add map toggle
 const toggleMap = () => $('div#map').slideToggle();
