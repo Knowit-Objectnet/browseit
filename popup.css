@@ -20,6 +20,11 @@ body {
   padding: 0;
 }
 
+/* Game */
+#game {
+  display: none;
+}
+
 /* Main */
 
 main {
