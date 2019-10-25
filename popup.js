@@ -30,14 +30,22 @@ var countFinished = function(doSlide) {
 };
 
 // go to page
-$('button').click(async function(event) {
+var enterGame = document.createEvent("Event");
+var exitGame = document.createEvent("Event");
+enterGame.initEvent('enterGame', true, true);
+exitGame.initEvent('exitGame', true, true);
+
+$('button').click(function(event) {
+
   event.preventDefault();
   if(event.target.value == "game") {
     $('#home').hide();
     $('#game').show();
-    $('#gameContainer').load("game.html")
+    $('#gameContainer').load("game.html");
+    document.dispatchEvent(enterGame);
   } else {
-    $('#gameContainer').empty()
+    document.dispatchEvent(exitGame);
+    $('#gameContainer').empty();
     $('#game').hide();
     $('#home').show();
   }
