@@ -14,17 +14,17 @@ var getEmployees = async function() {
         var doc = parser.parseFromString(html, "text/html");
         var employees = Array.from(doc.querySelectorAll('tr')).slice(1)
         employees.forEach(function(person) {
+            console.log(person)
             const name = person.querySelector('.confluence-userlink');
             const img = person.querySelector('.confluence-embedded-image');
             if(name && img){
                 var imgUrl = img.getAttribute("src");
-                if(!imgUrl.includes("https://projects.knowit.no")){
+                if(!imgUrl.includes("https://")){
                     imgUrl = "https://projects.knowit.no" + imgUrl;
                 }
                 result.push({name: name.innerText, img: imgUrl});
             };
         });
-        console.log(result);
         return result;
 
     })

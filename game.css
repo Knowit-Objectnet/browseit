@@ -1,11 +1,55 @@
+#game {
+}
+
+#gameMain {
+}
+
+.gui {
+    padding-bottom: 10px;
+}
+
+.gui .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.labels {
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+}
+
 .letterContainer {
     position: relative;
     padding: 4px 8px;
     font-size: 16px;
 }
 
+.section.info {
+    margin-bottom: 30px;
+}
+
+.section.name {
+    margin-bottom: 20px;
+}
+
 .hidden {
     opacity: 0;
+}
+
+.section.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#alphabet {
+    display: grid;
+    margin-bottom: auto;
+    row-gap: 3px;
+    width: 125px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
 }
 
 #nameSection .letterContainer::after {
@@ -25,6 +69,7 @@
 #nameSection {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #personImage {
@@ -32,6 +77,9 @@
     width: auto;
 }
 
+.letterContainer {
+    width: 13px;
+}
 .loader {
     border: 4px solid #f3f3f3;
     border-top: 4px solid grey;
