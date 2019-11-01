@@ -25,6 +25,10 @@ var getLocalHighScore = function(){
     highScore = localStorage.getItem("browseItNameGameScore");
     if(highScore == null){
         highScore = 0;
+        $("#bestHighScore").html("");
+    }
+    else{
+        $("#bestHighScore").html("Your best score: " + highScore);
     }
 }
 
@@ -134,12 +138,14 @@ var roundWin = function (){
 
 var gameOver = function (){
     showFinish();
+    checkIfNewHighScore();
     isPlaying = false;
     renderFinish();
 }
 
 var gameWin = function (){
     showFinish();
+    checkIfNewHighScore();
     isPlaying = false;
     renderFinish();
 }
@@ -206,6 +212,7 @@ var checkLetter = function(letter){
 
 var enterGame = function ()  {
     showMenu();
+    getLocalHighScore();
     loadNames();
 }
 var loadNames = function () {
