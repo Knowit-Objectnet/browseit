@@ -1,0 +1,33 @@
+.letter {
+    position: relative;
+    padding: 4px 8px;
+    font-size: 16px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#nameSection .letter::after {
+    background: black;
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 2px;
+    left: 12.5%;
+    bottom: 0;
+}
+
+.space {
+    width: 20px;
+}
+
+#nameSection {
+    display: flex;
+    flex-direction: row;
+}
+
+#personImage {
+    height: 200px;
+    width: auto;
+}
