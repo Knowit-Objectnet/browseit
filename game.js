@@ -56,11 +56,19 @@ var changePerson = function(){
             id = letter.toLowerCase();
             className = 'letter';
         };
-        return `<div class=${className} ${id ? 'id='+id : ''}>${letter}</div>`;
+        return `<div class=${className}><span class="hidden" ${id ? 'id='+id : ''}>${letter.toUpperCase()}</span></div>`;
     });
     $('#nameSection').append(letters);
 
 };
+
+var showWrongLetter = function(letter){
+    $('#alphabet').append(`<div class="letter"><span>${letter.toUpperCase()}</span></div>`);
+}
+
+var showCorrectLetter = function(letter) {
+    $(`#${letter.toLowerCase()}`).css("opacity", 1);
+}
 
 var incrementScore = function() {
 
