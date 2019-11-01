@@ -104,7 +104,8 @@ var updateGameState = function(){
     }
     else{
         var win = true;
-        for(const c of currentName.toLowerCase().replace(" ", "").replace("-", "")){
+        var nameIter = currentName.toLowerCase().split(" ").join("").split("-").join("");
+        for(const c of nameIter){
             if(!correctLetters.includes(c)){
                 win = false;
                 break;
