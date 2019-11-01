@@ -177,7 +177,7 @@ var renderFinish = function (win){
 }
 
 
-$(document).on("keypress", "#game", function (e) {
+$(document).on("keypress", "#play", function (e) {
     const key = e.key.toLowerCase();
     if((key >= "a" && key <= "z") || "æøå".includes(key)){
         checkLetter(key);
@@ -242,6 +242,7 @@ var showPlay = function(){
     $('#menu').hide();
     $('#play').show();
     $('#finish').hide();
+    $("#play").focus();
 }
 var showFinish = function(){
     $('#menu').hide();
