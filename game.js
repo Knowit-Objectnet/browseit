@@ -107,7 +107,7 @@ var updateGameState = function(){
     }
     else{
         var win = true;
-        for(const c of currentName){
+        for(const c of currentName.toLowerCase().replace(" ", "").replace("-", "")){
             if(!correctLetters.includes(c)){
                 win = false;
                 break;
@@ -126,6 +126,7 @@ var updateGameState = function(){
 }
 
 var roundWin = function (){
+    resetGameRender();
     changePerson();
 }
 
@@ -173,7 +174,7 @@ var renderFinish = function (win){
 
 $(document).on("keypress", "#game", function (e) {
     const key = e.key.toLowerCase();
-    if((key >= "a" && key <= "z") || key in "æøå"){
+    if((key >= "a" && key <= "z") || "æøå".includes(key)){
         checkLetter(key);
         updateGameState();
         renderGameState();
