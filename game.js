@@ -67,6 +67,7 @@ var showWrongLetter = function(letter){
 }
 
 var showCorrectLetter = function(letter) {
+    console.log($('#a'))
     $(`#${letter.toLowerCase()}`).css("opacity", 1);
 }
 

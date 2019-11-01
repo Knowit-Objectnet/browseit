@@ -8,7 +8,7 @@
     opacity: 0;
 }
 
-.letter::after {
+#nameSection .letter::after {
     background: black;
     position: absolute;
     content: '';
