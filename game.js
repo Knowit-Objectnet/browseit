@@ -42,11 +42,23 @@ var changePerson = function(){
     correctLetters = [];
     let person = employeesLeft.splice(Math.floor(Math.random() * employeesLeft.length), 1)[0];
     currentName = person.name;
+
     // image
-    $('#personImage').attr("src", person.img)
+    $('#personImage').attr("src", person.img);
+
     // letters
-    //let letters = person.name.map(letter => `<div id=${letter}>${letter}</div>`)
-    //$('#nameSection').append(letters)
+    let letters = person.name.split('').map(letter => {
+        let id;
+        let className;
+        if (letter === ' ') {
+            className = 'space';
+        } else {
+            id = letter.toLowerCase();
+            className = 'letter';
+        };
+        return `<div class=${className} ${id ? 'id='+id : ''}>${letter}</div>`;
+    });
+    $('#nameSection').append(letters);
 
 };
 
@@ -60,7 +72,7 @@ var decrementLives = function() {
 
 var resetGame = function() {
 
-}
+};
 
 
 $(document).on("keypress", "#game", function (e) {
@@ -106,7 +118,6 @@ var showPlay = function(){
     $('#play').show();
     $('#finish').hide();
     isPlaying = true;
-    initGame();
 }
 var showFinish = function(){
     $('#menu').hide();
