@@ -128,7 +128,7 @@ var gameWin = function (){
 var resetGame = function() {
     score = 0;
     lives = 10;
-    employeesLeft = employees;
+    employeesLeft = employees.slice();
     isPlaying = true;
     resetGameRender();
 };
