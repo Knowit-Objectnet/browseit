@@ -8,7 +8,7 @@ $('#playButton').click(function(e){
 });
 $('#endButton').click(function(e){
     isPlaying = false;
-    showFinish();
+    gameOver();
 });
 $('#retryButton').click(function(e){
     initGame();
@@ -49,14 +49,6 @@ var employeesLeft = [];
 var currentName;
 var wrongLetters = [];
 var correctLetters = [];
-
-var getNames = function() {
-    getEmployees()
-    .then((result) => {
-        employees = result;
-        employeesLeft = result;
-    })
-}
 
 var initGame = function() {
     resetGame();
@@ -152,15 +144,20 @@ var gameWin = function (){
 
 var resetGame = function() {
     score = 0;
-    lives = 10;
+    lives = 15;
     employeesLeft = employees.slice();
     isPlaying = true;
+    resetImageRender();
     resetGameRender();
 };
 
 var resetGameRender = function() {
     $("#nameSection").empty();
     $("#alphabet").empty();
+}
+
+var resetImageRender = function (){
+    $('#personImage').attr("src", "");
 }
 
 var renderGameState = function (){
