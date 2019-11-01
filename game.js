@@ -62,7 +62,6 @@ var changePerson = function(){
     correctLetters = [];
     let person = employeesLeft.splice(Math.floor(Math.random() * employeesLeft.length), 1)[0];
     currentName = person.name;
-    console.log(currentName);
 
     // image
     $('#personImage').attr("src", person.img);
@@ -200,7 +199,6 @@ var checkLetter = function(letter){
         if(letter === c){
             correctLetters.push(letter);
             showCorrectLetter(letter);
-            console.log(correctLetters);
             return;
         }
     }
