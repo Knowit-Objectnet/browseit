@@ -41,7 +41,7 @@
                   <div class="section">
                       <h3 id="bestHighScore"></h3>
                   </div>
-                  <button id="playButton">Play</button>
+                  <button class="gameButton green" id="playButton">Play</button>
                 </div>
               <div id="loadingError">
 
@@ -50,27 +50,31 @@
         
             <div id="play" tabindex="0">
 
-              <div class="gui section horizontal">
-                <div class="title">
-                  Feil bokstaver:
+              <div class="section information">
+                <div class="column left">
+                  <div class="title">
+                    Feil bokstaver:
+                  </div>
+                  <div id="alphabet"></div>
                 </div>
-                <div class="labels">
+
+                <div  class="column labels">
                   <label id="scoreLabel"></label>
                   <label id="livesLabel"></label>
                 </div>
-                <div class="title">
-                  Hvem er dette?
+                <div class="column right">
+                  <div>
+                      <div class="title">
+                        Hvem er dette?
+                      </div>
+                      <div id="imageContainer"><img id="personImage"/></div></div>
                 </div>
               </div>
-                <div class="info section horizontal">
-                    <div id="alphabet"></div>
-                    <div id="imageContainer"><img id="personImage"/></div>
-                </div>
-                <div class="name section">
-                    <div id="nameSection"> 
-                    </div>
-                </div>
-                <button id="endButton">End Game</button>
+              <div class="name section">
+                  <div id="nameSection"> 
+                  </div>
+              </div>
+              <button class="gameButton red"  id="endButton">End Game</button>
             </div>   
         
             <div id="finish">
@@ -86,7 +90,8 @@
                 <div class="section">
                     <h3 id="highScore"></h3>
                 </div>
-                <button id="retryButton">Retry</button> <button id="quitButton">Quit</button>
+                <button class="gameButton blue" id="retryButton">Retry</button>
+                <button class="gameButton red" id="quitButton">Quit</button>
             </div>
         </div>
       </div>
@@ -97,8 +102,6 @@
         <div id="map">
           <img src="img/sundt-etasje-5.png" title="click to close" />
         </div>
-
-        <button id="gameButton" value="game">to game</button>
 
         <section class="development">
           <h2>Utvikling</h2>
@@ -141,6 +144,11 @@
             </tbody>
           </table>
         </section>
+        <section class="gameLauncher">
+          <h2>Navnespillet</h2>
+          <div>Bli kjent med dine kolleager. Prøv navnespillet! </div>
+          <button class="gameButton small blue" id="gameButton" value="game">Start spill</button>
+        </section> 
 
         <section class="nooblist">
 
