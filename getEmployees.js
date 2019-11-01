@@ -1,6 +1,13 @@
 var getEmployees = async function() {
     let data = await fetch("https://projects.knowit.no/pages/viewpage.action?pageId=55805057", { credentials: "include", sameSite: false})
-    .then(result => result.text())
+    .then(result => {
+        if(result.redirected){
+            throw "Error loading employees";
+        }
+        else{
+            return result.text();
+        }
+    })
     .then(html => {
         let result = []
         var parser = new DOMParser();
@@ -17,7 +24,9 @@ var getEmployees = async function() {
         return result;
 
     })
-    .catch(e => console.log(e));
+    .catch(e => {
+        throw e;
+    });
 
     return data
 }
