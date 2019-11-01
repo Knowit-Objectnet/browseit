@@ -1,4 +1,5 @@
 var isPlaying = false;
+var highScore = 0;
 
 $('#playButton').click(function(e){
     showPlay();
@@ -17,6 +18,21 @@ $('#quitButton').click(function(e){
     showMenu();
     isPlaying = false;
 });
+
+
+var getLocalHighScore = function(){
+    highScore = localStorage.getItem("browseItNameGameScore");
+    if(highScore == null){
+        highScore = 0;
+    }
+}
+
+var checkIfNewHighScore = function (){
+    if(score > highScore){
+        highScore = score;
+        localStorage.setItem("browseItNameGameScore", score);
+    }
+}
 
 
 // Game logic
@@ -145,6 +161,7 @@ var renderFinish = function (win){
         $("#finishTitle").html("Game over!");
     }
     $("#score").html(score + " out of " + employees.length);
+    $("#highScore").html("Your best score: " + highScore);
 }
 
 
