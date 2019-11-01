@@ -114,13 +114,15 @@ var updateGameState = function(){
             }
         }
         if(win){
-            if(employeesLeft.length === 0){
-                gameWin();
-            }
-            else{
-                roundWin();
-                incrementScore();
-            }
+            incrementScore();
+            setTimeout(() => {
+                if(employeesLeft.length === 0){
+                    gameWin();
+                }
+                else{
+                    roundWin();
+                }
+            }, 2000);
         }
     }
 }
@@ -204,7 +206,25 @@ var checkLetter = function(letter){
 
 var enterGame = function ()  {
     showMenu();
-    getNames()
+    loadNames();
+}
+var loadNames = function () {
+    $("#loading").show();
+    $("#loadingFinished").hide();
+    $("#loadingError").hide();
+    getEmployees()
+    .then((result) => {
+        employees = result;
+        employeesLeft = result;
+        $("#loading").hide();
+        $("#loadingFinished").show();
+        $("#loadingError").hide();
+    }).catch((e) => {
+        $("#loading").hide();
+        $("#loadingFinished").hide();
+        $("#loadingError").show();
+        $("#loadingError").html("Feil ved innlasting av spill. Sørg for at du er logget inn på projects.knowit.no, og last inn spillet på nytt.");
+    });
 }
 var exitGame = function (){
     hideAll();
