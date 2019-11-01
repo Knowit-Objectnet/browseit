@@ -61,20 +61,20 @@ var changePerson = function(){
             className = 'space';
         } else {
             id = letter.toLowerCase();
-            className = 'letter';
+            className = 'letterContainer';
         };
-        return `<div class=${className}><span class="hidden" ${id ? 'id='+id : ''}>${letter.toUpperCase()}</span></div>`;
+        return `<div class=${className}><span class="hidden letter ${id ? id : ''}">${letter.toUpperCase()}</span></div>`;
     });
     $('#nameSection').append(letters);
 
 };
 
 var showWrongLetter = function(letter){
-    $('#alphabet').append(`<div class="letter"><span>${letter.toUpperCase()}</span></div>`);
+    $('#alphabet').append(`<div class="letterContainer"><span>${letter.toUpperCase()}</span></div>`);
 }
 
 var showCorrectLetter = function(letter) {
-    $(`#${letter.toLowerCase()}`).css("opacity", 1);
+    $(`.letter.${letter.toLowerCase()}`).css("opacity", 1);
 }
 
 var incrementScore = function() {
