@@ -2,16 +2,20 @@ var isPlaying = false;
 
 $('#playButton').click(function(e){
     showPlay();
+    isPlaying = true;
     initGame();
 });
 $('#endButton').click(function(e){
     showFinish();
+    isPlaying = false;
 });
 $('#retryButton').click(function(e){
     showPlay();
+    isPlaying = true;
 });
 $('#quitButton').click(function(e){
     showMenu();
+    isPlaying = false;
 });
 
 
@@ -21,7 +25,7 @@ var employees = [];
 var lives = 10;
 var score = 0;
 var employeesLeft = [];
-var currentName = "hello world";
+var currentName;
 var wrongLetters = [];
 var correctLetters = [];
 
@@ -34,7 +38,7 @@ var getNames = function() {
 }
 
 var initGame = function() {
-    //changePerson();
+    changePerson();
     renderGameState();
 }
 
@@ -69,9 +73,6 @@ var incrementScore = function() {
 
 var decrementLives = function() {
     lives -= 1;
-    if(lives === 0){
-        gameOver();
-    }
 };
 
 var updateGameState = function(){
@@ -92,25 +93,33 @@ var updateGameState = function(){
             }
             else{
                 roundWin();
+                incrementScore();
             }
         }
     }
 }
 
 var roundWin = function (){
-    
+    changePerson();
 }
 
 var gameOver = function (){
-
+    showFinish();
+    isPlaying = false;
 }
 
 var gameWin = function (){
-
+    showFinish();
+    isPlaying = false;
 }
 
 var resetGame = function() {
-
+    score = 0;
+    lives = 10;
+    employeesLeft = employees.slice();
+    showPlay();
+    isPlaying = true;
+    initGame();
 };
 
 var renderGameState = function (){
@@ -139,6 +148,7 @@ var checkLetter = function(letter){
         }
     }
     wrongLetters.push(letter);
+    decrementLives();
     return;
 }
 
@@ -157,24 +167,20 @@ var showMenu = function(){
     $('#menu').show();
     $('#play').hide();
     $('#finish').hide();
-    isPlaying = false;
 }
 var showPlay = function(){
     $('#menu').hide();
     $('#play').show();
     $('#finish').hide();
-    isPlaying = true;
 }
 var showFinish = function(){
     $('#menu').hide();
     $('#play').hide();
     $('#finish').show();
-    isPlaying = false;
 }
 var hideAll = function(){
     $('#menu').hide();
     $('#play').hide();
     $('#finish').hide();
-    isPlaying = false;
 }
 
