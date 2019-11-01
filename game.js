@@ -1,3 +1,4 @@
+var acceptInput = true;
 var isPlaying = false;
 var highScore = 0;
 
@@ -61,6 +62,7 @@ var changePerson = function(){
     correctLetters = [];
     let person = employeesLeft.splice(Math.floor(Math.random() * employeesLeft.length), 1)[0];
     currentName = person.name;
+    console.log(currentName);
 
     // image
     $('#personImage').attr("src", person.img);
@@ -111,6 +113,7 @@ var updateGameState = function(){
         }
         if(win){
             incrementScore();
+            acceptInput = false;
             setTimeout(() => {
                 if(employeesLeft.length === 0){
                     gameWin();
@@ -118,6 +121,7 @@ var updateGameState = function(){
                 else{
                     roundWin();
                 }
+                acceptInput = true;
             }, 2000);
         }
     }
@@ -177,12 +181,14 @@ var renderFinish = function (win){
 }
 
 
-$(document).on("keypress", "#play", function (e) {
-    const key = e.key.toLowerCase();
-    if((key >= "a" && key <= "z") || "æøå".includes(key)){
-        checkLetter(key);
-        updateGameState();
-        renderGameState();
+$(document).on("keypress", window, function (e) {
+    if(acceptInput){
+        const key = e.key.toLowerCase();
+        if((key >= "a" && key <= "z") || "æøå".includes(key)){
+            checkLetter(key);
+            updateGameState();
+            renderGameState();
+        }
     }
 });
 
@@ -194,6 +200,7 @@ var checkLetter = function(letter){
         if(letter === c){
             correctLetters.push(letter);
             showCorrectLetter(letter);
+            console.log(correctLetters);
             return;
         }
     }
