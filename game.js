@@ -21,7 +21,7 @@ var employees = [];
 var lives = 10;
 var score = 0;
 var employeesLeft = [];
-var currentName;
+var currentName = "hello world";
 var wrongLetters = [];
 var correctLetters = [];
 
@@ -34,7 +34,8 @@ var getNames = function() {
 }
 
 var initGame = function() {
-    changePerson();
+    //changePerson();
+    renderGameState();
 }
 
 var changePerson = function(){
@@ -97,7 +98,7 @@ var updateGameState = function(){
 }
 
 var roundWin = function (){
-
+    
 }
 
 var gameOver = function (){
@@ -113,7 +114,8 @@ var resetGame = function() {
 };
 
 var renderGameState = function (){
-
+    $("#scoreLabel").html("Score: "+score);
+    $("#livesLabel").html("Lives: "+lives);
 }
 
 
