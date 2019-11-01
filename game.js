@@ -116,11 +116,13 @@ var roundWin = function (){
 var gameOver = function (){
     showFinish();
     isPlaying = false;
+    renderFinish();
 }
 
 var gameWin = function (){
     showFinish();
     isPlaying = false;
+    renderFinish();
 }
 
 var resetGame = function() {
@@ -139,6 +141,16 @@ var resetGameRender = function() {
 var renderGameState = function (){
     $("#scoreLabel").html("Score: "+score);
     $("#livesLabel").html("Lives: "+lives);
+}
+
+var renderFinish = function (win){
+    if(win){
+        $("#finishTitle").html("Congratulations, you won!")
+    }
+    else{
+        $("#finishTitle").html("Game over!");
+    }
+    $("#score").html(score + " out of " + employees.length);
 }
 
 
