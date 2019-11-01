@@ -126,6 +126,7 @@ var updateGameState = function(){
 }
 
 var roundWin = function (){
+    resetGameRender();
     changePerson();
 }
 
