@@ -4,13 +4,12 @@
 #gameMain {
 }
 
-.gui {
-    padding-bottom: 10px;
-}
 
-.gui .title {
+.title {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .labels {
@@ -25,8 +24,21 @@
     font-size: 16px;
 }
 
-.section.info {
+.section.information {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     margin-bottom: 30px;
+}
+
+.column.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.column.left {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .section.name {
@@ -37,11 +49,6 @@
     opacity: 0;
 }
 
-.section.horizontal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 #alphabet {
     display: grid;
@@ -69,7 +76,6 @@
 #nameSection {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 #personImage {
