@@ -8,7 +8,7 @@ $('#playButton').click(function(e){
 });
 $('#endButton').click(function(e){
     isPlaying = false;
-    showFinish();
+    gameOver();
 });
 $('#retryButton').click(function(e){
     initGame();
@@ -25,6 +25,10 @@ var getLocalHighScore = function(){
     highScore = localStorage.getItem("browseItNameGameScore");
     if(highScore == null){
         highScore = 0;
+        $("#bestHighScore").html("");
+    }
+    else{
+        $("#bestHighScore").html("Your best score: " + highScore);
     }
 }
 
@@ -39,20 +43,12 @@ var checkIfNewHighScore = function (){
 // Game logic
 var employees = [];
 
-var lives = 10;
+var lives = 15;
 var score = 0;
 var employeesLeft = [];
 var currentName;
 var wrongLetters = [];
 var correctLetters = [];
-
-var getNames = function() {
-    getEmployees()
-    .then((result) => {
-        employees = result;
-        employeesLeft = result;
-    })
-}
 
 var initGame = function() {
     resetGame();
@@ -134,27 +130,34 @@ var roundWin = function (){
 
 var gameOver = function (){
     showFinish();
+    checkIfNewHighScore();
     isPlaying = false;
     renderFinish();
 }
 
 var gameWin = function (){
     showFinish();
+    checkIfNewHighScore();
     isPlaying = false;
     renderFinish();
 }
 
 var resetGame = function() {
     score = 0;
-    lives = 10;
+    lives = 15;
     employeesLeft = employees.slice();
     isPlaying = true;
+    resetImageRender();
     resetGameRender();
 };
 
 var resetGameRender = function() {
     $("#nameSection").empty();
     $("#alphabet").empty();
+}
+
+var resetImageRender = function (){
+    $('#personImage').attr("src", "");
 }
 
 var renderGameState = function (){
@@ -206,6 +209,7 @@ var checkLetter = function(letter){
 
 var enterGame = function ()  {
     showMenu();
+    getLocalHighScore();
     loadNames();
 }
 var loadNames = function () {
