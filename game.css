@@ -1,4 +1,4 @@
-#gameMain {
+#play {
     outline: none;
 }
 
@@ -107,17 +107,24 @@
 
 .gameButton {
     background: #888888;
+    margin: 4px;
     letter-spacing: 0.0375rem;
     align-self: center;
     max-width: 10rem;
     font-size: 14px;
     outline: none;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
     color: white;
-    padding: .5rem .6rem;
+    padding: 8px 9px;
     box-shadow: -1.2px -.9px 2px 1px #707070 inset;
     
+}
+
+.gameButton.small {
+    font-size: 13px;
+    padding: 6px 8px;
+    border-radius: 4px;
 }
 
 .gameButton.red {
@@ -131,8 +138,8 @@
 }
 
 .gameButton.blue {
-    background: #1e75c7;
-    box-shadow: -1.2px -.9px 0 .8px #175da0 inset;
+    background: #0b5c9a;
+    box-shadow: -1.2px -.9px 0 .8px rgb(16, 66, 112) inset;
 }
 
 .gameButton:hover {    
@@ -142,11 +149,21 @@
     box-shadow: none;
     transform: translate(1px, 1px);
 }
-  #loading{
+#loading{
     width: 15%;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
+.gameLauncher {
+    margin-top: 15px;
+    float: left;
+}
+
+.gameLauncher button {
+    margin-top: 10px;
+}
+
