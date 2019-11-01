@@ -49,12 +49,14 @@ var changePerson = function(){
     // letters
     let letters = person.name.split('').map(letter => {
         let id;
+        let className;
         if (letter === ' ') {
-            id = 'space';
+            className = 'space';
         } else {
             id = letter.toLowerCase();
+            className = 'letter';
         };
-        return `<div id=${id}>${id}</div>`;
+        return `<div class=${className} ${id ? 'id='+id : ''}>${letter}</div>`;
     });
     $('#nameSection').append(letters);
 
