@@ -63,22 +63,66 @@ var changePerson = function(){
 };
 
 var incrementScore = function() {
-
+    score += 1;
 };
 
 var decrementLives = function() {
-
+    lives -= 1;
+    if(lives === 0){
+        gameOver();
+    }
 };
+
+var updateGameState = function(){
+    if(lives <= 0){
+        gameOver();
+    }
+    else{
+        var win = true;
+        for(const c of currentName){
+            if(!correctLetters.includes(c)){
+                win = false;
+                break;
+            }
+        }
+        if(win){
+            if(employeesLeft.length === 0){
+                gameWin();
+            }
+            else{
+                roundWin();
+            }
+        }
+    }
+}
+
+var roundWin = function (){
+
+}
+
+var gameOver = function (){
+
+}
+
+var gameWin = function (){
+
+}
 
 var resetGame = function() {
 
 };
+
+var renderGameState = function (){
+
+}
 
 
 $(document).on("keypress", "#game", function (e) {
     const key = e.key.toLowerCase();
     if((key >= "a" && key <= "z") || key in "æøå"){
         checkLetter(key);
+        updateGameState();
+        renderGameState();
     }
 });
 
