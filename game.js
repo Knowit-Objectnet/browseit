@@ -114,13 +114,15 @@ var updateGameState = function(){
             }
         }
         if(win){
-            if(employeesLeft.length === 0){
-                gameWin();
-            }
-            else{
-                roundWin();
-                incrementScore();
-            }
+            incrementScore();
+            setTimeout(() => {
+                if(employeesLeft.length === 0){
+                    gameWin();
+                }
+                else{
+                    roundWin();
+                }
+            }, 2000);
         }
     }
 }
