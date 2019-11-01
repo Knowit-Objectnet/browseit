@@ -2,20 +2,21 @@ var isPlaying = false;
 
 $('#playButton').click(function(e){
     showPlay();
-    isPlaying = true;
     initGame();
+    isPlaying = true;
 });
 $('#endButton').click(function(e){
-    showFinish();
     isPlaying = false;
+    showFinish();
 });
 $('#retryButton').click(function(e){
+    initGame();
     showPlay();
     isPlaying = true;
 });
 $('#quitButton').click(function(e){
-    showMenu();
     isPlaying = false;
+    showMenu();
 });
 
 
@@ -38,6 +39,7 @@ var getNames = function() {
 }
 
 var initGame = function() {
+    resetGame();
     changePerson();
     renderGameState();
 }
@@ -124,11 +126,15 @@ var gameWin = function (){
 var resetGame = function() {
     score = 0;
     lives = 10;
-    employeesLeft = employees.slice();
-    showPlay();
+    employeesLeft = employees;
     isPlaying = true;
-    initGame();
+    resetGameRender();
 };
+
+var resetGameRender = function() {
+    $("#nameSection").empty();
+    $("#alphabet").empty();
+}
 
 var renderGameState = function (){
     $("#scoreLabel").html("Score: "+score);
