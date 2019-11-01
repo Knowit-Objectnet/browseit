@@ -8,10 +8,16 @@ var getEmployees = async function() {
         var employees = Array.from(doc.querySelectorAll('tr')).slice(1)
 
         employees.forEach(function(person) {
+            console.log(person)
             const name = person.querySelector('.confluence-userlink');
             const img = person.querySelector('.confluence-embedded-image');
-            if(name && img){
-                result.push({name: name.innerText, img: "https://projects.knowit.no" + img.getAttribute("src")});
+
+            if(name && img){  
+                let src = img.getAttribute("src"); 
+                if (!src.includes("https://")) {
+                    src = "https://projects.knowit.no" + src;
+                };
+                result.push({name: name.innerText, img: src});
             };
         });
         return result;

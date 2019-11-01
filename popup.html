@@ -26,26 +26,32 @@
 
 
       <div id="game">
-        <button id="homeButton" value="home">return</button>
-        <div id="gameMain" tabindex="0" style="border: 1px solid black; width: 400px; height: 300px;">
+        <div id="gameMain" tabindex="0">
             <div id="menu">
                 <div id="instructions" class="section">
-                    Menu goes here
                 </div>
                 <button id="playButton">Play</button>
             </div>
         
             <div id="play">
 
-              <div id="gui" class="section">
-                <label id="scoreLabel"></label>
-                <label id="livesLabel"></label>
+              <div class="gui section horizontal">
+                <div class="title">
+                  Feil bokstaver:
+                </div>
+                <div class="labels">
+                  <label id="scoreLabel"></label>
+                  <label id="livesLabel"></label>
+                </div>
+                <div class="title">
+                  Hvem er dette?
+                </div>
               </div>
-                <div class="section">
+                <div class="info section horizontal">
                     <div id="alphabet"></div>
                     <div id="imageContainer"><img id="personImage"/></div>
                 </div>
-                <div class="section">
+                <div class="name section">
                     <div id="nameSection"> 
                     </div>
                 </div>
@@ -67,6 +73,7 @@
                 </div>
                 <button id="retryButton">Retry</button> <button id="quitButton">Quit</button>
             </div>
+            <button id="homeButton" value="home">return</button>
         </div>
       </div>
 
