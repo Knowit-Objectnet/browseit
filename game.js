@@ -152,10 +152,12 @@ var checkLetter = function(letter){
     for(const c of currentName.toLowerCase()){
         if(letter === c){
             correctLetters.push(letter);
+            showCorrectLetter(letter);
             return;
         }
     }
     wrongLetters.push(letter);
+    showWrongLetter(letter);
     decrementLives();
     return;
 }
