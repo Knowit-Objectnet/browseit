@@ -1,9 +1,6 @@
-#game {
-}
-
 #gameMain {
+    outline: none;
 }
-
 
 .title {
     font-size: 20px;
@@ -14,8 +11,12 @@
 
 .labels {
     display: flex;
-    font-size: 14px;
     flex-direction: column;
+}
+
+.labels label {
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .letterContainer {
@@ -42,7 +43,7 @@
 }
 
 .section.name {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hidden {
@@ -73,6 +74,8 @@
     width: 20px;
 }
 
+
+
 #nameSection {
     display: flex;
     flex-direction: row;
@@ -93,9 +96,47 @@
     width: 24px;
     height: 24px;
     animation: spin 1s linear infinite;
-  }
+}
   
-  @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
+
+.gameButton {
+    background: #888888;
+    letter-spacing: 0.0375rem;
+    align-self: center;
+    max-width: 10rem;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: .5rem .6rem;
+    box-shadow: -1.2px -.9px 2px 1px #707070 inset;
+    
+}
+
+.gameButton.red {
+    background: #df4b4b;
+    box-shadow: -1.2px -.9px 0 .8px #a83737 inset;
+}
+
+.gameButton.green {
+    background: #46b44c;
+    box-shadow: -1.2px -.9px 0 .8px #328336 inset;
+}
+
+.gameButton.blue {
+    background: #1e75c7;
+    box-shadow: -1.2px -.9px 0 .8px #175da0 inset;
+}
+
+.gameButton:hover {    
+    opacity: 0.9;
+}
+.gameButton:active {
+    box-shadow: none;
+    transform: translate(1px, 1px);
+}
