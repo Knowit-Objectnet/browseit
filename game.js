@@ -63,6 +63,29 @@ var resetGame = function() {
 }
 
 
+$(document).on("keypress", "#game", function (e) {
+    const key = e.key.toLowerCase();
+    if(key >= "a" && key <= "z"){
+        checkLetter(key);
+    }
+});
+
+var checkLetter = function(letter){
+    if(correctLetters.includes(letter) || wrongLetters.includes(letter)){
+        return;
+    }
+    for(const c of "hello world"){
+        if(letter === c){
+            correctLetters.push(letter);
+            return;
+        }
+    }
+    wrongLetters.push(letter);
+    return;
+}
+
+
+
 // Navigation
 
 var enterGame = function ()  {
