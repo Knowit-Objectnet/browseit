@@ -36,6 +36,7 @@ $('#gameButton').click(function(event) {
   event.preventDefault();
     $('#home').hide();
     $('#game').show();
+    $("#mapmarker").hide();
     enterGame();
 });
 
@@ -44,6 +45,7 @@ $('#homeButton').click(function(event) {
   event.preventDefault();
     $('#game').hide();
     $('#home').show();
+    $("#mapmarker").show();
     exitGame();
 })
 

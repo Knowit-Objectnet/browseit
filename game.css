@@ -170,5 +170,47 @@
 .gameLauncher div {
     margin-left: 4px;
 }
-
-
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .arrowLeft {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  #homeButton{
+    border: none;
+    background: none;
+    margin-left: -4px;
+    margin-bottom: 8px;
+}
+#homeButton:hover{
+    cursor: pointer;
+}
+#loadingFinished{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 22%;
+}
+#instructions h3, #instructions p{
+    padding-top: 10px;
+}
+#bestHighScore{
+    margin-top: 30px;
+}
+#finish{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+}
+#finishTitle{
+    padding-bottom: 16px;
+}
+#highScore{
+    padding-bottom: 10px;
+}
