@@ -8,7 +8,7 @@ $('#playButton').click(function(e){
 });
 $('#endButton').click(function(e){
     isPlaying = false;
-    showFinish();
+    gameOver();
 });
 $('#retryButton').click(function(e){
     initGame();
@@ -25,6 +25,10 @@ var getLocalHighScore = function(){
     highScore = localStorage.getItem("browseItNameGameScore");
     if(highScore == null){
         highScore = 0;
+        $("#bestHighScore").html("");
+    }
+    else{
+        $("#bestHighScore").html("Your best score: " + highScore);
     }
 }
 
@@ -39,20 +43,12 @@ var checkIfNewHighScore = function (){
 // Game logic
 var employees = [];
 
-var lives = 10;
+var lives = 15;
 var score = 0;
 var employeesLeft = [];
 var currentName;
 var wrongLetters = [];
 var correctLetters = [];
-
-var getNames = function() {
-    getEmployees()
-    .then((result) => {
-        employees = result;
-        employeesLeft = result;
-    })
-}
 
 var initGame = function() {
     resetGame();
@@ -107,51 +103,61 @@ var updateGameState = function(){
     }
     else{
         var win = true;
-        for(const c of currentName){
+        for(const c of currentName.toLowerCase().replace(" ", "").replace("-", "")){
             if(!correctLetters.includes(c)){
                 win = false;
                 break;
             }
         }
         if(win){
-            if(employeesLeft.length === 0){
-                gameWin();
-            }
-            else{
-                roundWin();
-                incrementScore();
-            }
+            incrementScore();
+            setTimeout(() => {
+                if(employeesLeft.length === 0){
+                    gameWin();
+                }
+                else{
+                    roundWin();
+                }
+            }, 2000);
         }
     }
 }
 
 var roundWin = function (){
+    resetGameRender();
     changePerson();
 }
 
 var gameOver = function (){
     showFinish();
+    checkIfNewHighScore();
     isPlaying = false;
     renderFinish();
 }
 
 var gameWin = function (){
     showFinish();
+    checkIfNewHighScore();
     isPlaying = false;
     renderFinish();
 }
 
 var resetGame = function() {
     score = 0;
-    lives = 10;
+    lives = 15;
     employeesLeft = employees.slice();
     isPlaying = true;
+    resetImageRender();
     resetGameRender();
 };
 
 var resetGameRender = function() {
     $("#nameSection").empty();
     $("#alphabet").empty();
+}
+
+var resetImageRender = function (){
+    $('#personImage').attr("src", "");
 }
 
 var renderGameState = function (){
@@ -173,7 +179,7 @@ var renderFinish = function (win){
 
 $(document).on("keypress", "#game", function (e) {
     const key = e.key.toLowerCase();
-    if((key >= "a" && key <= "z") || key in "æøå"){
+    if((key >= "a" && key <= "z") || "æøå".includes(key)){
         checkLetter(key);
         updateGameState();
         renderGameState();
@@ -203,7 +209,26 @@ var checkLetter = function(letter){
 
 var enterGame = function ()  {
     showMenu();
-    getNames()
+    getLocalHighScore();
+    loadNames();
+}
+var loadNames = function () {
+    $("#loading").show();
+    $("#loadingFinished").hide();
+    $("#loadingError").hide();
+    getEmployees()
+    .then((result) => {
+        employees = result;
+        employeesLeft = result;
+        $("#loading").hide();
+        $("#loadingFinished").show();
+        $("#loadingError").hide();
+    }).catch((e) => {
+        $("#loading").hide();
+        $("#loadingFinished").hide();
+        $("#loadingError").show();
+        $("#loadingError").html("Feil ved innlasting av spill. Sørg for at du er logget inn på projects.knowit.no, og last inn spillet på nytt.");
+    });
 }
 var exitGame = function (){
     hideAll();
