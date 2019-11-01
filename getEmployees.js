@@ -1,4 +1,4 @@
-var loadEmployees = async function() {
+var getEmployees = async function() {
     let data = await fetch("https://projects.knowit.no/pages/viewpage.action?pageId=55805057", { credentials: "include", sameSite: false})
     .then(result => result.text())
     .then(html => {
@@ -11,7 +11,7 @@ var loadEmployees = async function() {
             const name = person.querySelector('.confluence-userlink');
             const img = person.querySelector('.confluence-embedded-image');
             if(name && img){
-                result.push({name: name.innerText, img: "projects.knowit.no" + img.getAttribute("src")});
+                result.push({name: name.innerText, img: "https://projects.knowit.no" + img.getAttribute("src")});
             };
         });
         return result;

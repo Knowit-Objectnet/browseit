@@ -2,6 +2,7 @@ var isPlaying = false;
 
 $('#playButton').click(function(e){
     showPlay();
+    initGame();
 });
 $('#endButton').click(function(e){
     showFinish();
@@ -13,16 +14,60 @@ $('#quitButton').click(function(e){
     showMenu();
 });
 
-function update(progress) {
-    // Update the state of the world for the elapsed time since last render
-  }
-  
-function draw() {
-    // Draw the state of the world
+
+// Game logic
+var employees = [];
+
+var lives = 10;
+var score = 0;
+var employeesLeft = [];
+var currentName;
+var wrongLetters = [];
+var correctLetters = [];
+
+var getNames = function() {
+    getEmployees()
+    .then((result) => {
+        employees = result;
+        employeesLeft = result;
+    })
 }
+
+var initGame = function() {
+    changePerson();
+}
+
+var changePerson = function(){
+    wrongLetters = [];
+    correctLetters = [];
+    let person = employeesLeft.splice(Math.floor(Math.random() * employeesLeft.length), 1)[0];
+    currentName = person.name;
+    // image
+    $('#personImage').attr("src", person.img)
+    // letters
+    //let letters = person.name.map(letter => `<div id=${letter}>${letter}</div>`)
+    //$('#nameSection').append(letters)
+
+};
+
+var incrementScore = function() {
+
+};
+
+var decrementLives = function() {
+
+};
+
+var resetGame = function() {
+
+}
+
+
+// Navigation
 
 var enterGame = function ()  {
     showMenu();
+    getNames()
 }
 var exitGame = function (){
     hideAll();
@@ -38,6 +83,7 @@ var showPlay = function(){
     $('#play').show();
     $('#finish').hide();
     isPlaying = true;
+    initGame();
 }
 var showFinish = function(){
     $('#menu').hide();
