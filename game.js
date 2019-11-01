@@ -43,7 +43,7 @@ var checkIfNewHighScore = function (){
 // Game logic
 var employees = [];
 
-var lives = 10;
+var lives = 15;
 var score = 0;
 var employeesLeft = [];
 var currentName;
