@@ -64,18 +64,14 @@
 }
 
 .section.name {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.column.right {
+.column.center {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.column.left {
-  margin-left: 0;
-  margin-right: auto;
+  margin-top: 60px;
+  flex-direction: column;
+  text-align: center;
 }
 
 .title {
@@ -87,16 +83,27 @@
 
 #alphabet {
   display: grid;
-  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   row-gap: 3px;
-  width: 125px;
+  width: 150px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 28px);
   text-align: center;
+  height: 118px;
+}
+
+.alphabetTitle {
+  color: #df4b4b;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 .wrong {
   color: #df4b4b;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .labels {
@@ -106,7 +113,7 @@
 
 .labels label {
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #personImage {
@@ -123,6 +130,7 @@
 #nameSection {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .letterContainer {
@@ -244,4 +252,10 @@ i {
 
 #homeButton:hover{
   cursor: pointer;
+}
+
+#endButton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%)
 }
