@@ -8,8 +8,10 @@ $('#playButton').click(function(e){
   isPlaying = true;
 });
 $('#endButton').click(function(e){
-  isPlaying = false;
-  gameOver();
+  if (acceptInput) {
+    isPlaying = false;
+    gameOver();
+  }
 });
 $('#retryButton').click(function(e){
   initGame();
@@ -80,18 +82,30 @@ var changePerson = function(){
       className = 'letterContainer';
       hidden = true;
     };
-    return `<div class=${className}><span class="${hidden ? 'hidden' : ''} letter ${id ? id : ''}">${letter.toUpperCase()}</span></div>`;
+    return `<div class="${className}"><div class="${hidden ? 'hidden' : ''} letter ${id ? id : ''}">${letter.toUpperCase()}</div></div>`;
   });
   $('#nameSection').append(letters);
 
 };
 
 var showWrongLetter = function(letter){
-  $('#alphabet').append(`<div class="letterContainer wrong"><span>${letter.toUpperCase()}</span></div>`);
-}
+  $('#alphabet').append(`<div class="letterContainer wrong"><div class="letter ${letter}">${letter.toUpperCase()}</div></div>`);
+};
 
 var showCorrectLetter = function(letter) {
-  $(`.letter.${letter.toLowerCase()}`).css("opacity", 1);
+  $(`.letter.${letter.toLowerCase()}`).removeClass('hidden');
+};
+
+var showCorrectName = function() {
+  $('#nameSection .letterContainer').addClass('isCorrectName');
+  $('#nameSection .letterContainer').addClass('no-underline');
+};
+
+var showWrongName = function() {
+  $('.letter.hidden').css("font-weight", "bold");
+  $(`.letter.hidden`).addClass('isWrongName');
+  $(`.letter.hidden`).removeClass('hidden');
+  $('#nameSection .letterContainer').addClass('no-underline');
 }
 
 var incrementScore = function() {
@@ -104,9 +118,15 @@ var decrementLives = function() {
 
 var updateGameState = function(){
   if(lives <= 0){
-    gameOver();
-  }
-  else{
+    $('#endButton').removeClass('red');
+    acceptInput = false;
+    showWrongName();
+    setTimeout(function() {
+      gameOver();
+      acceptInput = true;
+      $('#endButton').addClass('red');
+    }, 4000);
+  } else {
     var win = true;
     var nameIter = currentName.toLowerCase().split(" ").join("").split("-").join("");
     for(const c of nameIter){
@@ -116,6 +136,8 @@ var updateGameState = function(){
       }
     }
     if(win){
+      $('#endButton').removeClass('red');
+      showCorrectName();
       incrementScore();
       acceptInput = false;
       setTimeout(() => {
@@ -125,8 +147,9 @@ var updateGameState = function(){
         else{
           roundWin();
         }
+        $('#endButton').addClass('red');
         acceptInput = true;
-      }, 2000);
+      }, 2500);
     }
   }
 }
@@ -196,8 +219,16 @@ $(document).on("keypress", window, function (e) {
   }
 });
 
+var scaleLetter = function(letter) {
+  $(`.${letter}`).addClass('letter-scale');
+  setTimeout(function() {
+    $(`.${letter}`).removeClass('letter-scale');
+  }, 200)
+}
+
 var checkLetter = function(letter){
   if(correctLetters.includes(letter) || wrongLetters.includes(letter)){
+    scaleLetter(letter);
     return;
   }
   for(const c of currentName.toLowerCase()){
