@@ -29,6 +29,26 @@ var countFinished = function(doSlide) {
   }
 };
 
+// go to page
+
+$('#gameButton').click(function(event) {
+
+  event.preventDefault();
+    $('#home').hide();
+    $('#game').show();
+    $("#mapmarker").hide();
+    enterGame();
+});
+
+$('#homeButton').click(function(event) {
+
+  event.preventDefault();
+    $('#game').hide();
+    $('#home').show();
+    $("#mapmarker").show();
+    exitGame();
+})
+
 // Add map toggle
 const toggleMap = () => $('div#map').slideToggle();
 $('img#mapmarker').click(toggleMap);
