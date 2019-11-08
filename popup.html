@@ -21,6 +21,7 @@
         <a href="https://projects.knowit.no/display/FAG/Web+Chapter"><img id="twc" src="img/web-chapter-logo.png" /></a>
       </header>
 
+      <!-- Game container. See game.js for game logic -->
       <div id="game">
         <div id= gameHeader>
           <button id="homeButton"><i class="arrowLeft"></i></button>
@@ -28,7 +29,7 @@
         <div id="gameMain">
             <div id="menu">
               <div id="loading">
-                Loading
+                Laster inn
                   <div class="loader"></div>
               </div>
               <div id="loadingFinished">
@@ -44,7 +45,7 @@
                   <div class="section">
                       <h3 id="bestHighScore"></h3>
                   </div>
-                  <button class="gameButton green" id="playButton">Play</button>
+                  <button class="gameButton green" id="playButton">Start spill</button>
                 </div>
               <div id="loadingError">
 
@@ -54,30 +55,31 @@
             <div id="play" tabindex="0">
 
               <div class="section information">
-                <div class="column left">
-                  <div class="title">
-                    Feil bokstaver:
+                <div class="column center">
+                  <div class="alphabetTitle">
+                    Feil bokstaver
                   </div>
                   <div id="alphabet"></div>
                 </div>
 
-                <div  class="column labels">
-                  <label id="scoreLabel"></label>
-                  <label id="livesLabel"></label>
-                </div>
-                <div class="column right">
+                <div class="column">
                   <div>
                       <div class="title">
                         Hvem er dette?
                       </div>
                       <div id="imageContainer"><img id="personImage"/></div></div>
                 </div>
+
+                <div  class="column center labels">
+                  <label id="scoreLabel"></label>
+                  <label id="livesLabel"></label>
+                </div>
               </div>
               <div class="name section">
                   <div id="nameSection"> 
                   </div>
               </div>
-              <button class="gameButton red"  id="endButton">End Game</button>
+              <button class="gameButton red"  id="endButton">Gi opp</button>
             </div>   
         
             <div id="finish">
@@ -85,7 +87,7 @@
                 <h1 id="finishTitle"></h1>
               </div>
                 <div class="section">
-                    <h2>Your score:</h2>
+                    <h2>Poengsum:</h2>
                 </div>
                 <div class="section">
                     <h3 id="score"></h3>
@@ -93,12 +95,13 @@
                 <div class="section">
                     <h3 id="highScore"></h3>
                 </div>
-                <button class="gameButton blue" id="retryButton">Retry</button>
-                <button class="gameButton red" id="quitButton">Quit</button>
+                <button class="gameButton blue" id="retryButton">Prøv igjen</button>
+                <button class="gameButton red" id="quitButton">Avslutt</button>
             </div>
         </div>
       </div>
 
+      <!-- End of game container -->
 
 
       <div id="home">
