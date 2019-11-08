@@ -30,7 +30,7 @@ var getEmployees = async function() {
           result.push({ name: name.innerText, img: imgUrl });
         }
       });
-      return result;
+      return result.filter(e => e.name.includes("Andr"));
     })
     .catch(e => {
       throw e;

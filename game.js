@@ -40,7 +40,12 @@ var changePerson = function() {
     } else if (letter === "-") {
       className = "symbol";
     } else {
-      id = letter.toLowerCase();
+      id = "æøåÆØÅ".includes(letter)
+        ? letter.toLowerCase()
+        : letter
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
       className = "letterContainer";
       hidden = true;
     }
@@ -73,7 +78,11 @@ var checkLetter = function(letter) {
     scaleLetter(letter);
     return;
   }
-  for (const c of currentName.toLowerCase()) {
+  for (const c of currentName
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/(a)([\u0300-\u036f])/g, "å")
+    .replace(/[\u0300-\u036f]/g, "")) {
     if (letter === c) {
       correctLetters.push(letter);
       showCorrectLetter(letter);
@@ -100,6 +109,9 @@ var updateGameState = function() {
     var win = true;
     var nameIter = currentName
       .toLowerCase()
+      .normalize("NFD")
+      .replace(/(a)([\u0300-\u036f])/g, "å")
+      .replace(/[\u0300-\u036f]/g, "")
       .split(" ")
       .join("")
       .split("-")
@@ -138,14 +150,14 @@ var gameOver = function() {
   showFinish();
   checkIfNewHighScore();
   isPlaying = false;
-  renderFinish();
+  renderFinish(false);
 };
 
 var gameWin = function() {
   showFinish();
   checkIfNewHighScore();
   isPlaying = false;
-  renderFinish();
+  renderFinish(true);
 };
 
 var enterGame = function() {
