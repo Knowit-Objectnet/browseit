@@ -60,6 +60,11 @@
     text-align: center;
 }
 
+.wrong {
+    color: #df4b4b;
+    font-weight: bold;
+}
+
 #nameSection .letterContainer::after {
     background: black;
     position: absolute;

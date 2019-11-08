@@ -87,7 +87,7 @@ var changePerson = function(){
 };
 
 var showWrongLetter = function(letter){
-    $('#alphabet').append(`<div class="letterContainer"><span>${letter.toUpperCase()}</span></div>`);
+    $('#alphabet').append(`<div class="letterContainer wrong"><span>${letter.toUpperCase()}</span></div>`);
 }
 
 var showCorrectLetter = function(letter) {
