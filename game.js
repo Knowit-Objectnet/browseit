@@ -80,14 +80,14 @@ var changePerson = function(){
       className = 'letterContainer';
       hidden = true;
     };
-    return `<div class=${className}><span class="${hidden ? 'hidden' : ''} letter ${id ? id : ''}">${letter.toUpperCase()}</span></div>`;
+    return `<div class="${className}"><div class="${hidden ? 'hidden' : ''} letter ${id ? id : ''}">${letter.toUpperCase()}</div></div>`;
   });
   $('#nameSection').append(letters);
 
 };
 
 var showWrongLetter = function(letter){
-  $('#alphabet').append(`<div class="letterContainer wrong"><span>${letter.toUpperCase()}</span></div>`);
+  $('#alphabet').append(`<div class="letterContainer wrong"><div class="letter ${letter}">${letter.toUpperCase()}</div></div>`);
 }
 
 var showCorrectLetter = function(letter) {
@@ -196,8 +196,16 @@ $(document).on("keypress", window, function (e) {
   }
 });
 
+var scaleLetter = function(letter) {
+  $(`.${letter}`).addClass('letter-scale');
+  setTimeout(function() {
+    $(`.${letter}`).removeClass('letter-scale');
+  }, 200)
+}
+
 var checkLetter = function(letter){
   if(correctLetters.includes(letter) || wrongLetters.includes(letter)){
+    scaleLetter(letter);
     return;
   }
   for(const c of currentName.toLowerCase()){

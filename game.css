@@ -106,6 +106,8 @@
   margin-right: auto;
 }
 
+
+
 .labels {
   display: flex;
   flex-direction: column;
@@ -125,6 +127,14 @@
   position: relative;
   padding: 4px 8px;
   font-size: 16px;
+}
+
+.letter {
+  transition: transform 0.2s;
+}
+
+.letter-scale {
+  transform: scale(1.5);
 }
 
 #nameSection {
