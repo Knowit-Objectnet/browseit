@@ -30,29 +30,24 @@ var countFinished = function(doSlide) {
 };
 
 // go to page
-$('button').click(function(event) {
+
+$('#gameButton').click(function(event) {
+
   event.preventDefault();
-  if(event.target.value == "game") {
     $('#home').hide();
     $('#game').show();
-    $('#gameContainer').load("game.html")
-    /*fetch("https://projects.knowit.no/pages/viewpage.action?pageId=55805057", { credentials: "include", sameSite: false})
-    .then(result => result.text())
-    .then(html => {
-      var parser = new DOMParser();
-      var doc = parser.parseFromString(html, "text/html");
+    $("#mapmarker").hide();
+    enterGame();
+});
 
-      console.log(doc.querySelectorAll('tr'))
+$('#homeButton').click(function(event) {
 
-    })
-    .catch(e => console.log(e));*/
-  } else {
-    $('#gameContainer').empty()
+  event.preventDefault();
     $('#game').hide();
     $('#home').show();
-  }
-  
-});
+    $("#mapmarker").show();
+    exitGame();
+})
 
 // Add map toggle
 const toggleMap = () => $('div#map').slideToggle();
