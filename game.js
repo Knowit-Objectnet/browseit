@@ -29,7 +29,7 @@ var getLocalHighScore = function(){
     $("#bestHighScore").html("");
   }
   else{
-    $("#bestHighScore").html("Your best score: " + highScore);
+    $("#bestHighScore").html("Din beste poengsum: " + highScore);
   }
 }
 
@@ -169,19 +169,19 @@ var resetImageRender = function (){
 }
 
 var renderGameState = function (){
-  $("#scoreLabel").html("Score: "+score);
-  $("#livesLabel").html("Lives: "+lives);
+  $("#scoreLabel").html("Poeng: "+score);
+  $("#livesLabel").html("Antall liv: "+lives);
 }
 
 var renderFinish = function (win){
   if(win){
-    $("#finishTitle").html("Congratulations, you won!")
+    $("#finishTitle").html("Gratulerer, du vant!")
   }
   else{
-    $("#finishTitle").html("Game over!");
+    $("#finishTitle").html("Du tapte!");
   }
-  $("#score").html(score + " out of " + employees.length);
-  $("#highScore").html("Your best score: " + highScore);
+  $("#score").html(score + " av " + employees.length);
+  $("#highScore").html("Din rekord: " + highScore);
 }
 
 
