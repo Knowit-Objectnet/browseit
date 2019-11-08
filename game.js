@@ -188,7 +188,7 @@ var renderFinish = function (win){
 $(document).on("keypress", window, function (e) {
   if(acceptInput){
     const key = e.key.toLowerCase();
-    if((key >= "a" && key <= "z") || "æøå".includes(key)){
+    if(((key >= "a" && key <= "z") || "æøå".includes(key)) && e.keyCode != 13){
       checkLetter(key);
       updateGameState();
       renderGameState();
