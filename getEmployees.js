@@ -11,6 +11,7 @@ var getEmployees = async function() {
       }
     })
     .then(html => {
+      // Parse HTML table to an array of tuples {name, imageURL}
       let result = [];
       var parser = new DOMParser();
       var doc = parser.parseFromString(html, "text/html");
@@ -20,6 +21,9 @@ var getEmployees = async function() {
         const img = person.querySelector(".confluence-embedded-image");
         if (name && img) {
           var imgUrl = img.getAttribute("src");
+
+          // Images are hosted on multiple domains
+          // If domain is not specified it defaults to projects.knowit.no
           if (!imgUrl.includes("https://")) {
             imgUrl = "https://projects.knowit.no" + imgUrl;
           }

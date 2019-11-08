@@ -1,51 +1,11 @@
+// Game state
 var acceptInput = true;
 var isPlaying = false;
-var highScore = 0;
-
-$("#playButton").click(function(e) {
-  showPlay();
-  initGame();
-  isPlaying = true;
-});
-$("#endButton").click(function(e) {
-  if (acceptInput) {
-    isPlaying = false;
-    gameOver();
-  }
-});
-$("#retryButton").click(function(e) {
-  initGame();
-  showPlay();
-  isPlaying = true;
-});
-$("#quitButton").click(function(e) {
-  isPlaying = false;
-  showMenu();
-});
-
-// Local Storage
-var getLocalHighScore = function() {
-  highScore = localStorage.getItem("browseItNameGameScore");
-  if (highScore == null) {
-    highScore = 0;
-    $("#bestHighScore").html("");
-  } else {
-    $("#bestHighScore").html("Din beste poengsum: " + highScore);
-  }
-};
-
-var checkIfNewHighScore = function() {
-  if (score > highScore) {
-    highScore = score;
-    localStorage.setItem("browseItNameGameScore", score);
-  }
-};
-
-// Game state
-var employees = [];
+var employees = []; // Complete list of fetched employees
+var employeesLeft = []; // List of employees that have not been guessed this round
 var lives = 15;
 var score = 0;
-var employeesLeft = [];
+var highScore = 0;
 var currentName;
 var wrongLetters = [];
 var correctLetters = [];
@@ -73,6 +33,8 @@ var changePerson = function() {
     let id;
     let className;
     let hidden;
+
+    // Assign class based on letter to apply styles
     if (letter === " ") {
       className = "symbol";
     } else if (letter === "-") {
@@ -206,6 +168,48 @@ $(document).on("keypress", window, function(e) {
     }
   }
 });
+
+$("#playButton").click(function(e) {
+  showPlay();
+  initGame();
+  isPlaying = true;
+});
+
+$("#endButton").click(function(e) {
+  if (acceptInput) {
+    isPlaying = false;
+    gameOver();
+  }
+});
+
+$("#retryButton").click(function(e) {
+  initGame();
+  showPlay();
+  isPlaying = true;
+});
+
+$("#quitButton").click(function(e) {
+  isPlaying = false;
+  showMenu();
+});
+
+// Local Storage
+var getLocalHighScore = function() {
+  highScore = localStorage.getItem("browseItNameGameScore");
+  if (highScore == null) {
+    highScore = 0;
+    $("#bestHighScore").html("");
+  } else {
+    $("#bestHighScore").html("Din beste poengsum: " + highScore);
+  }
+};
+
+var checkIfNewHighScore = function() {
+  if (score > highScore) {
+    highScore = score;
+    localStorage.setItem("browseItNameGameScore", score);
+  }
+};
 
 // Render functions
 var showWrongLetter = function(letter) {
