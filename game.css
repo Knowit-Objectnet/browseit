@@ -133,6 +133,7 @@
   transition: transform 0.2s;
 }
 
+
 .letter-scale {
   transform: scale(1.5);
 }
@@ -161,7 +162,11 @@
   font-weight: bold;
 }
 
-.isCorrectName::after {
+.isWrongName {
+  color: #ff0000;
+}
+
+.no-underline::after {
   opacity: 0;
 }
 
