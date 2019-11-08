@@ -126,7 +126,7 @@ var updateGameState = function(){
           roundWin();
         }
         acceptInput = true;
-      }, 2000);
+      }, 1000);
     }
   }
 }
