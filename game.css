@@ -28,7 +28,7 @@
 .section.information {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .column.right {
@@ -43,7 +43,7 @@
 }
 
 .section.name {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .hidden {
