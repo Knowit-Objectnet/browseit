@@ -162,6 +162,10 @@ var enterGame = function() {
   loadNames();
 };
 
+var exitGame = function() {
+  hideAll();
+};
+
 // Event listener
 $(document).on("keypress", window, function(e) {
   if (acceptInput) {
@@ -197,8 +201,11 @@ $("#retryButton").click(function(e) {
 });
 
 $("#quitButton").click(function(e) {
-  isPlaying = false;
-  showMenu();
+  event.preventDefault();
+  $("#game").hide();
+  $("#home").show();
+  $("#mapmarker").show();
+  exitGame();
 });
 
 // Local Storage
@@ -293,9 +300,6 @@ var loadNames = function() {
         "Feil ved innlasting av spill. Sørg for at du er logget inn på projects.knowit.no, og last inn spillet på nytt."
       );
     });
-};
-var exitGame = function() {
-  hideAll();
 };
 var showMenu = function() {
   $("#menu").show();
