@@ -148,12 +148,12 @@
   width: 13px;
   position: relative;
   padding: 4px 4px;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .symbol .letter {
   position: absolute;
-  top: -2px;
+  top: -5px;
 }
 
 /* Finish */
