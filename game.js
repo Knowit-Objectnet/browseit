@@ -40,12 +40,7 @@ var changePerson = function() {
     } else if (letter === "-") {
       className = "symbol";
     } else {
-      id = "æøåÆØÅ".includes(letter)
-        ? letter.toLowerCase()
-        : letter
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .toLowerCase();
+      id = normalizeLetters(letter).toLowerCase();
       className = "letterContainer";
       hidden = true;
     }
@@ -54,6 +49,14 @@ var changePerson = function() {
     } letter ${id ? id : ""}">${letter.toUpperCase()}</div></div>`;
   });
   $("#nameSection").append(letters);
+};
+
+var normalizeLetters = function(letters) {
+  return letters
+    .normalize("NFD")
+    .replace(/(a)([\u0300-\u036f])/g, "å")
+    .replace(/(A)([\u0300-\u036f])/g, "Å")
+    .replace(/[\u0300-\u036f]/g, "");
 };
 
 var incrementScore = function() {
@@ -78,11 +81,7 @@ var checkLetter = function(letter) {
     scaleLetter(letter);
     return;
   }
-  for (const c of currentName
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/(a)([\u0300-\u036f])/g, "å")
-    .replace(/[\u0300-\u036f]/g, "")) {
+  for (const c of normalizeLetters(currentName).toLowerCase()) {
     if (letter === c) {
       correctLetters.push(letter);
       showCorrectLetter(letter);
@@ -107,11 +106,8 @@ var updateGameState = function() {
     }, 4000);
   } else {
     var win = true;
-    var nameIter = currentName
+    var nameIter = normalizeLetters(currentName)
       .toLowerCase()
-      .normalize("NFD")
-      .replace(/(a)([\u0300-\u036f])/g, "å")
-      .replace(/[\u0300-\u036f]/g, "")
       .split(" ")
       .join("")
       .split("-")
