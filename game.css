@@ -70,8 +70,12 @@
     bottom: 0;
 }
 
-.space {
-    width: 20px;
+.symbol {
+    width: 13px;
+    position: relative;
+    padding: 4px 8px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 

@@ -70,13 +70,17 @@ var changePerson = function(){
     let letters = person.name.split('').map(letter => {
         let id;
         let className;
+        let hidden;
         if (letter === ' ') {
-            className = 'space';
+            className = 'symbol';
+        } else if (letter === '-') {
+            className = 'symbol';
         } else {
             id = letter.toLowerCase();
             className = 'letterContainer';
+            hidden = true;
         };
-        return `<div class=${className}><span class="hidden letter ${id ? id : ''}">${letter.toUpperCase()}</span></div>`;
+        return `<div class=${className}><span class="${hidden ? 'hidden' : ''} letter ${id ? id : ''}">${letter.toUpperCase()}</span></div>`;
     });
     $('#nameSection').append(letters);
 
