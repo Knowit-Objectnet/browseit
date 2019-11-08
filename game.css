@@ -157,6 +157,14 @@
   bottom: 0;
 }
 
+.isCorrectName {
+  font-weight: bold;
+}
+
+.isCorrectName::after {
+  opacity: 0;
+}
+
 .hidden {
   opacity: 0;
 }

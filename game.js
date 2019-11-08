@@ -94,6 +94,10 @@ var showCorrectLetter = function(letter) {
   $(`.letter.${letter.toLowerCase()}`).css("opacity", 1);
 }
 
+var showCorrectName = function() {
+  $('#nameSection .letterContainer').addClass('isCorrectName')
+}
+
 var incrementScore = function() {
   score += 1;
 };
@@ -116,6 +120,7 @@ var updateGameState = function(){
       }
     }
     if(win){
+      showCorrectName();
       incrementScore();
       acceptInput = false;
       setTimeout(() => {
@@ -126,7 +131,7 @@ var updateGameState = function(){
           roundWin();
         }
         acceptInput = true;
-      }, 1000);
+      }, 2000);
     }
   }
 }
