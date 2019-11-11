@@ -212,13 +212,11 @@
 
 /* Button styling */
 
-i {
+.arrowLeft {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-}
-.arrowLeft {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
