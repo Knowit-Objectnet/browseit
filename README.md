@@ -4,10 +4,13 @@ BrowseIt gives you quick access and a good overview of the most frequently used 
 
 BrowseIt is an internal tool for employees in Knowit Objectnet AS, Norway. But *you're welcome to take a look* even if you don't work here.
 
-Contact: michael.johansen@knowit.no
+**Install**
+- Install link: https://chrome.google.com/webstore/detail/browseit-for-knowit/hbmpfibpnmpenneffbojjkcehjpacedo
+- Install shortlink: https://bit.ly/welcome-to-knowit
 
-- Install: https://chrome.google.com/webstore/detail/browseit-for-knowit/hbmpfibpnmpenneffbojjkcehjpacedo
-- Shortlink: https://bit.ly/welcome-to-knowit
+**Contact**
+- Primary contact: michael.johansen@knowit.no
+- Hangman contact: henrik.liodden@knowit.no, levi.sorum@knowit.no
 
 ## Legal
 
@@ -15,6 +18,7 @@ This software, as well as the concept, is not licensed for use anywhere outside 
 
 ## Credits (newest first)
 
+* Henrik Liodden and Levi Sørum made the awesome hangman game in 2019 (henrik.liodden@knowit.no, levi.sorum@knowit.no)
 * New recruits in 2019 provided a detailed PDF with change requests
 * All new recruits in 2016 provided great feedback
 * Lars Ivar Næss provided valuable feedback
@@ -28,5 +32,7 @@ This software, as well as the concept, is not licensed for use anywhere outside 
 * Sigmund Marius Nilssen suggested that there should be a list of "who to ask about what"
 
 ## History
+
+Version 2.0.0 included the awesome hangman game which lets employees play a game to learn each others names (match picture to name, hangman-style). The game was made by the new recruits Henrik Liodden and Levi Sørum.
 
 The initial release of BrowseIt was made by Michael Johansen in July 2016. The extension was made with "research time" in "Web Chapter", a knowledge sharing community in Knowit Objectnet. It was created because Michael needed to prepare a talk about *Chrome extensions*, and what better way to prepare than to just make a Chrome extension? The extension is used by practically all new recruits as an onboarding tool.
