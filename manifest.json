@@ -7,7 +7,7 @@
 
   "description": "For the noobs and the veterans alike. Has all important links, your introductory todolist, and a map of meeting rooms.",
   "homepage_url": "https://knowit.no",
-  "permissions": ["cookies", "https://projects.knowit.no/*"],
+  "permissions": ["https://projects.knowit.no/*"],
 
   "browser_action": {
     "default_title": "BrowseIt",
