@@ -40,7 +40,7 @@ var changePerson = function() {
     } else if (letter === "-") {
       className = "symbol";
     } else {
-      id = letter.toLowerCase();
+      id = normalizeLetters(letter).toLowerCase();
       className = "letterContainer";
       hidden = true;
     }
@@ -49,6 +49,14 @@ var changePerson = function() {
     } letter ${id ? id : ""}">${letter.toUpperCase()}</div></div>`;
   });
   $("#nameSection").append(letters);
+};
+
+var normalizeLetters = function(letters) {
+  return letters
+    .normalize("NFD")
+    .replace(/(a)([\u0300-\u036f])/g, "å")
+    .replace(/(A)([\u0300-\u036f])/g, "Å")
+    .replace(/[\u0300-\u036f]/g, "");
 };
 
 var incrementScore = function() {
@@ -73,7 +81,7 @@ var checkLetter = function(letter) {
     scaleLetter(letter);
     return;
   }
-  for (const c of currentName.toLowerCase()) {
+  for (const c of normalizeLetters(currentName).toLowerCase()) {
     if (letter === c) {
       correctLetters.push(letter);
       showCorrectLetter(letter);
@@ -98,7 +106,7 @@ var updateGameState = function() {
     }, 4000);
   } else {
     var win = true;
-    var nameIter = currentName
+    var nameIter = normalizeLetters(currentName)
       .toLowerCase()
       .split(" ")
       .join("")
@@ -138,20 +146,24 @@ var gameOver = function() {
   showFinish();
   checkIfNewHighScore();
   isPlaying = false;
-  renderFinish();
+  renderFinish(false);
 };
 
 var gameWin = function() {
   showFinish();
   checkIfNewHighScore();
   isPlaying = false;
-  renderFinish();
+  renderFinish(true);
 };
 
 var enterGame = function() {
   showMenu();
   getLocalHighScore();
   loadNames();
+};
+
+var exitGame = function() {
+  hideAll();
 };
 
 // Event listener
@@ -189,8 +201,11 @@ $("#retryButton").click(function(e) {
 });
 
 $("#quitButton").click(function(e) {
-  isPlaying = false;
-  showMenu();
+  event.preventDefault();
+  $("#game").hide();
+  $("#home").show();
+  $("#mapmarker").show();
+  exitGame();
 });
 
 // Local Storage
@@ -285,9 +300,6 @@ var loadNames = function() {
         "Feil ved innlasting av spill. Sørg for at du er logget inn på projects.knowit.no, og last inn spillet på nytt."
       );
     });
-};
-var exitGame = function() {
-  hideAll();
 };
 var showMenu = function() {
   $("#menu").show();
