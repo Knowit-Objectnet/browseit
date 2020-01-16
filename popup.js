@@ -9,6 +9,9 @@ console.log('%cSend en søt epost til en av lederne da vel. Du finner oss i medl
 console.log('%cFinn oss da ❤️ %chttps://projects.knowit.no/display/FAG/Web+Chapter', smallBlack, smallPinkLink);
 console.log('');
 
+// TODO: One beautiful day we may use syncStorage instead of localStorage, but
+//       browser support cannot be an issue.
+
 // Count finished tasks and add to title
 var countFinished = function(doSlide) {
   var total = $('input[type="checkbox"]').length;
