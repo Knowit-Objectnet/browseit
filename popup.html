@@ -376,7 +376,10 @@
       </div>
 
       <footer>
-        <a href="popup.html"><img id="expand" src="img/expand.png" /></a>
+        <div id="expand">
+          <a id="expandLink" href="popup.html"><img id="expandMe" src="img/expand.png" /></a>
+          <span id="alwaysExpand"><input data-nope="noCount" id="expandInput" name="expandInput" type="checkbox" /><label for="expandInput">Alltid stort vindu</label></span>
+        </div>
         <div id="feedback">
           Kildekode: <a href="https://github.com/knowit/browseit">github.com/knowit/browseit</a>
           <!--<span class="bold">Ctrl + Shift + B</span> åpner BrowseIt.-->

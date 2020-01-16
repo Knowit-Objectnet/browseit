@@ -186,13 +186,17 @@ footer {
   height: 45px;
   bottom: 0;
   left: 0;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
 }
 
-footer img#expand {
-  position: fixed;
-  bottom: 10px;
-  left: 30px;
+footer div#expand {
+  margin-left: 30px;
+  justify-self: left;
+  align-self: center;
+}
+
+footer img#expandMe {
   border: 1px solid #555;
   border-radius: 3px;
   width: 23px;
@@ -204,11 +208,9 @@ footer a#expand {
 }
 
 footer div#feedback {
-  position: relative;
-  float: left;
-  margin-top: 9px;
-  margin-left: 100px;
-  width: 600px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
 }
 
 footer div#feedback a {
@@ -216,12 +218,11 @@ footer div#feedback a {
 }
 
 footer div#counter {
-  position: relative;
-  float: left;
-  margin-top: 11px;
-  margin-left: 14px;
+  margin-right: 30px;
   font-size: 14pt;
   color: #555;
+  justify-self: right;
+  align-self: center;
 }
 
 /* Details */
