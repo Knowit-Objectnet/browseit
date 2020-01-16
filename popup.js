@@ -12,10 +12,17 @@ console.log('');
 // TODO: One beautiful day we may use syncStorage instead of localStorage, but
 //       browser support cannot be an issue.
 
+/**
+ * Use this string as a jQuery selector for finding all the nooblist checkboxes.
+ * As you may notice, we put `data-nope="noCount"` on non-nooblist checkboxes
+ * to make life easy and fast for ourselves.
+ */
+const noobCheckBoxes = 'input[type="checkbox"]:not(input[data-nope="noCount"])';
+
 // Count finished tasks and add to title
 var countFinished = function(doSlide) {
-  var total = $('input[type="checkbox"]').length;
-  var checked = $('input[type="checkbox"]:checked').length;
+  var total = $(noobCheckBoxes).length;
+  var checked = $(noobCheckBoxes).filter((i,box) => box.checked).length;
   $('span#noob_counter').text('(' + checked + '/' + total + ')');
   $('footer #counter').text(checked + '/' + total);
   if (total === checked) {
@@ -68,13 +75,13 @@ $('a').click(function(event) {
 });
 
 // Restore checks to boxes
-$('input[type="checkbox"]').each(function(val, i) {
+$(noobCheckBoxes).each(function(val, i) {
   let checked = localStorage[this.id] === 'true';
   $(this).attr('checked', checked);
 });
 
 // Hook up checkboxes
-$('input[type="checkbox"]').click(function() {
+$(noobCheckBoxes).click(function() {
   console.log('Checkbox clicked:', this.id);
   localStorage[this.id] = this.checked;
   countFinished(true);
@@ -97,12 +104,12 @@ var resizer = function(){
   var win = $(this);
 
   if (win.width() <= 800 && win.height() <= 600) {
-    $('img#expand').show();
+    $('span#alwaysExpand').hide();
     $('div#leftblock').hide();
     $('div#rightblock').hide();
   }
   else {
-    $('img#expand').hide();
+    $('a#expandLink').hide();
 
     var mainPadding = Number($('main').css('padding').match(/\d+/g)[1]);
     var mainOffset = (win.width() - $('main').width()) / 2 - mainPadding; // The last -1 is the border of the sideblocks
@@ -138,6 +145,5 @@ countFinished(false);
   if (checkLength !== individualIds.length) {
     console.error('There is a duplicate checkbox ID somewhere');
   }
-  // Test that all fields have a time field (except the tough section)
-  // TODO
+  // TODO: Test that all fields have a time field (except the tough section)
 })();
