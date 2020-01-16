@@ -9,6 +9,8 @@ console.log('%cSend en søt epost til en av lederne da vel. Du finner oss i medl
 console.log('%cFinn oss da ❤️ %chttps://projects.knowit.no/display/FAG/Web+Chapter', smallBlack, smallPinkLink);
 console.log('');
 
+var win = $(this);
+
 // TODO: One beautiful day we may use syncStorage instead of localStorage, but
 //       browser support cannot be an issue.
 
@@ -39,24 +41,20 @@ var countFinished = function(doSlide) {
   }
 };
 
-// go to page
-
+// Open / close game
 $('#gameButton').click(function(event) {
-
   event.preventDefault();
-    $('#home').hide();
-    $('#game').show();
-    $("#mapmarker").hide();
-    enterGame();
+  $('#home').hide();
+  $('#game').show();
+  $("#mapmarker").hide();
+  enterGame();
 });
-
 $('#homeButton').click(function(event) {
-
   event.preventDefault();
-    $('#game').hide();
-    $('#home').show();
-    $("#mapmarker").show();
-    exitGame();
+  $('#game').hide();
+  $('#home').show();
+  $("#mapmarker").show();
+  exitGame();
 })
 
 // Add map toggle
@@ -101,8 +99,6 @@ $('input[type="text"]').change(function() {
 
 // Hook up window resizer (only for when the window is shown in a full page)
 var resizer = function(){
-  var win = $(this);
-
   if (win.width() <= 800 && win.height() <= 600) {
     $('span#alwaysExpand').hide();
     $('div#leftblock').hide();
