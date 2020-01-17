@@ -97,6 +97,16 @@ $('input[type="text"]').change(function() {
   localStorage[this.id] = $(this).val();
 });
 
+// Hook up "always expand" checkbox (only visible in expanded mode)
+$('input#expandInput').change(function() {
+  console.log('Always expand changed', this.id, $(this).val());
+  localStorage[this.id] = this.checked;
+});
+// Restore check to "always expand" input
+if (localStorage.expandInput === 'true') {
+  $('input#expandInput').attr('checked', true);
+}
+
 // Hook up window resizer (only for when the window is shown in a full page)
 var resizer = function(){
   if (win.width() <= 800 && win.height() <= 600) {
