@@ -83,6 +83,11 @@ header div#leftheader {
   margin-top: 10px;
 }
 
+header div#leftheader a#title {
+  color: black;
+  text-decoration: none;
+}
+
 header img#mapmarker {
   color: #777;
   cursor: pointer;
