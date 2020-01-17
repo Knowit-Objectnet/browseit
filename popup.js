@@ -14,6 +14,29 @@ var win = $(this);
 // TODO: One beautiful day we may use syncStorage instead of localStorage, but
 //       browser support cannot be an issue.
 
+// Important: Do this check before anything else, to open the expanded version
+// of the page as fast as possible if that is what the user desires.
+// If "always expand" is already checked, open window immediately.
+if (localStorage.expandInput === 'true') {
+  // localStorage.pleaseExpand is used to detect whether this page was
+  // opened by the popup or directly by the user. Prevents making infinite
+  // BrowseIts. Although infinite BrowseIt tabs is a quite desirable outcome.
+  if (localStorage.pleaseExpand === 'pending') {
+    // Welcome to the expanded page
+    localStorage.pleaseExpand = 'handled';
+    // Important: We check "pending" first and set it to "handled" before
+    // we check window size to figure out if this is actually the right
+    // page. This may seem like a logical error at first glance, but is by
+    // design: It prevents BrowseIt from opening infinite BrowseIt tabs if
+    // the browser window is smaller than the popup. TODO: Or we could just
+    // improve the check for whether this is a popup? Maybe some other day.
+  } else if (win.width() <= 800 && win.height() <= 600) {
+    // Sending you to the expanded page, kthxbye
+    localStorage.pleaseExpand === 'pending'
+    window.open(document.URL);
+  }
+}
+
 /**
  * Use this string as a jQuery selector for finding all the nooblist checkboxes.
  * As you may notice, we put `data-nope="noCount"` on non-nooblist checkboxes
