@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import expand from "../img/expand.png";
 
 export function Footer(props) {
-  const total = props.totalBoxCount;
-  const checked = props.checkedBoxesCount;
+  const totalCount = props.totalBoxCount;
+  const checkedCount = props.checkedBoxesCount;
+
+  const [expandInput, setExpandInput] = useState(
+    localStorage.getItem("expandInput")
+  );
+  const [pleaseExpand, setPleaseExpand] = useState(
+    localStorage.getItem("pleaseExpand")
+  );
+
   const resize = () => {
     const href = "index.html";
     window.open(href);
+  };
+
+  const onChange = () => {
+    let value = expandInput === "true" ? "false" : "true";
+    localStorage.setItem("expandInput", value);
+    setExpandInput(value);
   };
 
   const style = {
@@ -23,8 +37,15 @@ export function Footer(props) {
   return (
     <footer>
       <div id="expand" style={style.tab}>
-        <img id="expandMe" src={expand} alt="" onClick={resize} />
-        <label style={style.label}>åpne i ny fane</label>
+        {props.isFullScreen && (
+          <img id="expandMe" src={expand} alt="" onClick={resize} />
+        )}
+        <input
+          type="checkbox"
+          checked={expandInput === "true" ? true : false}
+          onChange={onChange}
+        ></input>
+        <label style={style.label}>alltid åpne i ny fane</label>
       </div>
       <div id="feedback">
         Kildekode:{" "}
@@ -41,7 +62,7 @@ export function Footer(props) {
       </div>
       {
         <div id="counter">
-          {checked}/{total}
+          {checkedCount}/{totalCount}
         </div>
       }
     </footer>

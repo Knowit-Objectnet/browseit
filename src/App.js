@@ -7,15 +7,28 @@ import { Nooblist } from "./components/Nooblist";
 import * as jsonRequest from "./json";
 import { CompanySelector } from "./components/CompanySelector";
 import { FloorMap } from "./components/FloorMap";
+let isFullScreen = window.outerWidth <= 800 && window.outerHeight <= 600;
+
+if (localStorage.getItem("expandInput") === "true") {
+  if (isFullScreen)
+    window.open("index.html");
+}
 
 const SELECTED_COMPANY_KEY = "selectedCompany";
-
 // Ugly stuff to be able to select json file from dropdown.
 const jsonFiles = Object.entries(jsonRequest).map(j => j[1]);
 const defaultSelected = localStorage.getItem(SELECTED_COMPANY_KEY);
-const defaultSelectedJson = defaultSelected ? jsonFiles.filter(j => j.id === defaultSelected)[0] : {};
-const defaultBoxes = defaultSelected ? defaultSelectedJson.checkbox_sections.map(s => s.boxes.map(b => b.id)).flat() : undefined;
-const defaultCheckedBoxes = defaultSelected ? defaultBoxes.filter(b => localStorage.getItem(b) === "true") : undefined;
+const defaultSelectedJson = defaultSelected
+  ? jsonFiles.filter(j => j.id === defaultSelected)[0]
+  : {};
+const defaultBoxes = defaultSelected
+  ? defaultSelectedJson.checkbox_sections
+      .map(s => s.boxes.map(b => b.id))
+      .flat()
+  : undefined;
+const defaultCheckedBoxes = defaultSelected
+  ? defaultBoxes.filter(b => localStorage.getItem(b) === "true")
+  : undefined;
 
 // some console stuff for devs...
 //#region
@@ -42,7 +55,9 @@ console.log("");
 
 function App() {
   const [selectedJson, setSelectedJson] = useState(defaultSelectedJson);
-  const [totalBoxCount, setTotalBoxCount] = useState(defaultBoxes ? defaultBoxes.length : 0);
+  const [totalBoxCount, setTotalBoxCount] = useState(
+    defaultBoxes ? defaultBoxes.length : 0
+  );
   const [checkedBoxesCount, setCheckedBoxesCount] = useState(
     defaultCheckedBoxes ? defaultCheckedBoxes.length : 0
   );
@@ -99,6 +114,7 @@ function App() {
         selectedJson={selectedJson}
         checkedBoxesCount={checkedBoxesCount}
         setCheckedBoxesCount={setCheckedBoxesCount}
+        isFullScreen={isFullScreen}
       />
     </main>
   );
