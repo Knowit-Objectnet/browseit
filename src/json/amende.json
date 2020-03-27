@@ -8,7 +8,7 @@
       "title_class": "right name",
       "links": [
         {
-          "href": "https://projects.knowit.no/",
+          "href": "https://projects.knowit.no/display/AMENDE/Amende+Home",
           "href_title": "projects.knowit.no",
           "title": "Atlassian Confluence (wiki)"
         },
@@ -41,6 +41,11 @@
           "href": "https://github.com/knowit/",
           "href_title": "github.com/knowit",
           "title": "Knowit's public GitHub repos"
+        },
+        {
+          "href": "https://knowit.sharepoint.com/SitePages/home.aspx",
+          "href_title": "knowit.sharepoint.com/",
+          "title": "Sharepoint med nyttig (og unyttig info)"
         }
       ]
     },
@@ -102,7 +107,7 @@
         },
         {
           "href": "https://personfinder.knowit.no/",
-          "href_title": "persnfinder.knowit.no",
+          "href_title": "personfinder.knowit.no",
           "title": "PersonFinder"
         },
         {
@@ -113,7 +118,7 @@
         {
           "href": "http://helpit.knowit.se/",
           "href_title": "helpit.knowit.no",
-          "title": "HelpIt"
+          "title": "Self service IT"
         },
         {
           "href": "https://konferanse.knowit.no/",
@@ -129,6 +134,27 @@
           "href": "https://prodess.no/",
           "href_title": "prodess.no",
           "title": "Firmahytter"
+        },
+        {
+          "href": "https://knowit.sharepoint.com/SitePages/home.aspx",
+          "href_title": "knowit.sharepoint.com/",
+          "title": "Sharepoint med nyttig (og unyttig info)"
+        },
+        {
+          "href": "https://knowitlabs.no/",
+          "href_title": "knowitlabs.no/",
+          "title": "Bloggen vår!"
+        },
+        {
+          "href": "https://portal.simployer.no/StartPage/",
+          "href_title": "portal.simployer.no",
+          "title": "Personalhåndboka"
+        },
+        {
+          "href": "https://home.visma.com/home",
+          "href_title": "home.visma.com/home",
+          "title": "Lønnslippene"
+          
         }
       ]
     }
@@ -260,7 +286,7 @@
           "id": "communication_confluence",
           "label": "Abonnerer på daglige oppdateringer fra Confluence for å få oversikt over Knowit (fint som ny, skru av etterhvert)",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/users/editmyemailsettings.action"
+          "href": "https://projects.knowit.no/display/AMENDE/Amende+Home"
         }
       ]
     },
@@ -551,6 +577,12 @@
     {
       "id": "Fag",
       "boxes": [
+        {
+          "id": "science_blog",
+          "label": "Har du sjekket ut bloggen vår?",
+          "placeholder": "10min",
+          "href":"https://knowitlabs.no/"
+        },
         {
           "id": "science_leaders",
           "label": "Vet hvem fagsjefen er, og har hilst på vedkommende",
@@ -911,10 +943,6 @@
         {
           "id": "tough_confidant",
           "label": "Jeg vet at jeg alltid kan prate med de personalansvarlige (gruppeledere og avdelingsledere) om hva som helst for de har taushetsplikt, og at jeg kan velge fritt hvem av dem jeg vil prate med vanskelige ting om"
-        },
-        {
-          "id": "test",
-          "label": "test"
         }
       ]
     }

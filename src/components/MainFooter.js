@@ -9,9 +9,6 @@ export function Footer(props) {
   const [expandInput, setExpandInput] = useState(
     localStorage.getItem("expandInput")
   );
-  const [pleaseExpand, setPleaseExpand] = useState(
-    localStorage.getItem("pleaseExpand")
-  );
 
   const resize = () => {
     const href = "index.html";
