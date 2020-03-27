@@ -1,7 +1,6 @@
 import React from "react";
 
 export function CompanySelector(props) {
-  
   const handleSelect = event => {
     let selectedJson = props.jsonFiles.filter(
       j => j.id === event.target.value
@@ -17,9 +16,8 @@ export function CompanySelector(props) {
     });
     props.setTotalBoxCount(allBoxCount);
     props.setCheckedBoxesCount(checkedBoxes);
-    localStorage.setItem('selectedCompany', selectedJson.id);
+    localStorage.setItem("selectedCompany", selectedJson.id);
   };
-
   const style = {
     companySelector: {
       display: "flex",
@@ -27,10 +25,11 @@ export function CompanySelector(props) {
       justifyContent: "flex-end"
     }
   };
-  
+
   return (
     <div style={style.companySelector}>
-      <select onChange={handleSelect} defaultValue={props.selectedJson.id}>
+      <select onChange={handleSelect} value={props.selectedJson.id}>
+        {!props.selectedJson.id && (<option>Choose..</option>)}
         {props.jsonFiles.map((file, i) => {
           return (
             <option value={file.id} key={file.id}>
