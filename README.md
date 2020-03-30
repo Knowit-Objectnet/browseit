@@ -15,6 +15,8 @@ BrowseIt is an internal tool for employees in Knowit Objectnet AS, Norway. But _
 - Hangman contact: henrik.liodden@knowit.no, levi.sorum@knowit.no
 
 **Create new or modifiy content**
+
+
 The content of the extension is defined in json files located in `browseit/src/json/...json`. Add or remove links to/from your company's json file following the existing structure. I have added a json template for new companies to follow if they want to use the extension as well. Once you're json file is created / up to date make sure it's exported in `browseit/src/json/index.js`.
 
 Add a line that looks like this:
