@@ -31,9 +31,10 @@ main {
 
   background-color: #fff;
   /*border: 1px solid #ccc;*/
+  /* box-shadow: 0px 5px 10px 3px grey; */
 
-  width: 740px;
-  padding: 0 30px 30px 30px;
+  /* width: 830px; */
+  /* padding: 0 30px 30px 30px; */
 
   position: absolute;
   top: 0;
@@ -44,7 +45,7 @@ main {
 
 div#leftblock {
   border-right: 1px solid #ccc;
-  box-shadow: inset 0px 0px 20px 0px #555;
+  /* box-shadow: inset 0px 0px 20px 0px #555; */
   position: fixed;
   top: -100px;
   bottom: -100px;
@@ -55,7 +56,7 @@ div#leftblock {
 
 div#rightblock {
   border-left: 1px solid #ccc;
-  box-shadow: inset 0px 0px 20px 0px #555;
+  /* box-shadow: inset 0px 0px 20px 0px #555; */
   position: fixed;
   top: -100px;
   bottom: -100px;
@@ -186,10 +187,10 @@ footer {
   box-shadow: 0px 5px 10px 3px grey;
   color: #777;
   position: fixed;
-  width: 800px;
+  width: inherit;
   height: 45px;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
 }

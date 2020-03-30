@@ -7,11 +7,9 @@ import { Nooblist } from "./components/Nooblist";
 import * as jsonRequest from "./json";
 import { CompanySelector } from "./components/CompanySelector";
 import { FloorMap } from "./components/FloorMap";
-let isFullScreen = window.outerWidth <= 800 && window.outerHeight <= 600;
-
+let notFullScreen = window.outerWidth <= 800 && window.outerHeight <= 600;
 if (localStorage.getItem("expandInput") === "true") {
-  if (isFullScreen)
-    window.open("index.html");
+  if (notFullScreen) window.open("index.html");
 }
 
 const SELECTED_COMPANY_KEY = "selectedCompany";
@@ -70,53 +68,67 @@ function App() {
       paddingTop: "2em",
       fontSize: "3em",
       color: "lightgray"
+    },
+    main: {
+      maxWidth: "960px",
+      margin: "auto",
+      boxShadow: !notFullScreen ? "0px 5px 10px 3px grey" : ""
+    },
+    padding: {
+      padding: "0 30px 30px 30px"
+    },
+    footer: {
+      width: !notFullScreen ? "960px" : ""
     }
   };
   return (
-    
-    <main>
-      <header>
-        <Header showMap={showMap} setShowMap={setShowMap} />
-        <CompanySelector
-          jsonFiles={jsonFiles}
-          selectedJson={selectedJson}
-          setSelectedJson={setSelectedJson}
+    <main style={style.main}>
+      <div style={style.padding}>
+        <header>
+          <Header showMap={showMap} setShowMap={setShowMap} />
+          <CompanySelector
+            jsonFiles={jsonFiles}
+            selectedJson={selectedJson}
+            setSelectedJson={setSelectedJson}
+            totalBoxCount={totalBoxCount}
+            setTotalBoxCount={setTotalBoxCount}
+            checkedBoxesCount={checkedBoxesCount}
+            setCheckedBoxesCount={setCheckedBoxesCount}
+          />
+        </header>
+        <span>
+          <h2>{selectedJson.id}</h2>
+        </span>
+        {showMap && <FloorMap setShowMap={setShowMap} showMap={showMap} />}
+
+        <div className="App">
+          {selectedJson.id ? (
+            <div>
+              <Links link_sections={selectedJson.link_sections} />
+              <Nooblist
+                checkbox_sections={selectedJson.checkbox_sections}
+                checkedBoxesCount={checkedBoxesCount}
+                setCheckedBoxesCount={setCheckedBoxesCount}
+              />
+            </div>
+          ) : (
+            !showMap && (
+              <span style={style.placeholderText}>
+                Select your Knowit company ⭜
+              </span>
+            )
+          )}
+        </div>
+      </div>
+      <div style={style.footer}>
+        <Footer
           totalBoxCount={totalBoxCount}
-          setTotalBoxCount={setTotalBoxCount}
+          selectedJson={selectedJson}
           checkedBoxesCount={checkedBoxesCount}
           setCheckedBoxesCount={setCheckedBoxesCount}
+          isFullScreen={notFullScreen}
         />
-      </header>
-      <span>
-        <h2>{selectedJson.id}</h2>
-      </span>
-      {showMap && <FloorMap setShowMap={setShowMap} showMap={showMap} />}
-
-      <div className="App">
-        {selectedJson.id ? (
-          <div>
-            <Links link_sections={selectedJson.link_sections} />
-            <Nooblist
-              checkbox_sections={selectedJson.checkbox_sections}
-              checkedBoxesCount={checkedBoxesCount}
-              setCheckedBoxesCount={setCheckedBoxesCount}
-            />
-          </div>
-        ) : (
-          !showMap && (
-            <span style={style.placeholderText}>
-              Select your Knowit company ⭜
-            </span>
-          )
-        )}
       </div>
-      <Footer
-        totalBoxCount={totalBoxCount}
-        selectedJson={selectedJson}
-        checkedBoxesCount={checkedBoxesCount}
-        setCheckedBoxesCount={setCheckedBoxesCount}
-        isFullScreen={isFullScreen}
-      />
     </main>
   );
 }
