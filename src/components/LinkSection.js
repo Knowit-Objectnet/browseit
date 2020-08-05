@@ -1,8 +1,6 @@
 import React from "react";
 
-// const linkJsonStruct = Linkdata.link_sections;
-export function Links(props) {
-  const linkSections = props.link_sections;
+export function Links({ link_sections: linkSections}) {
   return (
     <div id="home">
       {linkSections.map((section, i) => {
