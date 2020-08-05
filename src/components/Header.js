@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import mapMarkedSolid from "../img/map-marked-alt-solid.svg";
 import webChapter from "../img/web-chapter-logo.png";
 

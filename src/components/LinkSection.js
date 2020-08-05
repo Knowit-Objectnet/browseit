@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 
 // const linkJsonStruct = Linkdata.link_sections;
 export function Links(props) {

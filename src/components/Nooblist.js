@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import fry from "../img/fry.gif";
 import { TodoItem } from "./TodoItem";
 
