@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export function TodoItem(props) {
   const label = props.label;
   const id = props.id;
-  const timeId = props.id.concat("_time");
+  const timeId = `${props.id}_time`;
   const styles = {
     input: {
       width: "4.5em"
