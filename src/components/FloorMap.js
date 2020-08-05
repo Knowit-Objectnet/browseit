@@ -1,12 +1,11 @@
-import React from "react";
-import fifthFloor from "../img/sundt-etasje-5.png";
+import React from 'react';
+import fifthFloor from '../img/sundt-etasje-5.png';
 
-export function FloorMap({showMap, setShowMap}) {
-
+export function FloorMap({ showMap, setShowMap }) {
   const style = {
-      paddingTop: "1.5em",
-      width: "100%",
-      cursor: "pointer"
+    paddingTop: '1.5em',
+    width: '100%',
+    cursor: 'pointer',
   };
 
   return (

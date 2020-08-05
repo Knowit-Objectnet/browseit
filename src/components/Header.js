@@ -1,8 +1,8 @@
-import React from "react";
-import mapMarkedSolid from "../img/map-marked-alt-solid.svg";
-import webChapter from "../img/web-chapter-logo.png";
+import React from 'react';
+import mapMarkedSolid from '../img/map-marked-alt-solid.svg';
+import webChapter from '../img/web-chapter-logo.png';
 
-export function Header({ showMap, setShowMap}) {
+export function Header({ showMap, setShowMap }) {
   return (
     <>
       <div id="leftheader">

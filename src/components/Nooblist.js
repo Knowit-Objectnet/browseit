@@ -1,6 +1,6 @@
-import React from "react";
-import fry from "../img/fry.gif";
-import { TodoItem } from "./TodoItem";
+import React from 'react';
+import fry from '../img/fry.gif';
+import { TodoItem } from './TodoItem';
 
 export function Nooblist(props) {
   const checkboxSections = props.checkbox_sections;
@@ -21,10 +21,10 @@ export function Nooblist(props) {
             <br />
           </li>
           <li>
-            <b>Om du vil,</b> send feedback om BrowseIt til{" "}
+            <b>Om du vil,</b> send feedback om BrowseIt til{' '}
             <a href="mailto:michael.johansen@knowit.no">
               michael.johansen@knowit.no
-            </a>{" "}
+            </a>{' '}
             om hva som kunne vært bedre til neste år
           </li>
         </ul>

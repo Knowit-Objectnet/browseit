@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export function Links({ link_sections: linkSections}) {
+export function Links({ link_sections: linkSections }) {
   return (
     <div id="home">
       {linkSections.map((section, linkSectionKey) => {

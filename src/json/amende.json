@@ -154,7 +154,6 @@
           "href": "https://home.visma.com/home",
           "href_title": "home.visma.com/home",
           "title": "Lønnslippene"
-          
         }
       ]
     }
@@ -581,7 +580,7 @@
           "id": "science_blog",
           "label": "Har du sjekket ut bloggen vår?",
           "placeholder": "10min",
-          "href":"https://knowitlabs.no/"
+          "href": "https://knowitlabs.no/"
         },
         {
           "id": "science_leaders",

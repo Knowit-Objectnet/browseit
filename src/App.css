@@ -138,7 +138,7 @@ section.nooblist {
 section h3 {
   font-family: RalewayBold;
 }
-section input[type="text"] {
+section input[type='text'] {
   margin-right: 5px;
 }
 
@@ -163,11 +163,11 @@ td.divider {
 
 /* Nooblist */
 
-input[type="text"] {
+input[type='text'] {
   width: 60px;
   text-align: right;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: inline-block;
 }
 
