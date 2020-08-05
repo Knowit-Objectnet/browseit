@@ -1,5 +1,5 @@
 import React from "react";
-import fiftFloor from "../img/sundt-etasje-5.png";
+import fifthFloor from "../img/sundt-etasje-5.png";
 
 export function FloorMap(props) {
   let visible = props.showMap;
@@ -13,7 +13,7 @@ export function FloorMap(props) {
   return (
     <div>
       <img
-        src={fiftFloor}
+        src={fifthFloor}
         style={style.map}
         title="click to close"
         alt=""
