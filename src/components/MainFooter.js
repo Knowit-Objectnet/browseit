@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import expand from "../img/expand.png";
+import expandImageSrc from "../img/expand.png";
 
 export function Footer(props) {
   const totalCount = props.totalBoxCount;
@@ -15,9 +15,9 @@ export function Footer(props) {
   };
 
   const onChange = () => {
-    let value = expandInput === "true" ? "false" : "true";
-    localStorage.setItem("expandInput", value);
-    setExpandInput(value);
+    const isExpanded = expandInput === "true" ? "false" : "true";
+    localStorage.setItem("expandInput", isExpanded);
+    setExpandInput(isExpanded);
   };
 
   const style = {
@@ -34,33 +34,27 @@ export function Footer(props) {
     <footer>
       <div id="expand" style={style.tab}>
         {props.isFullScreen && (
-          <img id="expandMe" src={expand} alt="" onClick={resize} />
+          <img id="expandMe" src={expandImageSrc} alt="" onClick={resize} />
         )}
+        <label style={style.label}>
         <input
           type="checkbox"
           checked={expandInput === "true" ? true : false}
           onChange={onChange}
         ></input>
-        <label style={style.label}>alltid åpne i ny fane</label>
+        &nbsp;alltid åpne i ny fane</label>
       </div>
       <div id="feedback">
-        Kildekode:{" "}
-        <a href="https://github.com/knowit/browseit">
-          github.com/knowit/browseit
-        </a>
-        – Versjon <span className="version">3.0</span>.
+        Kildekode:&nbsp;
+        <a href="https://github.com/knowit/browseit">github.com/knowit/browseit</a>
+        - Versjon <span className="version">3.0</span>.
         <br />
-        Send gjerne forslag til
-        <a href="mailto:michael.johansen@knowit.no">
-          {" "}
-          michael.johansen@knowit.no
-        </a>
+        Send gjerne forslag til&nbsp;
+        <a href="mailto:michael.johansen@knowit.no">michael.johansen@knowit.no</a>
       </div>
-      {
-        <div id="counter">
-          {checkedCount}/{totalCount}
-        </div>
-      }
+      <div id="counter">
+        {checkedCount}/{totalCount}
+      </div>
     </footer>
   );
 }
