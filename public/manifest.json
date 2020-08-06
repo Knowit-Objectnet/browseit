@@ -1,7 +1,7 @@
 {
   "name": "BrowseIt, for Knowit",
   "short_name": "BrowseIt",
-  "version": "2.1.0",
+  "version": "3.0.1",
   "manifest_version": 2,
   "offline_enabled": true,
 
@@ -11,23 +11,11 @@
 
   "browser_action": {
     "default_title": "BrowseIt",
-    "default_popup": "popup.html"
+    "default_popup": "index.html"
   },
-
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+B",
-        "mac": "MacCtrl+Shift+B"
-      },
-      "description": "Open BrowseIt"
-    }
-  },
-
   "icons": {
-    "48" : "img/48.png",
-    "128" : "img/128.png"
+    "48": "/48.png",
+    "128": "/128.png"
   },
-
   "content_security_policy": "script-src 'self'; object-src 'self'"
 }

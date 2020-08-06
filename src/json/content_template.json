@@ -1,0 +1,58 @@
+{
+  "id": "some knowit sub company name",
+  "link_sections": [
+    {
+      "header": "Utvikling",
+      "class": "development",
+      "href_class": "right link",
+      "title_class": "right name",
+      "links": [
+        {
+          "href": "https://something.org",
+          "href_title": "something.org",
+          "title": "What does this link to? "
+        },
+        {
+          "href": "...",
+          "href_title": "...",
+          "title": "..."
+        }
+      ]
+    },
+    {
+      "header": "Administrasjon",
+      "class": "administration",
+      "href_class": "right link",
+      "title_class": "right name",
+      "links": [
+        {
+          "href": "...",
+          "href_title": "...",
+          "title": "..."
+        },
+        {
+          "href": "...",
+          "href_title": "...",
+          "title": "..."
+        }
+      ]
+    }
+  ],
+  "checkbox_sections": [
+    {
+      "id": "this is the header for this sub category of checkboxes",
+      "boxes": [
+        {
+          "id": "this_is_an_id_used_in_local_storage",
+          "label": "This is the text following the checkbox",
+          "placeholder": "This is the placeholder text for the minute estimate input"
+        },
+        {
+          "id": "people_contract_example",
+          "label": "Har lest, forstått og signert ansettelseskontrakten (tar fort en time)_EKSEMPEL",
+          "placeholder": "10min"
+        }
+      ]
+    }
+  ]
+}
