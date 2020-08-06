@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Copyright (c) 2016 The Web Chapter. All Rights Reserved. -->
+    <meta charset="utf-8">
+    <title>BrowseIt</title>
+    <link href="./popup.css" rel="stylesheet" type="text/css"></link>
+    <link href="./game.css" rel="stylesheet" type="text/css"></link>
+    <script src="./jquery-3.1.0.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="/">Tilbake</a>
+     </header>
+
+      <!-- Game container. See game.js for game logic -->
+      <div id="game">
+        <div id= gameHeader>
+          <button id="homeButton"><i class="arrowLeft"></i></button>
+        </div>
+        <div id="gameMain">
+            <div id="menu">
+              <div id="loading">
+                Laster inn
+                  <div class="loader"></div>
+              </div>
+              <div id="loadingFinished">
+                  <div id="instructions" class="section">
+                      <h2>Velkommen til KnowIts navnespill!</h2>
+                      <h3>Instruksjoner:</h3>
+                      <p>Gjett navnet til den ansatte som vises på bildet ved å trykke inn én bokstav av gangen på tastaturet. <br/><br/>
+                        Strekene nederst på siden viser hvor mange bokstaver som er i navnet, og bokstavene du har gjettet feil vises til venstre på skjermen. <br/><br/>
+                        Du starter med 15 liv, og mister ett liv for hver bokstav du gjetter feil. Du får ett poeng for hvert navn du gjetter riktig. <br/><br/>
+                        Hvor mange navn klarer du? Trykk på start-knappen for å starte spillet.
+                      </p>
+                  </div>
+                  <div class="section">
+                      <h3 id="bestHighScore"></h3>
+                  </div>
+                  <button class="gameButton green" id="playButton">Start spill</button>
+                </div>
+              <div id="loadingError">
+
+              </div>
+            </div>
+
+            <div id="play" tabindex="0">
+
+              <div class="section information">
+                <div class="column center">
+                  <div class="alphabetTitle">
+                    Feil bokstaver
+                  </div>
+                  <div id="alphabet"></div>
+                </div>
+
+                <div class="column">
+                  <div>
+                      <div class="title">
+                        Hvem er dette?
+                      </div>
+                      <div id="imageContainer"><img id="personImage"/></div></div>
+                </div>
+
+                <div  class="column center labels">
+                  <label id="scoreLabel"></label>
+                  <label id="livesLabel"></label>
+                </div>
+              </div>
+              <div class="name section">
+                  <div id="nameSection">
+                  </div>
+              </div>
+              <button class="gameButton red"  id="endButton">Gi opp</button>
+            </div>
+
+            <div id="finish">
+              <div class="section">
+                <h1 id="finishTitle"></h1>
+              </div>
+                <div class="section">
+                    <h2>Poengsum:</h2>
+                </div>
+                <div class="section">
+                    <h3 id="score"></h3>
+                </div>
+                <div class="section">
+                    <h3 id="highScore"></h3>
+                </div>
+                <button class="gameButton blue" id="retryButton">Prøv igjen</button>
+                <button class="gameButton red" id="quitButton">Avslutt</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- End of game container -->
+    </main>
+    <script src="./game.js" type="text/javascript"></script>
+  </body>
+</html>
