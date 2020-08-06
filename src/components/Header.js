@@ -4,7 +4,7 @@ import webChapter from '../img/web-chapter-logo.png';
 
 export function Header({ showMap, setShowMap }) {
   return (
-    <>
+    <div className="header">
       <div id="leftheader">
         <a
           id="title"
@@ -14,16 +14,20 @@ export function Header({ showMap, setShowMap }) {
           BrowseIt
         </a>
       </div>
-      <img
-        id="mapmarker"
-        src={mapMarkedSolid}
-        width="40"
-        alt=""
-        onClick={() => setShowMap(!showMap)}
-      />
-      <a href="https://projects.knowit.no/display/FAG/Web+Chapter">
-        <img id="twc" src={webChapter} alt="" />
-      </a>
-    </>
+      <div>
+        <img
+          id="mapmarker"
+          src={mapMarkedSolid}
+          width="40"
+          alt=""
+          onClick={() => setShowMap(!showMap)}
+        />
+      </div>
+      <div>
+        <a href="https://projects.knowit.no/display/FAG/Web+Chapter">
+          <img id="twc" src={webChapter} alt="" />
+        </a>
+      </div>
+    </div>
   );
 }
