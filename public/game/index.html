@@ -100,19 +100,5 @@
     </main>
     <script src="./getEmployees.js"></script>
     <script src="./game.js"></script>
-    <script>
-      getEmployees();
-      // Open / close game
-      $('#gameButton').click(function (event) {
-        event.preventDefault();
-        $('#home').hide();
-        $('#game').show();
-        $('#mapmarker').hide();
-        enterGame();
-      });
-      $('#homeButton').click(function (event) {
-        exitGame();
-      });
-    </script>
   </body>
 </html>
