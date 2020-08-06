@@ -33,6 +33,7 @@ var getEmployees = async function () {
       return result;
     })
     .catch((e) => {
+      console.error(e);
       throw e;
     });
 

@@ -4,21 +4,16 @@
     <!-- Copyright (c) 2016 The Web Chapter. All Rights Reserved. -->
     <meta charset="utf-8" />
     <title>BrowseIt</title>
-    <link href="./popup.css" rel="stylesheet" type="text/css" />
     <link href="./game.css" rel="stylesheet" type="text/css" />
     <script src="./jquery-3.1.0.min.js"></script>
   </head>
 
   <body>
     <main>
-      <header>
-        <a href="/">Tilbake</a>
-      </header>
-
       <!-- Game container. See game.js for game logic -->
       <div id="game">
         <div id="gameHeader">
-          <button id="homeButton"><i class="arrowLeft"></i></button>
+          <a href="/" id="homeButton"> <i class="arrowLeft"></i> Tilbake</a>
         </div>
         <div id="gameMain">
           <div id="menu">
@@ -105,5 +100,19 @@
     </main>
     <script src="./getEmployees.js"></script>
     <script src="./game.js"></script>
+    <script>
+      getEmployees();
+      // Open / close game
+      $('#gameButton').click(function (event) {
+        event.preventDefault();
+        $('#home').hide();
+        $('#game').show();
+        $('#mapmarker').hide();
+        enterGame();
+      });
+      $('#homeButton').click(function (event) {
+        exitGame();
+      });
+    </script>
   </body>
 </html>
