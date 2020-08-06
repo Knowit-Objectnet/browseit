@@ -4,9 +4,6 @@ import { TodoItem } from './TodoItem';
 
 const ststicContent = () => (
   <>
-    <div>
-      <a href="./game/index.html">Spill</a>
-    </div>
     <h2>
       Nooblisten <span id="noob_counter">_</span>
     </h2>
