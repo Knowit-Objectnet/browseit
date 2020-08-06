@@ -4,18 +4,17 @@ BrowseIt gives you quick access and a good overview of the most frequently used 
 
 BrowseIt is an internal tool for employees in Knowit Objectnet AS, Norway. But _you're welcome to take a look_ even if you don't work here.
 
-**Install**
+## Install
 
-- Install link: https://chrome.google.com/webstore/detail/browseit-for-knowit/hbmpfibpnmpenneffbojjkcehjpacedo
-- Install shortlink: https://bit.ly/welcome-to-knowit
+- Install link: <https://chrome.google.com/webstore/detail/browseit-for-knowit/hbmpfibpnmpenneffbojjkcehjpacedo>
+- Install shortlink: <https://bit.ly/welcome-to-knowit>
 
-**Contact**
+## Contact
 
 - Primary contact: michael.johansen@knowit.no
 - Hangman contact: henrik.liodden@knowit.no, levi.sorum@knowit.no
 
-**Create new or modifiy content**
-
+## Create new or modifiy content
 
 The content of the extension is defined in json files located in `browseit/src/json/...json`. Add or remove links to/from your company's json file following the existing structure. I have added a json template for new companies to follow if they want to use the extension as well. Once you're json file is created / up to date make sure it's exported in `browseit/src/json/index.js`.
 
