@@ -28,14 +28,7 @@ body {
 
 main {
   overflow-y: scroll;
-
   background-color: #fff;
-  /*border: 1px solid #ccc;*/
-  /* box-shadow: 0px 5px 10px 3px grey; */
-
-  /* width: 830px; */
-  /* padding: 0 30px 30px 30px; */
-
   position: absolute;
   top: 0;
   right: 0;
@@ -45,7 +38,6 @@ main {
 
 div#leftblock {
   border-right: 1px solid #ccc;
-  /* box-shadow: inset 0px 0px 20px 0px #555; */
   position: fixed;
   top: -100px;
   bottom: -100px;
@@ -56,7 +48,6 @@ div#leftblock {
 
 div#rightblock {
   border-left: 1px solid #ccc;
-  /* box-shadow: inset 0px 0px 20px 0px #555; */
   position: fixed;
   top: -100px;
   bottom: -100px;
@@ -115,29 +106,20 @@ div#map img {
   width: 100%;
 }
 
-/* Sections */
+#home {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+}
 
+/* Sections */
 section {
   position: relative;
 }
-section.development {
-  border: 1px solid white;
-  float: left;
-  width: 45%;
-}
-section.administration {
-  border: 1px solid white;
-  float: right;
-  width: 50%;
-  z-index: 1; /* Since it's technically below the nooblist, this places it above the nooblist */
-}
-section.nooblist {
-  float: left;
-  width: 100%;
-}
+
 section h3 {
   font-family: RalewayBold;
 }
+
 section input[type='text'] {
   margin-right: 5px;
 }
@@ -151,22 +133,17 @@ table {
 td.left {
   text-align: right;
 }
-td.right {
-}
-td.link {
-}
-td.name {
-}
+
 td.divider {
   height: 10px;
 }
 
 /* Nooblist */
-
 input[type='text'] {
   width: 60px;
   text-align: right;
 }
+
 input[type='checkbox'] {
   display: inline-block;
 }
@@ -179,18 +156,15 @@ div#fry {
 }
 
 /* Footer */
-
 footer {
-  /* border: 1px solid white; */
   border-top: 1px solid #ccc;
   background-color: whitesmoke;
-  box-shadow: 0px 5px 10px 3px grey;
+  box-shadow: 0 5px 10px 3px grey;
   color: #777;
   position: fixed;
   width: inherit;
   height: 45px;
   bottom: 0;
-  /* left: 0; */
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
 }
@@ -203,7 +177,7 @@ footer div#expand {
 
 footer img#expandMe {
   position: relative;
-  top: 2px; /* pixel pushing */
+  top: 2px;
   border: 1px solid #555;
   border-radius: 3px;
   width: 23px;
