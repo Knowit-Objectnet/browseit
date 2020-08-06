@@ -27,6 +27,7 @@ export function Footer(props) {
     },
     label: {
       paddingLeft: '6px',
+      minWidth: '140px',
     },
   };
 
