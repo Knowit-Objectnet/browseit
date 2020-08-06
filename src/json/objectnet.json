@@ -449,7 +449,7 @@
           "id": "economy_accounts",
           "label": "Har sett over listen over bedriftskonti og bedriftsavtalene nederst på siden («Gratis FastTrack? Ooh, nice.»)",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/UC/Bedriftskonti"
+          "href": "https://projects.knowit.no/display/OO/Bedriftskonti+og+mat"
         },
         {
           "id": "economy_travelexpenses",
