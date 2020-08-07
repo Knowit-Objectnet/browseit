@@ -3,6 +3,7 @@
   font-family: Raleway;
   src: url('./fonts/Raleway-Medium.ttf');
 }
+
 @font-face {
   font-family: RalewayBold;
   src: url('./fonts/Raleway-Bold.ttf');
@@ -62,7 +63,8 @@ div#rightblock {
   display: flex;
   align-items: center;
 }
-.header > div {
+
+.header>div {
   flex: 1 auto;
 }
 
@@ -81,7 +83,8 @@ header img#mapmarker {
   color: #777;
   cursor: pointer;
   margin-top: 25px;
-  margin-left: 120px; /* can't be bothered with layout atm */
+  margin-left: 120px;
+  /* can't be bothered with layout atm */
   position: relative;
 }
 
@@ -128,6 +131,7 @@ table {
   font-size: 9pt;
   width: 100%;
 }
+
 td.left {
   text-align: right;
 }
@@ -209,9 +213,28 @@ footer div#counter {
 b {
   font-family: RalewayBold;
 }
+
 .bold {
   font-family: RalewayBold;
 }
+
 ul {
   margin-left: -20px;
+}
+
+.game-button {
+  cursor: pointer;
+  background-color: #46b44c;
+  box-shadow: -1.2px -0.9px 0 0.8px #328336 inset;
+  margin: 4px;
+  letter-spacing: 0.0375rem;
+  align-self: center;
+  max-width: 10rem;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 9px;
+  text-decoration: none;
 }

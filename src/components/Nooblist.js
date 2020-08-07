@@ -4,6 +4,11 @@ import { TodoItem } from './TodoItem';
 
 const ststicContent = () => (
   <>
+    <div>
+      <a href="/game/index.html" className="game-button">
+        KnowIts navnespill
+      </a>
+    </div>
     <h2>
       Nooblisten <span id="noob_counter">_</span>
     </h2>

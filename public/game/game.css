@@ -1,17 +1,5 @@
 /* Game Launcher */
 
-
-/* Fonts */
-@font-face {
-  font-family: Raleway;
-  src: url('./fonts/Raleway-Medium.ttf');
-}
-
-@font-face {
-  font-family: RalewayBold;
-  src: url('./fonts/Raleway-Bold.ttf');
-}
-
 /* Body */
 
 body {

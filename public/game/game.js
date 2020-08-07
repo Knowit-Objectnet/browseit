@@ -322,3 +322,7 @@ var hideAll = function () {
   $('#play').hide();
   $('#finish').hide();
 };
+
+showMenu();
+enterGame();
+initGame();

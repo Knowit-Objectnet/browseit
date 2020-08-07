@@ -39,5 +39,3 @@ var getEmployees = async function () {
 
   return data;
 };
-
-getEmployees();
