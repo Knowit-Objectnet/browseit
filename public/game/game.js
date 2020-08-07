@@ -23,7 +23,10 @@ var changePerson = function () {
     Math.floor(Math.random() * employeesLeft.length),
     1
   )[0];
-  currentName = person.name;
+  currentName = person && person.name ? person.name : '';
+  if (currentName === '') {
+    return null;
+  }
 
   // image
   $('#personImage').attr('src', person.img);
