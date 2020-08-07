@@ -41,11 +41,6 @@
           "href": "https://github.com/knowit/",
           "href_title": "github.com/knowit",
           "title": "Knowit's public GitHub repos"
-        },
-        {
-          "href": "https://knowit.sharepoint.com/SitePages/home.aspx",
-          "href_title": "knowit.sharepoint.com/",
-          "title": "Sharepoint med nyttig (og unyttig info)"
         }
       ]
     },
@@ -71,9 +66,9 @@
           "title": "Passord"
         },
         {
-          "href": "https://knowitobjectnet.slack.com/",
-          "href_title": "Intern Slack",
-          "title": "knowitobjectnet.slack"
+          "href": "https://amende.slack.com/signup",
+          "href_title": "amende.slack.com",
+          "title": "Intern Slack"
         },
         {
           "href": "https://knowit.slack.com/signup",
@@ -87,7 +82,7 @@
         },
         {
           "href": "https://knowit.unit4cloud.no/",
-          "href_title": "knowit.unit4cloud.no/",
+          "href_title": "knowit.unit4cloud.no",
           "title": "UBW utlegg"
         },
         {
@@ -136,14 +131,9 @@
           "title": "Firmahytter"
         },
         {
-          "href": "https://knowit.sharepoint.com/SitePages/home.aspx",
-          "href_title": "knowit.sharepoint.com/",
-          "title": "Sharepoint med nyttig (og unyttig info)"
-        },
-        {
           "href": "https://knowitlabs.no/",
-          "href_title": "knowitlabs.no/",
-          "title": "Bloggen vår!"
+          "href_title": "knowitlabs.no",
+          "title": "Bloggen"
         },
         {
           "href": "https://portal.simployer.no/StartPage/",
@@ -152,7 +142,7 @@
         },
         {
           "href": "https://home.visma.com/home",
-          "href_title": "home.visma.com/home",
+          "href_title": "home.visma.com",
           "title": "Lønnslippene"
         }
       ]
