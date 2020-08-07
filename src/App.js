@@ -114,7 +114,10 @@ function App() {
           ) : (
             !showMap && (
               <span style={style.placeholderText}>
-                Select your Knowit company ⭜
+                Select your Knowit company&nbsp;
+                <span role="img" aria-label="">
+                  ↗️
+                </span>
               </span>
             )
           )}
