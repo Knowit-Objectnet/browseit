@@ -82,7 +82,7 @@
         },
         {
           "href": "https://knowit.unit4cloud.no/",
-          "href_title": "knowit.unit4cloud.no/",
+          "href_title": "knowit.unit4cloud.no",
           "title": "UBW utlegg"
         },
         {
@@ -690,7 +690,7 @@
           "id": "profile_templates",
           "label": "Har sett Knowit sine presentasjons- og dokumentmaler og vet at jeg skal bruke den for 'Knowit Solutions'",
           "placeholder": "15min",
-          "href": "https://knowit.sharepoint.com/sites/groupcommon/templates/SitePages/Home.aspx"
+          "href": "https://knowit.sharepoint.com/sites/info-brand-communications"
         },
         {
           "id": "profile_bizcard",
@@ -842,6 +842,11 @@
         {
           "id": "security_backup",
           "label": "Har lagt inn gode backup-løsninger på laptopen (cloud syncing er tilstrekkelig)",
+          "placeholder": "bootcamp"
+        },
+        {
+          "id": "security_updates",
+          "label": "Er klar over at det er mitt eget ansvar å holde OS/programvare oppdatert",
           "placeholder": "bootcamp"
         },
         {
