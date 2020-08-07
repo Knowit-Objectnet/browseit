@@ -17,9 +17,7 @@ const ststicContent = () => {
           </a>
         </div>
       )}
-      <h2>
-        Nooblisten <span id="noob_counter">_</span>
-      </h2>
+      <h2>Nooblisten</h2>
       <div id="fry">
         Good news everyone! You have completed all the tasks. A+. Well done!
         <br />
