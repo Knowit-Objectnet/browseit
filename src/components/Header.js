@@ -10,6 +10,10 @@ export function Header({ showMap, setShowMap }) {
           id="title"
           href="https://bit.ly/welcome-to-knowit"
           title="See in Chrome WebStore"
+          onClick={(event) => {
+            event.preventDefault();
+            window.open('https://bit.ly/welcome-to-knowit');
+          }}
         >
           BrowseIt
         </a>
@@ -24,7 +28,12 @@ export function Header({ showMap, setShowMap }) {
         />
       </div>
       <div>
-        <a href="https://projects.knowit.no/display/FAG/Web+Chapter">
+        <a href="https://projects.knowit.no/display/FAG/Web+Chapter"
+          onClick={(event) => {
+            event.preventDefault();
+            window.open('https://projects.knowit.no/display/FAG/Web+Chapter');
+          }}
+        >
           <img id="twc" src={webChapter} alt="" />
         </a>
       </div>

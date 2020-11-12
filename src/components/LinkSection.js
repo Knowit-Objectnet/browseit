@@ -14,7 +14,15 @@ export function Links({ link_sections: linkSections }) {
                     <tr key={key}>
                       <td className={section.title_class}>{l.title}</td>
                       <td className={section.href_class}>
-                        <a href={l.href}>{l.href_title}</a>
+                        <a
+                          href={l.href}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            window.open(l.href);
+                          }}
+                        >
+                          {l.href_title}
+                        </a>
                       </td>
                     </tr>
                   );

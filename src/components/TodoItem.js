@@ -47,7 +47,18 @@ export function TodoItem(props) {
           onChange={handleCheck}
           checked={checked === 'true' ? true : false}
         />
-        {label} {props.href && <a href={props.href}>(lenke)</a>}
+        {label}{' '}
+        {props.href && (
+          <a
+            href={props.href}
+            onClick={(event) => {
+              event.preventDefault();
+              window.open(props.href);
+            }}
+          >
+            (lenke)
+          </a>
+        )}
       </label>
     </div>
   );
