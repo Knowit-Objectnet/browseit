@@ -51,12 +51,12 @@
       "title_class": "right name",
       "links": [
         {
-          "href": "http://epost.knowit.no/",
+          "href": "https://epost.knowit.no/",
           "href_title": "epost.knowit.no",
           "title": "Epost"
         },
         {
-          "href": "http://kalender.knowit.no/",
+          "href": "https://kalender.knowit.no/",
           "href_title": "kalender.knowit.no",
           "title": "Kalender"
         },
@@ -86,7 +86,7 @@
           "title": "UBW utlegg"
         },
         {
-          "href": "http://plusstidvalg.knowit.no",
+          "href": "https://plusstidvalg.knowit.no",
           "href_title": "plusstidvalg.knowit.no",
           "title": "Plusstidvalg"
         },
@@ -96,7 +96,7 @@
           "title": "CV Partner"
         },
         {
-          "href": "http://sundtcommander.knowit.no/?transparent=false&zoom=-0.2",
+          "href": "https://sundtcommander.knowit.no/?transparent=false&zoom=-0.2",
           "href_title": "sundtcommander.knowit.no/…",
           "title": "Møterom i sanntid"
         },
@@ -111,7 +111,7 @@
           "title": "Sharepoint"
         },
         {
-          "href": "http://helpit.knowit.se/",
+          "href": "https://helpit.knowit.se/",
           "href_title": "helpit.knowit.no",
           "title": "HelpIt"
         },
@@ -139,7 +139,7 @@
       "boxes": [
         {
           "id": "people_leaders",
-          "label": "Vet hvem mine ledere er (Prosjektleder, gruppeleder og avdelingsleder), og forskjellen på dem",
+          "label": "Vet hvem mine ledere er (prosjektleder, gruppeleder og avdelingsleder), og forskjellen på dem",
           "placeholder": "0min"
         },
         {
@@ -159,7 +159,7 @@
         },
         {
           "id": "people_handbook",
-          "label": "Har lest høvelig gjennom personalHåndboka (tar fort en time)",
+          "label": "Har lest høvelig gjennom personalhåndboka (tar fort en time)",
           "placeholder": "60min",
           "href": "https://projects.knowit.no/pages/viewpage.action?pageId=30998775"
         },
@@ -174,12 +174,6 @@
           "placeholder": "0min"
         },
         {
-          "id": "people_whistleblower",
-          "label": "Vet om varslingstjenesten som kan brukes til å melde fra om uakseptabel atferd (f.eks: trakassering / rasisme)",
-          "placeholder": "0min",
-          "href": "https://projects.knowit.no/pages/viewpage.action?spaceKey=OO&title=Varslingstjeneste"
-        },
-        {
           "id": "people_development",
           "label": "Har hatt min første utviklingssamtale med gruppeleder",
           "placeholder": "60min"
@@ -188,6 +182,12 @@
           "id": "people_vacation",
           "label": "Har fått forklart hvordan feriedager funker i mitt første arbeidsår",
           "placeholder": "0min"
+        },
+        {
+          "id": "people_whistleblower",
+          "label": "Vet om varslingstjenesten som kan brukes til å melde fra om uakseptabel atferd (f.eks: trakassering / rasisme)",
+          "placeholder": "0min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?spaceKey=OO&title=Varslingstjeneste"
         }
       ]
     },
