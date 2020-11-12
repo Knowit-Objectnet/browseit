@@ -17,7 +17,7 @@ export function Footer(props) {
 
   const onChange = () => {
     const isExpanded = expandInput === 'true' ? 'false' : 'true';
-    localStorage.setItem('expandInput', isExpanded);
+    localStorage.expandInput = isExpanded;
     setExpandInput(isExpanded);
   };
 
@@ -31,7 +31,6 @@ export function Footer(props) {
       minWidth: '140px',
     },
   };
-
   return (
     <footer>
       <div id="expand" style={style.tab}>
@@ -56,8 +55,8 @@ export function Footer(props) {
         - Versjon <span className="version">{version}</span>.
         <br />
         Send gjerne forslag til&nbsp;
-        <a href="mailto:michael.johansen@knowit.no">
-          michael.johansen@knowit.no
+        <a href="mailto:frida.klockmann@knowit.no">
+          frida.klockmann@knowit.no
         </a>
       </div>
       <div id="counter">

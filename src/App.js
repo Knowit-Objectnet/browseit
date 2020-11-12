@@ -78,7 +78,7 @@ function App() {
       padding: '0 30px 30px 30px',
     },
     footer: {
-      width: isFullScreen ? '960px' : '',
+      width: isFullScreen ? '960px' : '800px',
     },
   };
   return (
