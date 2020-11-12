@@ -33,11 +33,6 @@
           "title": "Atlassian Crowd (user groups)"
         },
         {
-          "href": "https://nexus.knowit.no/",
-          "href_title": "nexus.knowit.no",
-          "title": "Nexus for NPM & Maven"
-        },
-        {
           "href": "https://github.com/knowit/",
           "href_title": "github.com/knowit",
           "title": "Knowit's public GitHub repos"
@@ -51,12 +46,12 @@
       "title_class": "right name",
       "links": [
         {
-          "href": "https://epost.knowit.no/",
+          "href": "http://epost.knowit.no/",
           "href_title": "epost.knowit.no",
           "title": "Epost"
         },
         {
-          "href": "https://kalender.knowit.no/",
+          "href": "http://kalender.knowit.no/",
           "href_title": "kalender.knowit.no",
           "title": "Kalender"
         },
@@ -86,7 +81,7 @@
           "title": "UBW utlegg"
         },
         {
-          "href": "https://plusstidvalg.knowit.no",
+          "href": "http://plusstidvalg.knowit.no",
           "href_title": "plusstidvalg.knowit.no",
           "title": "Plusstidvalg"
         },
@@ -96,7 +91,7 @@
           "title": "CV Partner"
         },
         {
-          "href": "https://sundtcommander.knowit.no/?transparent=false&zoom=-0.2",
+          "href": "http://sundtcommander.knowit.no/?transparent=false&zoom=-0.2",
           "href_title": "sundtcommander.knowit.no/…",
           "title": "Møterom i sanntid"
         },
@@ -111,7 +106,7 @@
           "title": "Sharepoint"
         },
         {
-          "href": "https://helpit.knowit.se/",
+          "href": "http://helpit.knowit.se/",
           "href_title": "helpit.knowit.no",
           "title": "HelpIt"
         },
@@ -350,7 +345,7 @@
           "id": "offices_feedback",
           "label": "Vet at forslag kan sendes til sundt@knowit.no med subject Ønske/Idé/Feil/Spørsmål",
           "placeholder": "0min",
-          "href": "sundt@knowit.no"
+          "href": "mailto:sundt@knowit.no"
         }
       ]
     },
@@ -414,11 +409,6 @@
     {
       "id": "Økonomi",
       "boxes": [
-        {
-          "id": "economy_boss",
-          "label": "Har fått infoskriv for nyansatte fra økonomisjefen",
-          "placeholder": "15min"
-        },
         {
           "id": "economy_simcard",
           "label": "Har fått nytt telefonabonnement og SIM-kort som betales av jobben (sweet!)",
@@ -497,7 +487,7 @@
           "id": "economy_blooddonation",
           "label": "Har sjekket om jeg kan bli blodgiver, slik at jeg kan heve lønn samtidig som jeg redder noens liv og får en Mummi-kopp (se Personalhåndbok, kap. 7.3.2).",
           "placeholder": "2min",
-          "href": "https://www.rodekors.no/gi-blod/a-gi-blod/"
+          "href": "https://www.rodekors.no/gi-blod/"
         }
       ]
     },
@@ -544,7 +534,7 @@
           "id": "hours_plustimechoice",
           "label": "Vet at jeg kan endre om plusstimer utbetales eller ikke på plusstidvalg.knowit.no",
           "placeholder": "10min",
-          "href": "https://plusstidvalg.knowit.no/"
+          "href": "http://plusstidvalg.knowit.no/"
         }
       ]
     },
@@ -638,9 +628,9 @@
       "boxes": [
         {
           "id": "sales_login",
-          "label": "Får logget inn i CV Partner, ellers mailer jeg Per Christian Øren",
+          "label": "Får logget inn i CV Partner, ellers mailer jeg Erik Nylund",
           "placeholder": "10min",
-          "href": "perore@knowit.no"
+          "href": "mailto:etn@knowit.no"
         },
         {
           "id": "sales_master",
@@ -673,7 +663,7 @@
           "id": "recruiting_bonus",
           "label": "Har lest om rekrutteringsbonusen vår",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=61052573"
+          "href": "https://projects.knowit.no/display/OO/Rekrutteringsbonus"
         }
       ]
     },
@@ -691,12 +681,6 @@
           "label": "Har sett Knowit sine presentasjons- og dokumentmaler og vet at jeg skal bruke den for 'Knowit Solutions'",
           "placeholder": "15min",
           "href": "https://knowit.sharepoint.com/sites/info-brand-communications"
-        },
-        {
-          "id": "profile_bizcard",
-          "label": "Hvis jeg vil så har jeg skaffet visittkort, else void",
-          "placeholder": "20min",
-          "href": "https://knowit.sharepoint.com/sites/groupcommon/templates/Word/Forms/AllItems.aspx"
         },
         {
           "id": "profile_ask",
@@ -789,7 +773,7 @@
           "id": "develop_support",
           "label": "Vet at jeg kan ta kontakt med Drift på #drift, drift@knowit.no, eller lage en JIRA til Drift",
           "placeholder": "5min",
-          "href": "drift@knowit.no"
+          "href": "mailto:drift@knowit.no"
         }
       ]
     },
@@ -815,7 +799,7 @@
           "id": "security_2fa",
           "label": "Har satt 2-faktor på konsernkontoen via Active Directory → Profile → 'Additional security verification'",
           "placeholder": "bootcamp",
-          "href": "https://account.activedirectory.windowsazure.com/"
+          "href": "https://mysignins.microsoft.com/security-info"
         },
         {
           "id": "security_pwmanager",
@@ -827,7 +811,7 @@
           "id": "security_getpwmanager",
           "label": "Om jeg ikke har fått 1Password automatisk så mailer jeg on-passwords@knowit.no og ber om konto",
           "placeholder": "bootcamp",
-          "href": "on-passwords@knowit.no"
+          "href": "mailto:on-passwords@knowit.no"
         },
         {
           "id": "security_linkprivate",
