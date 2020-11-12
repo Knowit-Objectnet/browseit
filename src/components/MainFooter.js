@@ -51,7 +51,7 @@ export function Footer(props) {
         <a href="https://github.com/knowit/browseit">
           github.com/knowit/browseit
         </a>
-        - Versjon <span className="version">3.0.2</span>.
+        - Versjon <span className="version">3.0.3</span>.
         <br />
         Send gjerne forslag til&nbsp;
         <a href="mailto:frida.klockmann@knowit.no">
