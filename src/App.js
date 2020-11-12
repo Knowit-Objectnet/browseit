@@ -7,9 +7,9 @@ import { Nooblist } from './components/Nooblist';
 import * as jsonRequest from './json';
 import { CompanySelector } from './components/CompanySelector';
 import { FloorMap } from './components/FloorMap';
-let notFullScreen = window.outerWidth <= 800 && window.outerHeight <= 600;
-if (localStorage.getItem('expandInput') === 'true') {
-  if (notFullScreen) window.open('index.html');
+const isFullScreen = window.outerWidth > 800 && window.outerHeight > 600;
+if (localStorage.expandInput === 'true') {
+  if (!isFullScreen) window.open('index.html');
 }
 
 const SELECTED_COMPANY_KEY = 'selectedCompany';
@@ -72,13 +72,13 @@ function App() {
     main: {
       maxWidth: '960px',
       margin: 'auto',
-      boxShadow: !notFullScreen ? '0px 5px 10px 3px grey' : '',
+      boxShadow: isFullScreen ? '0px 5px 10px 3px grey' : '',
     },
     padding: {
       padding: '0 30px 30px 30px',
     },
     footer: {
-      width: !notFullScreen ? '960px' : '',
+      width: isFullScreen ? '960px' : '',
     },
   };
   return (
@@ -129,7 +129,7 @@ function App() {
           selectedJson={selectedJson}
           checkedBoxesCount={checkedBoxesCount}
           setCheckedBoxesCount={setCheckedBoxesCount}
-          isFullScreen={notFullScreen}
+          isFullScreen={isFullScreen}
         />
       </div>
     </main>

@@ -34,17 +34,18 @@ export function Footer(props) {
   return (
     <footer>
       <div id="expand" style={style.tab}>
-        {props.isFullScreen && (
-          <img id="expandMe" src={expandImageSrc} alt="" onClick={resize} />
-        )}
-        <label style={style.label}>
+        {props.isFullScreen? (
+          <label style={style.label}>
           <input
             type="checkbox"
             checked={expandInput === 'true' ? true : false}
             onChange={onChange}
-          ></input>
+          />
           &nbsp;alltid åpne i ny fane
         </label>
+        ):(
+          <img id="expandMe" src={expandImageSrc} alt="" onClick={resize} />
+        )}
       </div>
       <div id="feedback">
         Kildekode:&nbsp;
