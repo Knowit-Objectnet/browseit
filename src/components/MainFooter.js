@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import expandImageSrc from '../img/expand.png';
-import {version} from '../public/manifest.json';
 
 export function Footer(props) {
   const totalCount = props.totalBoxCount;
@@ -52,7 +51,7 @@ export function Footer(props) {
         <a href="https://github.com/knowit/browseit">
           github.com/knowit/browseit
         </a>
-        - Versjon <span className="version">{version}</span>.
+        - Versjon <span className="version">3.0.2</span>.
         <br />
         Send gjerne forslag til&nbsp;
         <a href="mailto:frida.klockmann@knowit.no">
