@@ -615,6 +615,12 @@
           "id": "social_teamchocolate",
           "label": "Har vært med på min første sjokoladetime med teamet",
           "placeholder": "15min"
+        },
+        {
+          "id": "social_slabberas",
+          "label": "Har vært på Slabberas med teamet",
+          "placeholder": "15min",
+          "href": "https://www.kaffeslabberas.no/"
         }
       ]
     },
