@@ -131,8 +131,8 @@
           "title": "Firmahytter"
         },
         {
-          "href": "https://home.visma.com/home",
-          "href_title": "home.visma.com",
+          "href": "http://lønn.knowit.no",
+          "href_title": "lønn.knowit.no",
           "title": "Lønnslippene"
         },
         {
@@ -242,7 +242,7 @@
         },
         {
           "id": "communication_mailinglists",
-          "label": "Har meldt meg på epostlistene som jeg ønsker å være på",
+          "label": "Har meldt meg på epostlistene som jeg ønsker å være på (Pass på at du er med i objectnet@knowit.no og trondheim@knowit.no)",
           "placeholder": "15min",
           "href": "https://groups.google.com/a/knowit.no/forum/#!forumsearch/"
         },
@@ -294,7 +294,7 @@
       "boxes": [
         {
           "id": "offices_keycard",
-          "label": "Har fått adgangskort, lært koden og tatt av kodelappen",
+          "label": "Har fått adgangskort og lært koden, samt fått nøkkel",
           "placeholder": "1min"
         },
         {
@@ -303,23 +303,14 @@
           "placeholder": "0min"
         },
         {
-          "id": "offices_lunch",
-          "label": "Vet at lunsj dekkes med 50,- i Sundt-kantinen hver dag, selv etter rabatter, og at dispenserdrikke er gratis for oss",
-          "placeholder": "0min"
-        },
-        {
           "id": "offices_lunch_out",
-          "label": "Vet at lunsj dekkes med 60,- for utekonsulenter hver dag",
-          "placeholder": "0min"
-        },
-        {
-          "id": "offices_storage",
-          "label": "Har vært på lageret vårt, og vet hva jeg kan finne de",
-          "placeholder": "10min"
+          "label": "Vet at lunsj dekkes med 60,- for hver dag (les \"lunsjpenger\" avsnittet)",
+          "placeholder": "0min",
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=1541230"
         },
         {
           "id": "offices_post",
-          "label": "Vet at pakker skal adresseres Heimdalsgata 15, 0561 Oslo, og hentes i resepsjonen i 1. etasje",
+          "label": "Vet at pakker skal adresseres Professor Brochs gate 8A, 7030 Trondheim, og hentes ved døra",
           "placeholder": "0min"
         },
         {
@@ -329,53 +320,36 @@
         },
         {
           "id": "offices_emergencyexits",
-          "label": "Vet hvor nærmeste nødutgang er, og at Heimdalsgata er stedet å møte opp når brannalarmen går",
+          "label": "Vet hvor nærmeste nødutgang er",
           "placeholder": "Hils"
         },
         {
           "id": "offices_recycling",
-          "label": "Jeg vet at det er tre resirkuleringsstasjoner for papp, plast og pant, to i 5. etasje, og en i 4. etasje",
-          "placeholder": "0min"
-        },
-        {
-          "id": "offices_trash",
-          "label": "Jeg vet at det er to avfallsbeholdere på hvert kjøkken, med grønn pose til matavfall og hvit pose til søppel",
+          "label": "Jeg vet at det er en resirkuleringsstasjon for papp, plast og pant ute i bygget ovenfor inngangen",
           "placeholder": "0min"
         },
         {
           "id": "offices_cardboard",
-          "label": "Jeg vet at jeg selv må kaste pappesker og stort avfall i søppelrommet i 1. etasje (inn gangen bak heisene)",
+          "label": "Jeg vet at jeg selv må kaste pappesker og stort avfall i søppelrommet ute",
           "placeholder": "0min"
         },
         {
           "id": "offices_landlord",
-          "label": "Har utforsket Entra sin app (finnes også på iOS/Android) og sett hva slags tjenester de tilbyr oss (t.o.m. renseri)",
+          "label": "Har utforsket Teknobyen sin nettside og sett hva slags tjenester de tilbyr",
           "placeholder": "10min",
-          "href": "https://app.entra.no/nb/9/"
+          "href": "https://teknobyen.no/"
         },
         {
           "id": "offices_auditorium",
-          "label": "Vet at det er gratis å booke auditorium/møterom i 1. etasje via Entra sin møteromsbooking",
+          "label": "Vet at det er gratis å booke møterom og har lest informasjonen om det under \"møterom\"",
           "placeholder": "5min",
-          "href": "https://cgn.pronestor.com/3392-entra-sundtkvartalet/"
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=83758224"
         },
         {
-          "id": "offices_meeting_food",
-          "label": "Vet at det også er mulig, men ikke gratis, å booke møtemat via Entra sin møteromsbooking",
-          "placeholder": "5min",
-          "href": "https://cgn.pronestor.com/3392-entra-sundtkvartalet/"
-        },
-        {
-          "id": "offices_firetraining",
-          "label": "Har tatt det obligatoriske brannkurset for Sundtkvartalet, finn link og kurskode på mottak av nyansatte-siden",
-          "placeholder": "60min",
+          "id": "offices_information",
+          "label": "Har lest informasjonen som gjelder Trondheim på \"Mottak av Nyansatte\" siden",
+          "placeholder": "20min",
           "href": "https://projects.knowit.no/display/OO/Mottak+av+nyansatte"
-        },
-        {
-          "id": "offices_feedback",
-          "label": "Vet at forslag kan sendes til sundt@knowit.no med subject Ønske/Idé/Feil/Spørsmål",
-          "placeholder": "0min",
-          "href": "mailto:sundt@knowit.no"
         }
       ]
     },
@@ -384,7 +358,7 @@
       "boxes": [
         {
           "id": "headshots_photoshoot",
-          "label": "Har fått bildet mitt tatt via vår interne fotograf, det skal brukes overalt i farger",
+          "label": "Har fått bildet mitt tatt på jobb, det skal brukes overalt i farger",
           "placeholder": "30min"
         },
         {
@@ -392,11 +366,6 @@
           "label": "Vet hvor jeg finner profilbilder for hele Knowit Norge",
           "placeholder": "0min",
           "href": "https://knowit.sharepoint.com/teams/profilbilder/sitepages/home.aspx"
-        },
-        {
-          "id": "headshots_accesscard",
-          "label": "Har fått profilbildet på adgangskortet",
-          "placeholder": "5min"
         },
         {
           "id": "headshots_cvreg",
@@ -451,14 +420,10 @@
           "href": "https://projects.knowit.no/display/OO/Telenor-mobilabonnement+for+familie"
         },
         {
-          "id": "economy_ticket",
-          "label": "Har ordnet meg Ruter# ansattbillett om ønsket (vanlig årspris, men kan avsluttes som månedskort)",
-          "placeholder": "20min"
-        },
-        {
           "id": "economy_insurancepolicy",
           "label": "Har lest høvelig over forsikringspolisene",
-          "placeholder": "20min"
+          "placeholder": "20min",
+          "href": "https://projects.knowit.no/display/OO/Forsikringer"
         },
         {
           "id": "economy_insurance_card",
@@ -647,8 +612,8 @@
           "placeholder": "60min"
         },
         {
-          "id": "social_teamice",
-          "label": "Har vært med på min første is på takterrassen med teamet",
+          "id": "social_teamchocolate",
+          "label": "Har vært med på min første sjokoladetime med teamet",
           "placeholder": "15min"
         }
       ]
@@ -745,7 +710,7 @@
         },
         {
           "id": "hwsw_gadgets",
-          "label": "Hentet det jeg trenger av kabler, mus/tastatur, laptopstand, overganger, etc.",
+          "label": "Hentet det jeg trenger av kabler, mus/tastatur, laptopstand, overganger, etc. (evt ta kontakt med gruppeleder hvis du trenger mer)",
           "placeholder": "20min"
         },
         {
@@ -755,13 +720,13 @@
         },
         {
           "id": "hwsw_printer",
-          "label": "Har satt opp printeren med guiden på wikien",
-          "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Oppsett+av+skriver+%28printer%29+i+Sundtkvartalet"
+          "label": "Vet at printeren ligger i 2. etg. Utskrift av epostvedlegg kan gjøres med epost til \"95abyi22udwy@hpeprint.com\". I hvert fall pdf støttes.",
+          "placeholder": "0min",
+          "href": "mailto: 95abyi22udwy@hpeprint.com"
         },
         {
           "id": "hwsw_office",
-          "label": "Har en office suite som fungerer for meg (MS Office, iWork, GDocs, OpenOffice, etc.)",
+          "label": "Har en office suite som fungerer for meg (MS Office, iWork, GDocs, OpenOffice, etc.)(Ta kontakt med drift for MS Office)",
           "placeholder": "20min"
         }
       ]
