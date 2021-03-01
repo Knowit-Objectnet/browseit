@@ -1,7 +1,7 @@
 {
   "name": "BrowseIt, for Knowit",
   "short_name": "BrowseIt",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "manifest_version": 2,
   "offline_enabled": true,
   "description": "For the noobs and the veterans alike. Has all important links, your introductory todolist, and a map of meeting rooms.",
