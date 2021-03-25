@@ -42,6 +42,8 @@ var changePerson = function () {
       className = 'symbol';
     } else if (letter === '-') {
       className = 'symbol';
+    } else if (letter === '.') {
+      className = 'symbol';
     } else {
       id = normalizeLetters(letter).toLowerCase();
       className = 'letterContainer';
@@ -114,6 +116,8 @@ var updateGameState = function () {
       .split(' ')
       .join('')
       .split('-')
+      .join('')
+      .split('.')
       .join('');
     for (const c of nameIter) {
       if (!correctLetters.includes(c)) {
