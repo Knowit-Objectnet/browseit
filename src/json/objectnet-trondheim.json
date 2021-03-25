@@ -41,6 +41,11 @@
           "href": "https://github.com/knowit/",
           "href_title": "github.com/knowit",
           "title": "Knowit's public GitHub repos"
+        },
+        {
+          "href": "https://kompetanse.knowit.no/",
+          "href_title": "kompetanse.knowit.no",
+          "title": "Knowit's Kompetanse Kartlegging"
         }
       ]
     },
