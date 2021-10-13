@@ -41,16 +41,6 @@
           "href": "https://kompetanse.knowit.no/",
           "href_title": "kompetanse.knowit.no",
           "title": "Knowit's Kompetanse Kartlegging"
-        },
-        {
-          "href": "http://lønn.knowit.no",
-          "href_title": "lønn.knowit.no",
-          "title": "Lønnslippene"
-        },
-        {
-          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=30998775",
-          "href_title": "projects.knowit.no/pages/...",
-          "title": "Personalhåndboka"
         }
       ]
     },
@@ -139,6 +129,16 @@
           "href": "https://kompetanse.knowit.no/",
           "href_title": "kompetanse.knowit.no",
           "title": "Knowit's Kompetanse Kartlegging"
+        },
+        {
+          "href": "http://lønn.knowit.no",
+          "href_title": "lønn.knowit.no",
+          "title": "Lønnslippene"
+        },
+        {
+          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=30998775",
+          "href_title": "projects.knowit.no/pages/...",
+          "title": "Personalhåndboka"
         }
       ]
     }

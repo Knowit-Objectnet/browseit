@@ -57,7 +57,7 @@ export function Footer(props) {
         >
           github.com/knowit/browseit
         </a>
-        - Versjon <span className="version">3.0.6</span>.
+        - Versjon <span className="version">3.0.7</span>.
         <br />
         Send gjerne forslag til&nbsp;
         <a
