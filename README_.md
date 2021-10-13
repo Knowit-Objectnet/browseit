@@ -11,7 +11,7 @@ BrowseIt is an internal tool for employees in Knowit Objectnet AS, Norway. But *
 - Install shortlink: https://bit.ly/welcome-to-knowit
   
 **Contact**
-- Primary contact: michael.johansen@knowit.no
+- Primary contact: frida.klockmann@knowit.no
 - Hangman contact: henrik.liodden@knowit.no, levi.sorum@knowit.no
   
 **Create new or modifiy content**
