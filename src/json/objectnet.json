@@ -240,31 +240,31 @@
           "id": "communication_companycalendar",
           "label": "Har lagt til felleskalenderen",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_vacationcalendar",
           "label": "Har lagt til feriekalenderen, og lover å legge inn feriedagene mine",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_sciencecalendar",
           "label": "Har lagt til fagkalenderen, og skal bli med på fagarrangementer",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_eventcalendar",
           "label": "Har lagt til eventkalenderen, og skal bli med på fest",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_meetingcalendars",
           "label": "Har lagt til møteromskalenderne, og vet hvordan jeg skrur dem av når jeg ikke trenger dem",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_confluence",
