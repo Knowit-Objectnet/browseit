@@ -136,8 +136,8 @@
           "title": "Lønnslippene"
         },
         {
-          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=30998775",
-          "href_title": "projects.knowit.no/pages/...",
+          "href": "https://sites.google.com/knowit.no/personalhandbok/personalh%C3%A5ndbok/",
+          "href_title": "personalhandbok.knowit.no",
           "title": "Personalhåndboka"
         }
       ]
@@ -171,7 +171,7 @@
           "id": "people_handbook",
           "label": "Har lest høvelig gjennom personalhåndboka (tar fort en time)",
           "placeholder": "60min",
-          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=30998775"
+          "href": "https://sites.google.com/knowit.no/personalhandbok/personalh%C3%A5ndbok/"
         },
         {
           "id": "people_project",
@@ -212,7 +212,7 @@
         {
           "id": "communication_user",
           "label": "Har fått bruker på Google Apps (single sign-on for mange tjenester!)",
-          "placeholder": "00min"
+          "placeholder": "0min"
         },
         {
           "id": "communication_email",
@@ -240,31 +240,31 @@
           "id": "communication_companycalendar",
           "label": "Har lagt til felleskalenderen",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_vacationcalendar",
           "label": "Har lagt til feriekalenderen, og lover å legge inn feriedagene mine",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_sciencecalendar",
           "label": "Har lagt til fagkalenderen, og skal bli med på fagarrangementer",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_eventcalendar",
           "label": "Har lagt til eventkalenderen, og skal bli med på fest",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_meetingcalendars",
           "label": "Har lagt til møteromskalenderne, og vet hvordan jeg skrur dem av når jeg ikke trenger dem",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/Legge-til-kalendere.aspx"
         },
         {
           "id": "communication_confluence",
@@ -289,12 +289,13 @@
         },
         {
           "id": "offices_lunch",
-          "label": "Vet at lunsj dekkes med 50,- i Sundt-kantinen hver dag, selv etter rabatter, og at dispenserdrikke er gratis for oss",
-          "placeholder": "0min"
+          "label": "Vet at lunsj dekkes hver dag ved scanning av QR-kode, og jeg kan finne menyen på kantina sine nettsider (protip: skriv ut QR-koden og fest den på adgangskortet)",
+          "placeholder": "0min",
+          "href": "https://tullin.munu.shop/"
         },
         {
           "id": "offices_lunch_out",
-          "label": "Vet at lunsj dekkes med 60,- for utekonsulenter hver dag",
+          "label": "Vet at lunsj dekkes med 60,- hver dag for utekonsulenter som kjøper egen lunsj",
           "placeholder": "0min"
         },
         {
@@ -304,7 +305,7 @@
         },
         {
           "id": "offices_post",
-          "label": "Vet at pakker skal adresseres Heimdalsgata 15, 0561 Oslo, og hentes i resepsjonen i 1. etasje",
+          "label": "Vet at pakker skal adresseres Universitetsgata 1, 0164 Oslo, og hentes i resepsjonen i 4. etasje",
           "placeholder": "0min"
         },
         {
@@ -314,12 +315,12 @@
         },
         {
           "id": "offices_emergencyexits",
-          "label": "Vet hvor nærmeste nødutgang er, og at Heimdalsgata er stedet å møte opp når brannalarmen går",
+          "label": "Vet hvor nærmeste nødutgang er, og at parken over veien fra trikkestoppet ved Tullinløkka er stedet å møte opp når brannalarmen går (Sjekk plakater for rømningsplan som er plassert ved trappene hvis du er usikker)",
           "placeholder": "Hils"
         },
         {
           "id": "offices_recycling",
-          "label": "Jeg vet at det er tre resirkuleringsstasjoner for papp, plast og pant, to i 5. etasje, og en i 4. etasje",
+          "label": "Jeg vet at det er plassert resirkuleringsstasjoner rundt omkring på kontoret",
           "placeholder": "0min"
         },
         {
@@ -333,12 +334,6 @@
           "placeholder": "0min"
         },
         {
-          "id": "offices_landlord",
-          "label": "Har utforsket Entra sin app (finnes også på iOS/Android) og sett hva slags tjenester de tilbyr oss (t.o.m. renseri)",
-          "placeholder": "10min",
-          "href": "https://app.entra.no/nb/9/"
-        },
-        {
           "id": "offices_auditorium",
           "label": "Vet at det er gratis å booke auditorium/møterom i 1. etasje via Entra sin møteromsbooking",
           "placeholder": "5min",
@@ -346,21 +341,9 @@
         },
         {
           "id": "offices_meeting_food",
-          "label": "Vet at det også er mulig, men ikke gratis, å booke møtemat via Entra sin møteromsbooking",
+          "label": "Vet at det også er mulig, men ikke gratis, å booke møtemat via kantina sin nettside",
           "placeholder": "5min",
-          "href": "https://cgn.pronestor.com/3392-entra-sundtkvartalet/"
-        },
-        {
-          "id": "offices_firetraining",
-          "label": "Har tatt det obligatoriske brannkurset for Sundtkvartalet, finn link og kurskode på mottak av nyansatte-siden",
-          "placeholder": "60min",
-          "href": "https://projects.knowit.no/display/OO/Mottak+av+nyansatte"
-        },
-        {
-          "id": "offices_feedback",
-          "label": "Vet at forslag kan sendes til sundt@knowit.no med subject Ønske/Idé/Feil/Spørsmål",
-          "placeholder": "0min",
-          "href": "mailto:sundt@knowit.no"
+          "href": "https://tullin.munu.shop/articles"
         }
       ]
     },
@@ -389,18 +372,13 @@
           "placeholder": "5min"
         },
         {
-          "id": "headshots_confluence",
-          "label": "Lagt inn profilbildet på Confluence",
-          "placeholder": "5min"
-        },
-        {
           "id": "headshots_jira",
           "label": "Lagt inn profilbildet på JIRA",
           "placeholder": "5min"
         },
         {
-          "id": "headshots_bitbucket",
-          "label": "Lagt inn profilbildet på Bitbucket",
+          "id": "headshots_github",
+          "label": "Lagt inn profilbildet på GitHub",
           "placeholder": "5min"
         },
         {
@@ -411,6 +389,11 @@
         {
           "id": "headshots_google",
           "label": "Lagt inn profilbildet på G Suite",
+          "placeholder": "5min"
+        },
+        {
+          "id": "headshots_m365",
+          "label": "Lagt inn profilbildet på Microsoft 365",
           "placeholder": "5min"
         },
         {
@@ -525,11 +508,6 @@
           "placeholder": "0min"
         },
         {
-          "id": "hours_lunch",
-          "label": "Har funnet ut av hvorvidt jeg skal føre 0.5 timer for lunsj eller ikke (kundeavhengig)",
-          "placeholder": "10min"
-        },
-        {
           "id": "hours_vacation",
           "label": "Har forstått at jeg må forhåndslevere timelister for ferieuker slik at regnskap ikke lider",
           "placeholder": "5min"
@@ -541,15 +519,9 @@
         },
         {
           "id": "hours_faq",
-          "label": "Vet at mange typiskse timeføringsspørsmål står i UBW FAQen vår",
+          "label": "Vet at mange typiske timeføringsspørsmål står i UBW FAQen vår",
           "placeholder": "10min",
           "href": "https://projects.knowit.no/pages/viewpage.action?pageId=82477132"
-        },
-        {
-          "id": "hours_plustimechoice",
-          "label": "Vet at jeg kan endre om plusstimer utbetales eller ikke på plusstidvalg.knowit.no",
-          "placeholder": "10min",
-          "href": "http://plusstidvalg.knowit.no/"
         }
       ]
     },
@@ -755,6 +727,11 @@
       "id": "Utviklingsverktøy",
       "boxes": [
         {
+          "id": "develop_link_github",
+          "label": "Har fått tilgang til Knowit-Objectnet sin organisasjon på GitHub",
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/GitHub.aspx"
+        },
+        {
           "id": "develop_confluence",
           "label": "Har sett meg rundt på Confluence (wikien)",
           "placeholder": "løpende"
@@ -765,9 +742,10 @@
           "placeholder": "løpende"
         },
         {
-          "id": "develop_bitbucket",
-          "label": "Har sett meg rundt på Bitbucket (kodebasene)",
-          "placeholder": "løpende"
+          "id": "develop_github",
+          "label": "Har sett meg rundt på GitHub (kodebasene)",
+          "placeholder": "løpende",
+          "href": "https://github.com/Knowit-Objectnet"
         },
         {
           "id": "develop_crowd_bamboo",
@@ -781,8 +759,9 @@
         },
         {
           "id": "develop_sshkeys",
-          "label": "Har laget unik og passordbeskyttet SSH-nøkkel, og lagt den inn på Bitbucket",
-          "placeholder": "30min"
+          "label": "Har laget unik og passordbeskyttet SSH-nøkkel, og lagt den inn på GitHub",
+          "placeholder": "30min",
+          "href": "https://knowit.sharepoint.com/sites/Func-U7-drift/SitePages/GitHub.aspx"
         },
         {
           "id": "develop_support",
@@ -802,7 +781,7 @@
         },
         {
           "id": "security_workpasswords",
-          "label": "Bruker et sterkt og unikt passord med single sign-on hos Knowit (Gmail, Slack, Confluence, JIRA, Bitbucket, etc.)",
+          "label": "Bruker et sterkt og unikt passord med single sign-on hos Knowit (Gmail, Slack, JIRA, GitHub, etc.)",
           "placeholder": "bootcamp"
         },
         {
