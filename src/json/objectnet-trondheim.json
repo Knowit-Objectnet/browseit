@@ -266,13 +266,13 @@
         },
         {
           "id": "communication_eventcalendar",
-          "label": "Har lagt til eventkalenderen, og skal bli med på fest",
+          "label": "(Optional) Har lagt til eventkalenderen, og skal bli med på fest",
           "placeholder": "10min",
           "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
         {
-          "id": "communication_meetingcalendars",
-          "label": "Har lagt til møteromskalenderne, og vet hvordan jeg skrur dem av når jeg ikke trenger dem",
+          "id": "communication_eventcalendar_trondheim",
+          "label": "Har lagt til Trondheim kontoret sin eventkalender, og skal bli med på fest",
           "placeholder": "10min",
           "href": "https://projects.knowit.no/display/DRIFT/Legge+til+kalendere"
         },
@@ -289,12 +289,17 @@
       "boxes": [
         {
           "id": "offices_keycard",
-          "label": "Har fått adgangskort og lært koden, samt fått nøkkel",
+          "label": "Har fått adgangskort og lært koden, samt fått nøkkel (Gjerne test at den fungerer)",
           "placeholder": "1min"
         },
         {
           "id": "offices_desk",
           "label": "Har fått en kontorstol jeg liker, og et heve/senk bord",
+          "placeholder": "0min"
+        },
+        {
+          "id": "offices_shoes",
+          "label": "Vet at i Trondheim så har vi ikke utesko på bena inne på kontoret",
           "placeholder": "0min"
         },
         {
@@ -305,7 +310,7 @@
         },
         {
           "id": "offices_post",
-          "label": "Vet at pakker skal adresseres Professor Brochs gate 8A, 7030 Trondheim, og hentes ved døra",
+          "label": "Vet at pakker skal adresseres Knowit, Kongens gate 60, 7012 Trondheim, og hentes ved døra",
           "placeholder": "0min"
         },
         {
@@ -320,7 +325,7 @@
         },
         {
           "id": "offices_recycling",
-          "label": "Jeg vet at det er en resirkuleringsstasjon for papp, plast og pant ute i bygget ovenfor inngangen",
+          "label": "Jeg vet at det er en resirkuleringsstasjon for papp, plast og pant bak i bygget (på utsiden, men inne i gangen som går gjennom bygget)",
           "placeholder": "0min"
         },
         {
@@ -329,16 +334,9 @@
           "placeholder": "0min"
         },
         {
-          "id": "offices_landlord",
-          "label": "Har utforsket Teknobyen sin nettside og sett hva slags tjenester de tilbyr",
-          "placeholder": "10min",
-          "href": "https://teknobyen.no/"
-        },
-        {
           "id": "offices_auditorium",
-          "label": "Vet at det er gratis å booke møterom og har lest informasjonen om det under \"møterom\"",
-          "placeholder": "5min",
-          "href": "https://projects.knowit.no/pages/viewpage.action?pageId=83758224"
+          "label": "Vet at møterommet/lunsjrommet er det rommet i høyre ende av kontoret",
+          "placeholder": "5min"
         },
         {
           "id": "offices_information",
@@ -418,18 +416,18 @@
           "id": "economy_insurancepolicy",
           "label": "Har lest høvelig over forsikringspolisene",
           "placeholder": "20min",
-          "href": "https://projects.knowit.no/display/OO/Forsikringer"
+          "href": "https://sites.google.com/knowit.no/personalhandbok/pensjon-forsikring/avtaler-og-forsikringsbevis"
         },
         {
           "id": "economy_insurance_card",
-          "label": "Har lastet ned og lagt inn forsikringsinfo i Gouda-appen",
+          "label": "Har lastet ned og lagt inn forsikringsinfo i Gjensidige",
           "placeholder": "5min"
         },
         {
           "id": "economy_accounts",
           "label": "Har sett over listen over bedriftskonti og bedriftsavtalene nederst på siden («Gratis FastTrack? Ooh, nice.»)",
           "placeholder": "10min",
-          "href": "https://projects.knowit.no/display/OO/Bedriftskonti+og+mat"
+          "href": "https://projects.knowit.no/x/3pV5Ag"
         },
         {
           "id": "economy_travelexpenses",
@@ -491,7 +489,7 @@
         },
         {
           "id": "hours_startpage",
-          "label": " Har satt ny startside til å være 'Din ansettelse' → 'Timelister' under 'Din Profil' i UBW",
+          "label": "Har satt ny startside til å være 'Din ansettelse' → 'Timelister' under 'Din Profil' i UBW",
           "placeholder": "5min"
         },
         {
@@ -612,10 +610,9 @@
           "placeholder": "15min"
         },
         {
-          "id": "social_slabberas",
-          "label": "Har vært på Slabberas med teamet",
-          "placeholder": "15min",
-          "href": "https://www.kaffeslabberas.no/"
+          "id": "social_coffee",
+          "label": "Har vært på cafe med teamet",
+          "placeholder": "15min"
         }
       ]
     },
@@ -716,7 +713,7 @@
         },
         {
           "id": "hwsw_wifi",
-          "label": "Fått koblet på WiFi og vet at VPN og møteroms-Chromecasts kun funker på vårt interne WiFi (ikke gjestenettet)",
+          "label": "Fått koblet på WiFi og vet at VPN kun funker på vårt interne WiFi (ikke gjestenettet)",
           "placeholder": "5min"
         },
         {
@@ -846,15 +843,11 @@
       "boxes": [
         {
           "id": "decency_dishwasher",
-          "label": "Jeg lover å aldri sette koppen nedi kummen, for jeg er ikke 12 år lenger"
+          "label": "Jeg lover å aldri sette koppen nedi vasken, for jeg er ikke 12 år lenger"
         },
         {
           "id": "decency_noise",
           "label": "Jeg lover å redusere støynivået mitt når jeg går gjennom kontorlandskapet i arbeidstiden, for jeg er ikke 5 år lenger"
-        },
-        {
-          "id": "decency_cantina",
-          "label": "Jeg skal unngå å ta med ting fra kantina opp, og dersom jeg gjør det så lover jeg å ta det ned samme dag"
         },
         {
           "id": "decency_toilets",
